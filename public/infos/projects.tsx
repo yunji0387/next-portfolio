@@ -1,4 +1,4 @@
-const projectList = [
+export const projectList = [
     {
         name: "Sky Cast Weather App",
         description: "Sky Cast is a React-based web app providing current weather updates and forecasts using Google Maps APIs.",
