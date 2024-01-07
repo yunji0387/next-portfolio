@@ -21,7 +21,7 @@ const footerItems = [
 
 export function Footer() {
   return (
-    <div className="flex flex-col justify-center items-center w-full">
+    <footer className="flex flex-col justify-center items-center w-full">
       <ul className="bg-pink-800 flex items-center justify-center p-2">
         {footerItems.map((item) => (
           <li key={item.name} className="p-2">
@@ -32,6 +32,6 @@ export function Footer() {
         ))}
       </ul>
       <p>&copy; {new Date().getFullYear()} Yun Ji How.</p>
-    </div>
+    </footer>
   );
 }
