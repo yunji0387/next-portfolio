@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <div className="custom-container">
       <div className="bg-red-900 flex flex-col justify-center items-center w-full">
-        <Link href="/" target="_blank" rel="noopener noreferrer">
+        <Link href="/" rel="noopener noreferrer">
           <p className="text-white hover:underline">Back</p>
         </Link>
         <p>{">"} contact section</p>
