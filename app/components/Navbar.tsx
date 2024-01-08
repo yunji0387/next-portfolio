@@ -17,12 +17,12 @@ const navItems = [
 
 export function Navbar() {
     return (
-        <nav className="bg-cyan-800 w-full">
-            <ul className="flex items-center justify-center p-2 space-x-4">
+        <nav className="w-full">
+            <ul className="bg-cyan-800 flex items-center justify-center p-2 space-x-4 h-11">
                 {navItems.map((item) => (
                     <li key={item.name}>
                         <Link href={item.link}>
-                            <p className="p-2 text-white hover:bg-cyan-700 transition duration-300">{item.name}</p>
+                            <p className="p-2 text-white hover:text-lg transition-all duration-300 ease-in-out">{item.name}</p>
                         </Link>
                     </li>
                 ))}
