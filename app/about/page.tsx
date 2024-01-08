@@ -17,7 +17,9 @@ export default function About() {
           <p className="text-white">About Me</p>
           <p className="text-sm">{about.description}</p>
         </div>
-
+        <Link href="/resume" rel="noopener noreferrer">
+          <p className="text-white hover:underline">Resume</p>
+        </Link>
         <div className="bg-green-900 w-full p-2">
           <p className="text-white">Education</p>
           {education.map((edu) => (
