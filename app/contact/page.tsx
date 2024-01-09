@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { contactList } from "@/public/infos/contact";
+import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
 export default function Contact() {
   return (
     <div className="custom-container">
       <div className="bg-red-900 flex flex-col justify-center items-center w-full">
+        <Navbar />
         <Link href="/" rel="noopener noreferrer">
           <p className="text-white hover:underline">Back</p>
         </Link>

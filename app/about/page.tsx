@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { about } from "@/public/infos/about";
 import { education } from "@/public/infos/education";
@@ -9,6 +10,7 @@ export default function About() {
   return (
     <div className="custom-container">
       <div className="bg-red-900 flex flex-col justify-center items-center w-full">
+        <Navbar />
         <Link href="/" rel="noopener noreferrer">
           <p className="text-white hover:underline">Back</p>
         </Link>

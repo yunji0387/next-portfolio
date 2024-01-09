@@ -22,7 +22,7 @@ const footerItems = [
 export function Footer() {
   return (
     <footer className="flex flex-col justify-center items-center w-full">
-      <ul className="bg-pink-800 flex items-center justify-center p-2">
+      <ul className="bg-pink-800 flex items-center justify-center">
         {footerItems.map((item) => (
           <li key={item.name} className="p-2">
             <Link href={item.link} target="_blank" rel="noopener noreferrer">

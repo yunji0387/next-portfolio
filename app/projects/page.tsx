@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { projectList } from "@/public/infos/projects";
+import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
 export default function Projects() {
   return (
     <div className="custom-container">
       <div className="bg-red-900 flex flex-col justify-center items-center w-full">
+        <Navbar />
         <Link href="/" rel="noopener noreferrer">
           <p className="text-white hover:underline">Back</p>
         </Link>
