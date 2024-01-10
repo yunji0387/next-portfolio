@@ -12,7 +12,7 @@ export function MainCard() {
         </p>
         <p>{">"} Looking for new opportunities.</p>
         <div className="flex flex-row h-6">
-          <p className="bg-red-800 h-6">{">"} Check out my&nbsp;</p>
+          <p className="h-6">{">"} Check out my&nbsp;</p>
           <Link href="/resume" rel="noopener noreferrer">
             <span className="text-white underline hover:text-lg">resume</span>
           </Link>
