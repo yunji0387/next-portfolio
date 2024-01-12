@@ -50,18 +50,24 @@ export default function About() {
         </div>
         <div className="bg-green-900 w-full p-2">
           <p className="text-white">Certifications</p>
-          {certificationsList.map((cert) => (
-            <div key={cert.name} className="bg-blue-900 p-2">
-              <p className="text-sm">{cert.name}</p>
-              <p className="text-sm">{cert.date}</p>
-              <Link href={cert.link} target="_blank" rel="noopener noreferrer">
-                <p className="text-sm text-white hover:underline">
-                  Certification Link
-                </p>
-              </Link>
-              <p className="text-sm">{cert.organization}</p>
-            </div>
-          ))}
+          <div className="overflow-auto max-h-80">
+            {certificationsList.map((cert) => (
+              <div key={cert.name} className="bg-blue-900 p-2">
+                <p className="text-sm">{cert.name}</p>
+                <p className="text-sm">{cert.date}</p>
+                <Link
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p className="text-sm text-white hover:underline">
+                    Certification Link
+                  </p>
+                </Link>
+                <p className="text-sm">{cert.organization}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <Footer />
