@@ -1,18 +1,9 @@
-// "use client";
-// import React, { useState } from "react";
-
 type HamburgerIconProps = {
   isOpen: boolean;
   handleClick: () => void;
 };
 
 export function HamburgerIcon({ isOpen, handleClick }: HamburgerIconProps) {
-  //   const [isOpen, setIsOpen] = useState(false);
-
-  //   const handleClick = () => {
-  //     setIsOpen(!isOpen);
-  //   };
-
   return (
     <button
       onClick={handleClick}
