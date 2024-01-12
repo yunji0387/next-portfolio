@@ -9,11 +9,8 @@ import { certificationsList } from "@/public/infos/certifications";
 export default function About() {
   return (
     <div className="custom-container">
+      <Navbar />
       <div className="bg-red-900 flex flex-col justify-center items-center w-full">
-        <Navbar />
-        <Link href="/" rel="noopener noreferrer">
-          <p className="text-white hover:underline">Back</p>
-        </Link>
         <p>{">"} about section</p>
         <div className="bg-blue-900 w-full p-2">
           <p className="text-white">About Me</p>

@@ -6,11 +6,8 @@ import { Footer } from "../components/Footer";
 export default function Projects() {
   return (
     <div className="custom-container">
+      <Navbar />
       <div className="bg-red-900 flex flex-col justify-center items-center w-full">
-        <Navbar />
-        <Link href="/" rel="noopener noreferrer">
-          <p className="text-white hover:underline">Back</p>
-        </Link>
         <p>{">"} projects section</p>
         {projectList.map((project, index) => (
           <div key={index} className="bg-blue-900 w-full p-2">

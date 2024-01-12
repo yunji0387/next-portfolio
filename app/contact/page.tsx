@@ -6,11 +6,8 @@ import { Footer } from "../components/Footer";
 export default function Contact() {
   return (
     <div className="custom-container">
+      <Navbar />
       <div className="bg-red-900 flex flex-col justify-center items-center w-full">
-        <Navbar />
-        <Link href="/" rel="noopener noreferrer">
-          <p className="text-white hover:underline">Back</p>
-        </Link>
         <p>{">"} contact section</p>
         <div className="bg-blue-900 flex flex-col justify-center items-center w-full">
           {contactList.map((contact, index) => (
