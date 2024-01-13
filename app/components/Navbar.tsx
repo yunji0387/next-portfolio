@@ -37,13 +37,20 @@ export function Navbar() {
       </div>
 
       {/* Combined Menu */}
-      <ul className={`flex flex-col md:flex-row items-center justify-center md:space-x-4 transition-all duration-500 ease-in-out overflow-hidden absolute md:relative w-full ${
-        isOpen ? "bg-gray-900 max-h-96 opacity-100 border border-2 rounded-md md:border-none" : "max-h-0 opacity-0 md:max-h-full md:opacity-100"
-      } top-full md:top-0 left-0 z-50 md:z-auto`}>
+      <ul
+        className={`flex flex-col md:flex-row items-center justify-center md:space-x-4 transition-all duration-500 ease-in-out overflow-hidden absolute md:relative w-full ${
+          isOpen
+            ? "bg-gray-900 md:bg-none max-h-96 opacity-100 border-2 rounded-md md:border-none"
+            : "max-h-0 opacity-0 md:max-h-full md:opacity-100"
+        } top-full md:top-0 left-0 z-50 md:z-auto w-full`}
+      >
         {navItems.map((item) => (
-          <li key={item.name} className="bg-pink-800 flex items-center justify-center w-24 md:my-0 my-2">
-            <Link href={item.link}>
-              <p className="p-1 md:p-2 text-white text-lg hover:bg-cyan-900 md:hover:bg-transparent transition-colors duration-300">
+          <li
+            key={item.name}
+            className="flex items-center justify-center w-full border md:border-none"
+          >
+            <Link href={item.link} className="w-full">
+              <p className="text-lg hover:scale-150 transition-all duration-300 ease-in-out text-center p-2 text-white">
                 {item.name}
               </p>
             </Link>
