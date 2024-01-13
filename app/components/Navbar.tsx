@@ -49,8 +49,8 @@ export function Navbar() {
             key={item.name}
             className="flex items-center justify-center w-full border-2 md:border-none rounded-md m-2 bg-gray-900 md:bg-transparent"
           >
-            <Link href={item.link} className="w-full flex justify-center items-center h-12 hover:h-14 md:hover:h-12 text-lg hover:text-2xl transition-all duration-300 ease-in-out">
-              <p className="p-2 text-white">
+            <Link href={item.link} className="w-full flex justify-center items-center h-12 hover:h-14 md:h-8 md:hover:h-8 text-lg hover:text-2xl transition-all duration-300 ease-in-out">
+              <p className="text-white">
                 {item.name}
               </p>
             </Link>
