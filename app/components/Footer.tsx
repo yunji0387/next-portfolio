@@ -35,7 +35,7 @@ export function Footer() {
         {footerItems.map((item) => (
           <li
             key={item.name}
-            className="flex items-center justify-center m-1 p-2 w-14"
+            className="flex items-center justify-center m-2 w-14"
           >
             <Link href={item.link} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center">
               <Image
@@ -43,7 +43,7 @@ export function Footer() {
                 alt={item.name}
                 width={50}
                 height={50}
-                className="hover:scale-150 transition-all duration-300 ease-in-out"
+                className="select-none hover:scale-150 transition-all duration-300 ease-in-out"
               />
             </Link>
           </li>
