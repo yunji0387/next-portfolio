@@ -23,7 +23,7 @@ export const contactList = [
     {
         name: "X",
         link: "https://twitter.com/",
-        username: "-",
+        username: "currently unavailable",
         icon: "X",
         isAvailable: false,
     },

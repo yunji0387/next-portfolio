@@ -9,19 +9,30 @@ export default function Contact() {
       <Navbar />
       <div className="bg-black flex flex-col justify-center items-center w-full">
         <p>{">"} contact section</p>
-        <div className="bg-gray-900 w-full md:w-[85%] p-2 rounded-lg border-2 border-white">
-          <div className="bg-gray-800 flex flex-col justify-center p-5 w-full rounded-md">
-            <p>{">"} contact section</p>
+        <div className="bg-gray-900 w-full md:w-[80%] p-2 rounded-lg border-2 border-white">
+          <div className="bg-gray-800 flex flex-col justify-center p-1 md:p-5 w-full rounded-md">
+            <p className="text-sm md:text-base">{">"} contact section</p>
             {contactList.map((contact, index) => (
-              <div key={index} className="bg-pink-900 flex flex-row w-full py-1">
-                <p>{">"} {contact.name} :</p>
-                <Link
-                  href={contact.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p className="text-white hover:underline">Link</p>
-                </Link>
+              <div key={index} className="flex flex-row w-full py-1 text-sm md:text-base">
+                <p className="w-[4.5rem] md:w-24">
+                  {">"} {contact.name}
+                </p>
+                <p>:&nbsp;</p>
+                {contact.isAvailable ? (
+                  <Link
+                    href={contact.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className="text-white underline hover:font-bold">
+                      {contact.username}
+                    </p>
+                  </Link>
+                ) : (
+                  <p className="text-gray-500 cursor-not-allowed">
+                    {contact.username}
+                  </p>
+                )}
               </div>
             ))}
           </div>
