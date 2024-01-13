@@ -38,19 +38,19 @@ export function Navbar() {
 
       {/* Combined Menu */}
       <ul
-        className={`flex flex-col md:flex-row items-center justify-center md:space-x-4 transition-all duration-500 ease-in-out overflow-hidden absolute md:relative w-full ${
+          className={`flex flex-col md:flex-row items-center justify-center md:space-x-4 overflow-hidden absolute md:relative w-full ${
           isOpen
-            ? "bg-gray-900 md:bg-none max-h-96 opacity-100 border-2 rounded-md md:border-none"
+            ? "max-h-96 opacity-100 transition-all duration-500 ease-in-out"
             : "max-h-0 opacity-0 md:max-h-full md:opacity-100"
         } top-full md:top-0 left-0 z-50 md:z-auto w-full`}
       >
         {navItems.map((item) => (
           <li
             key={item.name}
-            className="flex items-center justify-center w-full border md:border-none"
+            className="flex items-center justify-center w-full border-2 md:border-none rounded-md m-2 bg-gray-900 md:bg-transparent"
           >
-            <Link href={item.link} className="w-full">
-              <p className="text-lg hover:scale-150 transition-all duration-300 ease-in-out text-center p-2 text-white">
+            <Link href={item.link} className="w-full flex justify-center items-center h-12 hover:h-14 md:hover:h-12 text-lg hover:text-2xl transition-all duration-300 ease-in-out">
+              <p className="p-2 text-white">
                 {item.name}
               </p>
             </Link>
