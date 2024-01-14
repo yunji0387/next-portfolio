@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { projectList } from "@/public/infos/projects";
 import { Navbar } from "../components/Navbar";
@@ -16,30 +17,43 @@ export default function Projects() {
                 <p>
                   {">"} {project.name}
                 </p>
-                <p className="text-sm">{project.description}</p>
-                <Link
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p className="text-white hover:underline">Web Link</p>
-                </Link>
-                <Link
-                  href={project.github_repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p className="text-white hover:underline">GitHub Repo Link</p>
-                </Link>
-                <div className="flex flex-wrap gap-x-2">
-                  {project.tech_stack.map((tech, index) => (
-                    <p
-                      key={index}
-                      className="bg-pink-600 text-xs whitespace-nowrap px-2 py-1 m-1 rounded text-center"
+                <div className="grid grid-cols-12 gap-4">
+                  <div className="col-span-12 md:col-span-4 bg-black w-full">
+                    {/* <img
+                      src={project.image}
+                      alt={project.name}
+                      className="w-full"
+                    /> */}
+                  </div>
+                  <div className="col-span-12 md:col-span-8">
+                    <p className="text-sm">{project.description}</p>
+                    <Link
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      {tech}
-                    </p>
-                  ))}
+                      <p className="text-white hover:underline">Web Link</p>
+                    </Link>
+                    <Link
+                      href={project.github_repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <p className="text-white hover:underline">
+                        GitHub Repo Link
+                      </p>
+                    </Link>
+                    <div className="flex flex-wrap gap-x-2">
+                      {project.tech_stack.map((tech, index) => (
+                        <p
+                          key={index}
+                          className="bg-pink-600 text-xs whitespace-nowrap px-2 py-1 m-1 rounded text-center"
+                        >
+                          {tech}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
