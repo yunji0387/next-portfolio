@@ -17,18 +17,20 @@ export default function Projects() {
                 <p>
                   {">"} {project.name}
                 </p>
-                <div className="grid grid-cols-12 gap-4">
-                  <div className="col-span-12 md:col-span-4 lg:col-span-3 bg-black w-full max-w-80">
-                    <Image
-                      src={project.image}
-                      alt={project.name}
-                      width={0}
-                      height={0}
-                      layout="responsive"
-                      style={{ width: "100%", height: "auto" }}
-                    />
+                <div className="grid grid-cols-12 gap-1">
+                  <div className="col-span-12 md:col-span-4 lg:col-span-3 flex justify-center items-center w-full">
+                    <div className="bg-black w-full max-w-80 m-2 p-2 border rounded-md">
+                      <Image
+                        src={project.image}
+                        alt={project.name}
+                        width={0}
+                        height={0}
+                        layout="responsive"
+                        className="w-full h-auto"
+                      />
+                    </div>
                   </div>
-                  <div className="col-span-12 md:col-span-8 lg:col-span-9">
+                  <div className="col-span-12 md:col-span-8 lg:col-span-9 m-2">
                     <p className="text-sm">{project.description}</p>
                     <Link
                       href={project.link}
