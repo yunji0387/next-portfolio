@@ -7,8 +7,8 @@ export default function Projects() {
   return (
     <div className="custom-container">
       <Navbar />
-      <div className="bg-red-900 flex flex-col justify-center items-center w-full">
-        <div className="bg-gray-900 w-[80%] p-2 rounded-lg border-2 border-white">
+      <div className="flex flex-col justify-center items-center w-full">
+        <div className="bg-gray-900 w-full p-2 rounded-lg border-2 border-white">
           <div className="bg-gray-800 w-full p-5 rounded-md">
             <p>{">"} projects section</p>
             {projectList.map((project, index) => (
