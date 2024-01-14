@@ -5,6 +5,7 @@ export const projectList = [
         link: "https://sky-cast-854836ef4892.herokuapp.com/",
         github_repo: "https://github.com/yunji0387/weather-app",
         tech_stack: ['React', 'Node.js', 'Express', 'MongoDB', 'Google Maps API', 'OpenWeatherMap API', 'Heroku', 'NoSQL', 'Git', 'RESTful API', 'JSON', 'JavaScript', 'HTML', 'CSS'],
+        image: "/icons/projects/skyCast.png",
     },
     {
         name: "Little Lemon Restaurant App",
@@ -12,6 +13,7 @@ export const projectList = [
         link: "https://little-lemon-restaurant-88e8841b3bad.herokuapp.com/",
         github_repo: "",
         tech_stack: ['React', 'MUI', 'Formik', 'Figma', 'UX/UI', 'Heroku', 'Git', 'JavaScript'],
+        image: "/icons/projects/littleLemon.png",
     },
     {
         name: "Text Mining: Sentiment Analysis and Recommendation System on Yelp Reviews",
@@ -19,6 +21,7 @@ export const projectList = [
         link: "https://github.com/Makiato1999/COMP4710_Yelp/blob/main/ProjectReport.pdf",
         github_repo: "https://github.com/Makiato1999/COMP4710_Yelp",
         tech_stack: ['Data Mining', 'Text Mining', 'Data Analysis', 'Jupyter Notebook', 'Pandas', 'Python'],
+        image: "/icons/projects/yelpDataMining.png",
     },
     {
         name: "Basic Ray Tracing Technique Implementation",
@@ -26,6 +29,7 @@ export const projectList = [
         link: "https://github.com/yunji0387/Ray_Tracing_Project/blob/main/COMP4490_Project_Report.pdf",
         github_repo: "https://github.com/yunji0387/Ray_Tracing_Project",
         tech_stack: ['Computer Graphics', 'OpenGL', 'C++', 'Git', 'Ray Tracing'],
+        image: "/icons/projects/rayTracing.png",
     },
     {
         name: "2D Platformer Game in Godot",
@@ -33,6 +37,7 @@ export const projectList = [
         link: "https://github.com/yunji0387/my-first-godot-game",
         github_repo: "https://github.com/yunji0387/my-first-godot-game",
         tech_stack: ['Godot', 'GDScript', 'Git', 'Game Development', '2D Game'],
+        image: "/icons/projects/godotGame.png",
     },
     {
         name: "Hydrological Data Analysis",
@@ -40,6 +45,7 @@ export const projectList = [
         link: "https://github.com/yunji0387/hydrological_analysis",
         github_repo: "https://github.com/yunji0387/hydrological_analysis",
         tech_stack: ['Data Analysis', 'Jupyter Notebook', 'Pandas', 'Python'],
+        image: "/icons/projects/hydrologicalAnalysis.png",
     },
     {
         name: "React Portfolio Website",
@@ -47,6 +53,7 @@ export const projectList = [
         link: "https://yunji0387.github.io/my-portfolio/",
         github_repo: "https://github.com/yunji0387/my-portfolio",
         tech_stack: ['React', 'Heroku', 'Git', 'JavaScript', 'HTML', 'CSS'],
+        image: "/icons/projects/reactPortfolio.png",
     },
     {
         name: "React Mini Games Website",
@@ -54,6 +61,7 @@ export const projectList = [
         link:"https://yunji0387.github.io/react-game-web/",
         github_repo: "https://github.com/yunji0387/react-game-web",
         tech_stack: ['React', 'Git', 'JavaScript', 'HTML', 'CSS'],
+        image: "/icons/projects/miniGameWeb.png",
     },
     {
         name: "Your Daily Web",
@@ -61,5 +69,6 @@ export const projectList = [
         link: "https://yunji0387.github.io/your-daily-web/",
         github_repo: "",
         tech_stack: ['Node.js', 'EJS', 'Heroku', 'RESTful API','JavaScript', 'HTML', 'CSS'],
+        image: "/icons/projects/yourDailyWeb.png",
     },
 ];
