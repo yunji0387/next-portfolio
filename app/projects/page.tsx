@@ -3,6 +3,7 @@ import Link from "next/link";
 import { projectList } from "@/public/infos/projects";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import { TextBanner } from "../components/TextBanner";
 
 export default function Projects() {
   const scrollStyles = {
@@ -76,7 +77,7 @@ export default function Projects() {
                         </div>
                       </div>
                     </div> */}
-                    <div className="flex flex-wrap gap-x-2 w-full">
+                    <div className="hidden lg:flex flex-wrap gap-x-2 w-full">
                       {project.tech_stack.map((tech, index) => (
                         <p
                           key={index}
@@ -85,6 +86,9 @@ export default function Projects() {
                           {tech}
                         </p>
                       ))}
+                    </div>
+                    <div className="lg:hidden">
+                      <TextBanner textList={project.tech_stack} />
                     </div>
                   </div>
                 </div>
