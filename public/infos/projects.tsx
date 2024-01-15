@@ -4,7 +4,7 @@ export const projectList = [
         description: "Sky Cast is a React-based web app providing current weather updates and forecasts using Google Maps APIs.",
         link: "https://sky-cast-854836ef4892.herokuapp.com/",
         github_repo: "https://github.com/yunji0387/weather-app",
-        tech_stack: ['React', 'Node.js', 'Express', 'MongoDB', 'Google Maps API', 'OpenWeatherMap API', 'Heroku', 'NoSQL', 'RESTful API'],
+        tech_stack: ['React', 'Node.js', 'Express', 'MongoDB', 'Google Maps API', 'OpenWeatherMap API', 'Heroku', 'NoSQL'],
         image: "/images/projects/skyCast.png",
     },
     {

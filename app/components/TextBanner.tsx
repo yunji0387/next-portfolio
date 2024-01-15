@@ -9,7 +9,8 @@ export function TextBanner({ textList, speed = 5000 }: TextBannerProps) {
   };
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex flex-row items-center justify-center">
+      <div className="bg-gray-800 h-8 w-[5%]"></div>
       <div className="bg-pink-800 relative overflow-hidden h-6 md:h-8 w-full md:w-[85%] lg:w-[50rem] text-sm md:text-base lg:text-lg">
         <div className="absolute flex whitespace-nowrap items-center justify-center">
           <section className="scroll-section" style={scrollStyle}>
@@ -35,6 +36,7 @@ export function TextBanner({ textList, speed = 5000 }: TextBannerProps) {
           </section>
         </div>
       </div>
+      <div className="bg-gray-800 h-8 w-[5%]"></div>
     </div>
   );
 }
