@@ -5,6 +5,10 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
 export default function Projects() {
+  const scrollStyles = {
+    animation: "scrollLeft 10s linear infinite",
+  };
+
   return (
     <div className="custom-container">
       <Navbar />
@@ -38,21 +42,41 @@ export default function Projects() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <p className="p-1 hover:font-bold">
-                          Web Link
-                        </p>
+                        <p className="p-1 hover:font-bold">Web Link</p>
                       </Link>
                       <Link
                         href={project.github_repo}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <p className="p-1 hover:font-bold">
-                          GitHub Repo Link
-                        </p>
+                        <p className="p-1 hover:font-bold">GitHub Repo Link</p>
                       </Link>
                     </div>
-                    <div className="flex flex-wrap gap-x-2">
+                    {/* <div className="overflow-hidden whitespace-nowrap">
+                      <div className="flex" style={scrollStyles}>
+                        <div className="flex gap-x-2">
+                          {project.tech_stack.map((tech, index) => (
+                            <p
+                              key={`first-${index}`}
+                              className="bg-pink-600 text-xs px-2 py-1 m-1 rounded text-center"
+                            >
+                              {tech}
+                            </p>
+                          ))}
+                        </div>
+                        <div className="flex gap-x-2">
+                          {project.tech_stack.map((tech, index) => (
+                            <p
+                              key={`second-${index}`}
+                              className="bg-pink-600 text-xs px-2 py-1 m-1 rounded text-center"
+                            >
+                              {tech}
+                            </p>
+                          ))}
+                        </div>
+                      </div>
+                    </div> */}
+                    <div className="flex flex-wrap gap-x-2 w-full">
                       {project.tech_stack.map((tech, index) => (
                         <p
                           key={index}
