@@ -37,7 +37,7 @@ export default function Projects() {
                   </div>
                   <div className="col-span-12 md:col-span-8 lg:col-span-9 m-2">
                     <p className="text-sm">{project.description}</p>
-                    <div className="flex flex-row text-white text-sm text-white underline">
+                    <div className="flex flex-col sm:flex-row text-white text-sm text-white underline">
                       <Link
                         href={project.link}
                         target="_blank"
@@ -50,38 +50,14 @@ export default function Projects() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <p className="p-1 hover:font-bold">GitHub Repo Link</p>
+                        <p className="p-1 sm:pl-5 hover:font-bold">GitHub Repo Link</p>
                       </Link>
                     </div>
-                    {/* <div className="overflow-hidden whitespace-nowrap">
-                      <div className="flex" style={scrollStyles}>
-                        <div className="flex gap-x-2">
-                          {project.tech_stack.map((tech, index) => (
-                            <p
-                              key={`first-${index}`}
-                              className="bg-pink-600 text-xs px-2 py-1 m-1 rounded text-center"
-                            >
-                              {tech}
-                            </p>
-                          ))}
-                        </div>
-                        <div className="flex gap-x-2">
-                          {project.tech_stack.map((tech, index) => (
-                            <p
-                              key={`second-${index}`}
-                              className="bg-pink-600 text-xs px-2 py-1 m-1 rounded text-center"
-                            >
-                              {tech}
-                            </p>
-                          ))}
-                        </div>
-                      </div>
-                    </div> */}
                     <div className="hidden lg:flex flex-wrap gap-x-2 w-full">
                       {project.tech_stack.map((tech, index) => (
                         <p
                           key={index}
-                          className="bg-pink-600 text-xs whitespace-nowrap px-2 py-1 m-1 rounded text-center"
+                          className="bg-green-700 text-xs whitespace-nowrap px-2 py-1 m-1 rounded-full text-center font-semibold"
                         >
                           {tech}
                         </p>
