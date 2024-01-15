@@ -32,22 +32,26 @@ export default function Projects() {
                   </div>
                   <div className="col-span-12 md:col-span-8 lg:col-span-9 m-2">
                     <p className="text-sm">{project.description}</p>
-                    <Link
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <p className="text-white hover:underline">Web Link</p>
-                    </Link>
-                    <Link
-                      href={project.github_repo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <p className="text-white hover:underline">
-                        GitHub Repo Link
-                      </p>
-                    </Link>
+                    <div className="flex flex-row text-white text-sm text-white underline">
+                      <Link
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <p className="p-1 hover:font-bold">
+                          Web Link
+                        </p>
+                      </Link>
+                      <Link
+                        href={project.github_repo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <p className="p-1 hover:font-bold">
+                          GitHub Repo Link
+                        </p>
+                      </Link>
+                    </div>
                     <div className="flex flex-wrap gap-x-2">
                       {project.tech_stack.map((tech, index) => (
                         <p
