@@ -66,7 +66,7 @@ export const projectList = [
     {
         name: "Your Daily Web",
         description: "a website that provides basic information on stocks, cryptocurrencies, weather, and more.",
-        link: "https://yunji0387.github.io/your-daily-web/",
+        link: "http://dailyweb-51c4ca40411a.herokuapp.com/home",
         github_repo: "https://github.com/yunji0387/DailyWebBlog-v1",
         tech_stack: ['Node.js', 'EJS', 'Heroku', 'RESTful API','JavaScript', 'HTML', 'CSS'],
         image: "/images/projects/yourDailyWeb.png",
