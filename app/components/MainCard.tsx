@@ -3,7 +3,7 @@ import { about } from "@/public/infos/about";
 
 export function MainCard() {
   return (
-    <div className="bg-black flex flex-col justify-center items-center w-full h-[70vh]">
+    <div className="flex flex-col justify-center items-center w-full h-[70vh]">
       <div className="bg-gray-900 w-[80%] p-2 rounded-lg border-2 border-white">
         <div className="bg-gray-800 w-full p-5 rounded-md">
           <p>{">"} Hi, I&apos;m Yun Ji How.</p>
