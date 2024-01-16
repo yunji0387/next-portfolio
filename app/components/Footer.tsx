@@ -49,7 +49,7 @@ export function Footer() {
           </li>
         ))}
       </ul>
-      <p className="text-sm select-none">&copy; {new Date().getFullYear()} Yun Ji How.</p>
+      <p className="text-sm select-none font-light">&copy; {new Date().getFullYear()} Yun Ji How.</p>
     </footer>
   );
 }

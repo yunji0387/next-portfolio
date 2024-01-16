@@ -19,7 +19,7 @@ export default function Projects() {
             <p>{">"} Projects Section</p>
             {projectList.map((project, index) => (
               <div key={index} className="w-full pt-2">
-                <p>
+                <p className="font-semibold">
                   {">"} {project.name}
                 </p>
                 <div className="grid grid-cols-12 gap-1">
@@ -36,7 +36,7 @@ export default function Projects() {
                     </div>
                   </div>
                   <div className="col-span-12 md:col-span-8 lg:col-span-9 mt-2">
-                    <p className="text-sm lg:text-base text-justify">{project.description}</p>
+                    <p className="text-sm lg:text-base text-justify font-light">{project.description}</p>
                     <div className="flex flex-col sm:flex-row p-1 text-sm md:text-base text-white underline">
                       <Link
                         href={project.link}
