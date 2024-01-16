@@ -12,7 +12,6 @@ export default function About() {
     <div className="custom-container">
       <Navbar />
       <div className="flex flex-col justify-center items-center w-full">
-        <p className="w-full">{">"} About Section</p>
         <div className="bg-gray-900 border rounded-lg m-2 w-full">
           <div className="bg-gray-800 rounded-lg p-2 m-2">
             <p className="text-sm text-white">{">"} About Me</p>
