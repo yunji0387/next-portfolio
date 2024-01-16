@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
@@ -66,18 +67,30 @@ export default function About() {
             <p className="text-sm text-white">{">"} Certifications</p>
             <div className="overflow-auto max-h-64">
               {certificationsList.map((cert) => (
-                <div key={cert.name} className="p-2 text-sm">
-                  <Link
-                    href={cert.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <p className="underline hover:font-bold transition-all duration-300 ease-in-out">
-                      {cert.name} - {cert.organization}
-                    </p>
-                  </Link>
-                  <p className="">{cert.date}</p>
+                <Link
+                key={cert.name} 
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex flex-row items-center p-2 text-sm w-full hover:bg-gray-700 hover:font-bold transition-all duration-300 ease-in-out">
+                  <div>
+                    <Image
+                      src={cert.image}
+                      alt={cert.organization}
+                      width={50}
+                      height={50}
+                      className="m-1 mr-2"
+                    />
+                  </div>
+                  <div>
+                      <p>
+                        {cert.name} - {cert.organization}
+                      </p>
+                    <p>{cert.date}</p>
+                  </div>
                 </div>
+                </Link>
               ))}
             </div>
           </div>
