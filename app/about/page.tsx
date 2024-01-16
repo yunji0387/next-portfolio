@@ -19,7 +19,7 @@ export default function About() {
             <div className="flex flex-row h-6 text-sm">
               <p className="h-6">{">"} Check out my&nbsp;</p>
               <Link href="/resume" rel="noopener noreferrer">
-                <span className="text-white underline hover:text-base">
+                <span className="text-white underline hover:text-base hover:font-bold transition-all duration-300 ease-in-out">
                   resume
                 </span>
               </Link>
