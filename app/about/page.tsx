@@ -49,7 +49,10 @@ export default function About() {
             {workExperience.map((work) => (
               <div key={work.company} className="w-full p-3 text-sm">
                 <p className="font-bold">{work.company}</p>
-                <p className="font-semibold">{work.title} <span className="font-light">({work.jobType})</span></p>
+                <p className="font-semibold">
+                  {work.title}{" "}
+                  <span className="font-light">({work.jobType})</span>
+                </p>
                 <p className="font-light">{work.date}</p>
                 <p className="">{work.location}</p>
                 <p className="font-extralight">{work.description}</p>
@@ -58,25 +61,25 @@ export default function About() {
           </div>
         </div>
 
-        <div className="bg-green-900 w-full p-2">
-          <p className="text-white">Certifications</p>
-          <div className="overflow-auto max-h-80">
-            {certificationsList.map((cert) => (
-              <div key={cert.name} className="bg-blue-900 p-2">
-                <p className="text-sm">{cert.name}</p>
-                <p className="text-sm">{cert.date}</p>
-                <Link
-                  href={cert.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p className="text-sm text-white hover:underline">
-                    Certification Link
-                  </p>
-                </Link>
-                <p className="text-sm">{cert.organization}</p>
-              </div>
-            ))}
+        <div className="bg-gray-900 border rounded-lg m-2 w-full">
+          <div className="bg-gray-800 rounded-lg p-2 m-2">
+            <p className="text-sm text-white">{">"} Certifications</p>
+            <div className="overflow-auto max-h-80">
+              {certificationsList.map((cert) => (
+                <div key={cert.name} className="bg-blue-900 p-2 text-sm">
+                  <Link
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className="underline hover:font-bold transition-all duration-300 ease-in-out">
+                      {cert.name} - {cert.organization}
+                    </p>
+                  </Link>
+                  <p className="">{cert.date}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
