@@ -11,25 +11,36 @@ export default function About() {
     <div className="custom-container">
       <Navbar />
       <div className="bg-red-900 flex flex-col justify-center items-center w-full">
-        <p>{">"} about section</p>
-        <div className="bg-blue-900 w-full p-2">
-          <p className="text-white">About Me</p>
-          <p className="text-sm">{about.description}</p>
-        </div>
-        <Link href="/resume" rel="noopener noreferrer">
-          <p className="text-white hover:underline">Resume</p>
-        </Link>
-        <div className="bg-green-900 w-full p-2">
-          <p className="text-white">Education</p>
-          {education.map((edu) => (
-            <div key={edu.school} className="bg-blue-900 p-2">
-              <p className="text-sm">{edu.school}</p>
-              <p className="text-sm">{edu.degree}</p>
-              <p className="text-sm">{edu.major}</p>
-              <p className="text-sm">{edu.date}</p>
-              <p className="text-sm">{edu.location}</p>
+        <p className="w-full">{">"} About Section</p>
+        <div className="bg-gray-900 border rounded-lg m-2 w-full">
+          <div className="bg-gray-800 rounded-lg p-2 m-2">
+            <p className="text-sm text-white">{">"} About Me</p>
+            <p className="text-sm text-justify p-3">{about.description}</p>
+            <div className="flex flex-row h-6 text-sm">
+              <p className="h-6">{">"} Check out my&nbsp;</p>
+              <Link href="/resume" rel="noopener noreferrer">
+                <span className="text-white underline hover:text-base">
+                  resume
+                </span>
+              </Link>
+              <p>.</p>
             </div>
-          ))}
+          </div>
+        </div>
+
+        <div className="bg-gray-900 border rounded-lg m-2 w-full">
+          <div className="bg-gray-800 rounded-lg p-2 m-2">
+            <p className="text-sm text-white">{">"} Education</p>
+            {education.map((edu) => (
+              <div key={edu.school} className="p-3 text-sm">
+                <p className="font-medium">{edu.school}</p>
+                <p className="font-bold">{edu.degree}</p>
+                <p className="font-semibold">{edu.major}</p>
+                <p className="">{edu.date}</p>
+                <p className="">{edu.location}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="bg-pink-900 w-full p-2">
