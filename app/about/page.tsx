@@ -11,7 +11,7 @@ export default function About() {
   return (
     <div className="custom-container">
       <Navbar />
-      <div className="bg-red-900 flex flex-col justify-center items-center w-full">
+      <div className="flex flex-col justify-center items-center w-full">
         <p className="w-full">{">"} About Section</p>
         <div className="bg-gray-900 border rounded-lg m-2 w-full">
           <div className="bg-gray-800 rounded-lg p-2 m-2">
