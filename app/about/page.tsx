@@ -32,30 +32,32 @@ export default function About() {
           <div className="bg-gray-800 rounded-lg p-2 m-2">
             <p className="text-sm text-white">{">"} Education</p>
             {education.map((edu) => (
-              <div key={edu.school} className="p-3 text-sm">
+              <div key={edu.school} className="w-full p-3 text-sm text-center">
                 <p className="font-medium">{edu.school}</p>
                 <p className="font-bold">{edu.degree}</p>
                 <p className="font-semibold">{edu.major}</p>
-                <p className="">{edu.date}</p>
+                <p className="font-light">{edu.date}</p>
                 <p className="">{edu.location}</p>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="bg-pink-900 w-full p-2">
-          <p className="text-white">Work Experience</p>
-          {workExperience.map((work) => (
-            <div key={work.company} className="bg-blue-900 p-2">
-              <p className="text-sm">{work.company}</p>
-              <p className="text-sm">{work.title}</p>
-              <p className="text-sm">{work.jobType}</p>
-              <p className="text-sm">{work.date}</p>
-              <p className="text-sm">{work.location}</p>
-              <p className="text-sm">{work.description}</p>
-            </div>
-          ))}
+        <div className="bg-gray-900 border rounded-lg m-2 w-full">
+          <div className="bg-gray-800 rounded-lg p-2 m-2">
+            <p className="text-sm text-white">{">"} Work Experience</p>
+            {workExperience.map((work) => (
+              <div key={work.company} className="w-full p-3 text-sm">
+                <p className="font-bold">{work.company}</p>
+                <p className="font-semibold">{work.title} <span className="font-light">({work.jobType})</span></p>
+                <p className="font-light">{work.date}</p>
+                <p className="">{work.location}</p>
+                <p className="font-extralight">{work.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
+
         <div className="bg-green-900 w-full p-2">
           <p className="text-white">Certifications</p>
           <div className="overflow-auto max-h-80">
