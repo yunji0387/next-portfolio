@@ -41,6 +41,12 @@ export function Credit() {
           Pixel perfect - Flaticon
         </a>
       </p>
+      <a href="https://www.flaticon.com/free-icons/meta" title="meta icons">
+        Meta icons created by Freepik - Flaticon
+      </a>
+      <a href="https://www.flaticon.com/free-icons/ibm" title="IBM icons">
+        IBM icons created by Freepik - Flaticon
+      </a>
     </div>
   );
 }

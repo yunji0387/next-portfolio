@@ -64,9 +64,9 @@ export default function About() {
         <div className="bg-gray-900 border rounded-lg m-2 w-full">
           <div className="bg-gray-800 rounded-lg p-2 m-2">
             <p className="text-sm text-white">{">"} Certifications</p>
-            <div className="overflow-auto max-h-80">
+            <div className="overflow-auto max-h-64">
               {certificationsList.map((cert) => (
-                <div key={cert.name} className="bg-blue-900 p-2 text-sm">
+                <div key={cert.name} className="p-2 text-sm">
                   <Link
                     href={cert.link}
                     target="_blank"
