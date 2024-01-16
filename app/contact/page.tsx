@@ -8,10 +8,10 @@ export default function Contact() {
     <div className="custom-container">
       <Navbar />
       <div className="bg-black flex flex-col justify-center items-center w-full">
-        <p>{">"} contact section</p>
+        <p>{">"} Contact section</p>
         <div className="bg-gray-900 w-full md:w-[80%] p-2 rounded-lg border-2 border-white">
           <div className="bg-gray-800 flex flex-col justify-center p-1 md:p-5 w-full rounded-md">
-            <p className="text-sm md:text-base">{">"} contact section</p>
+            <p className="text-sm md:text-base">{">"} Contact Section</p>
             {contactList.map((contact, index) => (
               <div key={index} className="flex flex-row w-full py-1 text-sm md:text-base">
                 <p className="w-[4.5rem] md:w-24">

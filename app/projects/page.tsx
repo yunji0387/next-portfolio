@@ -16,9 +16,9 @@ export default function Projects() {
       <div className="flex flex-col justify-center items-center w-full">
         <div className="bg-gray-900 w-full p-2 rounded-lg border-2 border-white">
           <div className="bg-gray-800 w-full p-5 rounded-md">
-            <p>{">"} projects section</p>
+            <p>{">"} Projects Section</p>
             {projectList.map((project, index) => (
-              <div key={index} className="bg-blue-900 w-full pt-2">
+              <div key={index} className="w-full pt-2">
                 <p>
                   {">"} {project.name}
                 </p>
@@ -35,9 +35,9 @@ export default function Projects() {
                       />
                     </div>
                   </div>
-                  <div className="col-span-12 md:col-span-8 lg:col-span-9 m-2">
+                  <div className="col-span-12 md:col-span-8 lg:col-span-9 mt-2">
                     <p className="text-sm">{project.description}</p>
-                    <div className="flex flex-col sm:flex-row text-white text-sm text-white underline">
+                    <div className="flex flex-col sm:flex-row p-1 text-white text-sm text-white underline">
                       <Link
                         href={project.link}
                         target="_blank"
@@ -68,6 +68,7 @@ export default function Projects() {
                     </div>
                   </div>
                 </div>
+                <div className="border-dashed border-b m-2"/>
               </div>
             ))}
           </div>
