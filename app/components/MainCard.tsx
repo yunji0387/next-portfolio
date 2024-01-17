@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { about } from "@/public/infos/about";
+import { skillsIconList } from "@/public/infos/skillsIconList";
+import { ImageBanner } from "../components/ImageBanner";
 
 export function MainCard() {
   return (
@@ -19,6 +21,9 @@ export function MainCard() {
             <p>.</p>
           </div>
         </div>
+      </div>
+      <div className="w-[85%]">
+      <ImageBanner imageList={skillsIconList} speed={8000} />
       </div>
     </div>
   );

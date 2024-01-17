@@ -47,36 +47,6 @@ export function Credit() {
       <a href="https://www.flaticon.com/free-icons/ibm" title="IBM icons">
         IBM icons created by Freepik - Flaticon
       </a>
-      <a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons">
-        Html 5 icons created by Freepik - Flaticon
-      </a>
-      <a href="https://www.flaticon.com/free-icons/css-3" title="css 3 icons">
-        Css 3 icons created by Freepik - Flaticon
-      </a>
-      <a
-        href="https://www.flaticon.com/free-icons/javascript"
-        title="javascript icons"
-      >
-        Javascript icons created by Freepik - Flaticon
-      </a>
-      <a
-        href="https://www.flaticon.com/free-icons/typescript"
-        title="typescript icons"
-      >
-        Typescript icons created by Freepik - Flaticon
-      </a>
-      <a href="https://www.flaticon.com/free-icons/react" title="react icons">
-        React icons created by Freepik - Flaticon
-      </a>
-      <a href="https://www.flaticon.com/free-icons/java" title="java icons">
-        Java icons created by Freepik - Flaticon
-      </a>
-      <a href="https://www.flaticon.com/free-icons/python" title="python icons">
-        Python icons created by Freepik - Flaticon
-      </a>
-      <a href="https://www.flaticon.com/free-icons/coding" title="coding icons">
-        Coding icons created by Freepik - Flaticon
-      </a>
     </div>
   );
 }
