@@ -37,7 +37,7 @@ export default function Projects() {
                   </div>
                   <div className="col-span-12 md:col-span-8 lg:col-span-9 mt-2">
                     <p className="text-sm lg:text-base text-justify font-light">{project.description}</p>
-                    <div className="flex flex-col sm:flex-row p-1 text-sm md:text-base text-white underline">
+                    <div className="flex flex-col sm:flex-row p-1 text-sm md:text-base underline">
                       <Link
                         href={project.link}
                         target="_blank"

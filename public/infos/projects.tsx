@@ -68,7 +68,7 @@ export const projectList = [
         description: "a website that provides basic information on stocks, cryptocurrencies, weather, and more.",
         link: "http://dailyweb-51c4ca40411a.herokuapp.com/home",
         github_repo: "https://github.com/yunji0387/DailyWebBlog-v1",
-        tech_stack: ['Node.js', 'EJS', 'Heroku', 'RESTful API','JavaScript', 'HTML', 'CSS'],
+        tech_stack: ['Node.js', 'EJS', 'Heroku', 'RESTful API','JavaScript', 'HTML', 'CSS', 'JQuery', 'AJAX'],
         image: "/images/projects/yourDailyWeb.png",
     },
 ];

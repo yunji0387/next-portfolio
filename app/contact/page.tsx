@@ -23,7 +23,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <p className="text-white underline hover:font-bold transition-all duration-300 ease-in-out">
+                    <p className="underline hover:font-bold transition-all duration-300 ease-in-out">
                       {contact.username}
                     </p>
                   </Link>

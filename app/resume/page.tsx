@@ -8,7 +8,7 @@ export default function Resume() {
       <Navbar />
 
         <div className="w-full h-full flex flex-col justify-center items-center border bg-gray-900 rounded-lg p-2 m-2">
-          <p className="text-white text-sm w-full">{">"} Resume</p>
+          <p className="text-sm w-full">{">"} Resume</p>
           <object
             data="/resume.pdf"
             type="application/pdf"
