@@ -47,6 +47,15 @@ export function Credit() {
       <a href="https://www.flaticon.com/free-icons/ibm" title="IBM icons">
         IBM icons created by Freepik - Flaticon
       </a>
+      <a href="https://www.flaticon.com/free-icons/light" title="light icons">
+        Light icons created by Freepik - Flaticon
+      </a>
+      <a
+        href="https://www.flaticon.com/free-icons/dark-mode"
+        title="dark mode icons"
+      >
+        Dark mode icons created by Uniconlabs - Flaticon
+      </a>
     </div>
   );
 }
