@@ -7,7 +7,6 @@ import { ThemeSwitcher } from "./ThemeSwitcher";
 export function MainCard() {
   return (
     <div className="flex flex-col justify-center items-center w-full h-[70vh]">
-      <ThemeSwitcher />
       <div className="w-[80%]">
         <ImageBanner imageList={skillsIconList} speed={8000} />
       </div>
