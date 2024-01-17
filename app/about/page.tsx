@@ -12,10 +12,10 @@ export default function About() {
     <div className="custom-container">
       <Navbar />
       <div className="flex flex-col justify-center items-center w-full">
-        <div className="bg-gray-900 border rounded-lg m-2 w-full">
-          <div className="bg-gray-800 rounded-lg p-2 m-2">
+        <div className="w-full terminal-outer-container">
+          <div className="terminal-inner-container">
             <p className="text-sm">{">"} About Me</p>
-            <p className="text-sm text-justify p-3">{about.description}</p>
+            <p className="text-sm text-justify sm:p-3">{about.description}</p>
             <div className="flex flex-row h-6 text-sm">
               <p className="h-6">{">"} Check out my&nbsp;</p>
               <Link href="/resume" rel="noopener noreferrer">
@@ -28,11 +28,14 @@ export default function About() {
           </div>
         </div>
 
-        <div className="bg-gray-900 border rounded-lg m-2 w-full">
-          <div className="bg-gray-800 rounded-lg p-2 m-2">
+        <div className="w-full terminal-outer-container m-2">
+          <div className="w-full terminal-inner-container">
             <p className="text-sm">{">"} Education</p>
             {education.map((edu) => (
-              <div key={edu.school} className="w-full p-3 text-sm text-center">
+              <div
+                key={edu.school}
+                className="w-full sm:p-3 text-sm text-center"
+              >
                 <p className="font-medium">{edu.school}</p>
                 <p className="font-bold">{edu.degree}</p>
                 <p className="font-semibold">{edu.major}</p>
@@ -43,11 +46,11 @@ export default function About() {
           </div>
         </div>
 
-        <div className="bg-gray-900 border rounded-lg m-2 w-full">
-          <div className="bg-gray-800 rounded-lg p-2 m-2">
+        <div className="w-full terminal-outer-container m-2">
+          <div className="w-full terminal-inner-container">
             <p className="text-sm">{">"} Work Experience</p>
             {workExperience.map((work) => (
-              <div key={work.company} className="w-full p-3 text-sm">
+              <div key={work.company} className="w-full p-1 sm:p-3 text-sm">
                 <p className="font-bold">{work.company}</p>
                 <p className="font-semibold">
                   {work.title}{" "}
@@ -61,34 +64,36 @@ export default function About() {
           </div>
         </div>
 
-        <div className="bg-gray-900 border rounded-lg m-2 w-full">
-          <div className="bg-gray-800 rounded-lg p-2 m-2">
+        <div className="w-full terminal-outer-container m-2">
+          <div className="w-full terminal-inner-container">
             <p className="text-sm">{">"} Certifications</p>
             <div className="overflow-auto max-h-64">
               {certificationsList.map((cert) => (
                 <Link
-                key={cert.name} 
-                href={cert.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="flex flex-row items-center p-2 text-sm w-full hover:bg-gray-700 hover:font-bold transition-all duration-300 ease-in-out">
-                  <div>
-                    <Image
-                      src={cert.image}
-                      alt={cert.organization}
-                      width={50}
-                      height={50}
-                      className="m-1 mr-2"
-                    />
-                  </div>
-                  <div>
-                      <p>
+                  key={cert.name}
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="flex flex-row items-center p-1 sm:p-2 text-sm w-full hover:bg-indigo-200 dark:hover:bg-gray-700 hover:font-bold transition-all duration-300 ease-in-out">
+                    <div className="hidden sm:block">
+                      <Image
+                        src={cert.image}
+                        alt={cert.organization}
+                        width={50}
+                        height={50}
+                        className="m-1 mr-2"
+                      />
+                    </div>
+                    <div>
+                      <p className="hidden sm:block">
                         {cert.name} - {cert.organization}
                       </p>
-                    <p>{cert.date}</p>
+                      <p className="sm:hidden">{cert.name}</p>
+                      <p className="font-bold sm:hidden">{cert.organization}</p>
+                      <p>{cert.date}</p>
+                    </div>
                   </div>
-                </div>
                 </Link>
               ))}
             </div>

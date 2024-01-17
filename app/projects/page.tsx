@@ -14,8 +14,8 @@ export default function Projects() {
     <div className="custom-container">
       <Navbar />
       <div className="flex flex-col justify-center items-center w-full">
-        <div className="bg-gray-900 w-full p-2 rounded-lg border-2 border-white">
-          <div className="bg-gray-800 w-full p-5 rounded-md">
+        <div className="w-full terminal-outer-container">
+          <div className="w-full terminal-inner-container">
             <p>{">"} Projects Section</p>
             {projectList.map((project, index) => (
               <div key={index} className="w-full pt-2">
@@ -24,7 +24,7 @@ export default function Projects() {
                 </p>
                 <div className="grid grid-cols-12 gap-1">
                   <div className="col-span-12 md:col-span-4 lg:col-span-3 flex justify-center items-center w-full">
-                    <div className="bg-black w-full max-w-80 m-2 p-2 border rounded-md">
+                    <div className="w-full max-w-80 m-2 terminal-outer-container border">
                       <Image
                         src={project.image}
                         alt={project.name}
@@ -57,7 +57,7 @@ export default function Projects() {
                       {project.tech_stack.map((tech, index) => (
                         <p
                           key={index}
-                          className="bg-green-700 text-xs whitespace-nowrap px-2 py-1 m-1 rounded-full text-center font-semibold"
+                          className="bg-green-300 dark:bg-green-700 text-xs whitespace-nowrap px-2 py-1 m-1 rounded-full text-center font-semibold"
                         >
                           {tech}
                         </p>

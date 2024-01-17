@@ -7,7 +7,7 @@ export default function Resume() {
     <div className="custom-container h-[80vh]">
       <Navbar />
 
-        <div className="w-full h-full flex flex-col justify-center items-center border bg-gray-900 rounded-lg p-2 m-2">
+        <div className="w-full h-full flex flex-col justify-center items-center m-2 terminal-outer-container">
           <p className="text-sm w-full">{">"} Resume</p>
           <object
             data="/resume.pdf"
