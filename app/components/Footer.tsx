@@ -1,9 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-// import GitHubIcon from '/icons/github.png';
-// import LinkedInIcon from '/icons/linkedin.png';
-// import TwitterIcon from '/icons/twitter.png';
-// import GmailIcon from '/icons/gmail.png';
 
 const footerItems = [
   {
@@ -54,7 +50,7 @@ export function Footer() {
           </li>
         ))}
       </ul>
-      <div className="border rounded-full px-1 bg-green-900">
+      <div className="dark:border rounded-full px-1 dark:bg-green-900">
         <p className="text-sm select-none font-light">
           &copy; {new Date().getFullYear()} Yun Ji How.
         </p>

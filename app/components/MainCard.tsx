@@ -19,7 +19,7 @@ export function MainCard() {
           <div className="flex flex-row h-6">
             <p className="h-6">{">"} Check out my&nbsp;</p>
             <Link href="/resume" rel="noopener noreferrer">
-              <span className="text-white underline hover:text-lg hover:font-bold transition-all duration-300 ease-in-out">resume</span>
+              <span className="underline hover:text-lg hover:font-bold transition-all duration-300 ease-in-out">resume</span>
             </Link>
             <p>.</p>
           </div>

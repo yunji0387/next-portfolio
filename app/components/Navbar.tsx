@@ -50,7 +50,7 @@ export function Navbar() {
             className="flex items-center justify-center w-[85%] border-2 md:border-none rounded-full m-2 bg-gray-900 md:bg-transparent"
           >
             <Link href={item.link} className="w-full flex justify-center items-center h-12 hover:h-14 md:h-8 md:hover:h-8 text-lg hover:text-2xl hover:font-bold transition-all duration-300 ease-in-out">
-              <p className="text-white">
+              <p className="">
                 {item.name}
               </p>
             </Link>
