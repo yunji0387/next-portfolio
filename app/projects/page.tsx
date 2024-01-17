@@ -18,7 +18,7 @@ export default function Projects() {
           <div className="w-full terminal-inner-container">
             <p>{">"} Projects Section</p>
             {projectList.map((project, index) => (
-              <div key={index} className="w-full pt-2">
+              <div key={index} className="w-full py-2 border-b-2 border-dashed border-black dark:border-white">
                 <p className="font-semibold">
                   {">"} {project.name}
                 </p>
@@ -36,24 +36,28 @@ export default function Projects() {
                     </div>
                   </div>
                   <div className="col-span-12 md:col-span-8 lg:col-span-9 mt-2">
-                    <p className="text-sm lg:text-base text-justify font-light">{project.description}</p>
+                    <p className="text-sm md:text-base text-justify font-light px-2">
+                      {project.description}
+                    </p>
                     <div className="flex flex-col sm:flex-row p-1 text-sm md:text-base underline">
                       <Link
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <p className="p-1 hover:font-bold">Web Link</p>
+                        <p className="p-1 hover:font-bold lg:text-lg">Web Link</p>
                       </Link>
                       <Link
                         href={project.github_repo}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <p className="p-1 sm:pl-5 hover:font-bold">GitHub Repo Link</p>
+                        <p className="p-1 sm:pl-5 hover:font-bold lg:text-lg">
+                          GitHub Repo Link
+                        </p>
                       </Link>
                     </div>
-                    <div className="hidden lg:flex flex-wrap gap-x-2 w-full">
+                    {/* <div className="hidden lg:flex flex-wrap gap-x-2 w-full">
                       {project.tech_stack.map((tech, index) => (
                         <p
                           key={index}
@@ -62,13 +66,11 @@ export default function Projects() {
                           {tech}
                         </p>
                       ))}
-                    </div>
-                    <div className="lg:hidden">
-                      <TextBanner textList={project.tech_stack} />
-                    </div>
+                    </div> */}
+                    <TextBanner textList={project.tech_stack} />
                   </div>
                 </div>
-                <div className="border-dashed border-b m-2"/>
+                {/* <div className="border-dashed border-b m-2" /> */}
               </div>
             ))}
           </div>

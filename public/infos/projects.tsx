@@ -12,7 +12,7 @@ export const projectList = [
         description: "The Little Lemon Restaurant's website is a modern front-end platform built with React and Material-UI, showcasing our restaurant's online presence.",
         link: "https://meta-fe-capstone.vercel.app/",
         github_repo: "https://github.com/yunji0387/meta-fe-capstone",
-        tech_stack: ['React', 'MUI', 'Formik', 'Figma', 'UX/UI', 'Heroku', 'Git', 'JavaScript'],
+        tech_stack: ['React', 'MUI', 'Formik', 'Figma', 'UX/UI', 'Heroku', 'Git', 'JavaScript', 'Responsive Design'],
         image: "/images/projects/littleLemon.png",
     },
     {
@@ -28,7 +28,7 @@ export const projectList = [
         description: "Computer Graphics project centered on enhancing ray tracing with advanced techniques for accelerated rendering and image quality improvement.",
         link: "https://github.com/yunji0387/Ray_Tracing_Project/blob/main/COMP4490_Project_Report.pdf",
         github_repo: "https://github.com/yunji0387/Ray_Tracing_Project",
-        tech_stack: ['Computer Graphics', 'OpenGL', 'C++', 'Git', 'Ray Tracing'],
+        tech_stack: ['Computer Graphics', 'OpenGL', 'C++', 'Git', 'Ray Tracing', 'Anti-Aliasing', 'BVH'],
         image: "/images/projects/rayTracing.png",
     },
     {
@@ -44,7 +44,7 @@ export const projectList = [
         description: "This study presents an analysis and forecasting of Cedar Lake's hydrological patterns using data from the Oleson Point station, supplied by Manitoba Hydro.",
         link: "https://github.com/yunji0387/hydrological_analysis",
         github_repo: "https://github.com/yunji0387/hydrological_analysis",
-        tech_stack: ['Data Analysis', 'Jupyter Notebook', 'Pandas', 'Python'],
+        tech_stack: ['Data Analysis', 'Jupyter Notebook', 'Pandas', 'Python', 'NumPy', 'Matplotlib'],
         image: "/images/projects/hydrologicalAnalysis.png",
     },
     {
@@ -52,7 +52,7 @@ export const projectList = [
         description: "This website is a React-based portfolio web app.",
         link: "https://yunji0387.github.io/my-portfolio/",
         github_repo: "https://github.com/yunji0387/my-portfolio",
-        tech_stack: ['React', 'Heroku', 'Git', 'JavaScript', 'HTML', 'CSS'],
+        tech_stack: ['React', 'Heroku', 'Git', 'JavaScript', 'HTML', 'CSS','Responsive Design', 'React Hooks', 'Google Fonts'],
         image: "/images/projects/reactPortfolio.png",
     },
     {
@@ -60,7 +60,7 @@ export const projectList = [
         description: "This website is a React-based mini games web app.",
         link:"https://yunji0387.github.io/react-game-web/",
         github_repo: "https://github.com/yunji0387/react-game-web",
-        tech_stack: ['React', 'Git', 'JavaScript', 'HTML', 'CSS'],
+        tech_stack: ['React', 'Git', 'JavaScript', 'HTML', 'CSS', 'Responsive Design', 'React Hooks'],
         image: "/images/projects/miniGameWeb.png",
     },
     {
