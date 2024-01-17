@@ -94,13 +94,13 @@ body {
     #fff 80%,
     transparent
   );
-  /* mask-image: linear-gradient(
+  mask-image: linear-gradient(
     90deg,
     transparent,
     #fff 20%,
     #fff 80%,
     transparent
-  ); */
+  );
 }
 
 .img-banner-scroll div {
