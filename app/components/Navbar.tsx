@@ -56,6 +56,11 @@ export function Navbar() {
             </Link>
           </li>
         ))}
+        <li>
+          <Link href="/">
+            <p>Dark</p>
+          </Link>
+        </li>
       </ul>
     </nav>
   );
