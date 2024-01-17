@@ -11,8 +11,6 @@ export function MainCard() {
       <div className="w-[80%]">
         <ImageBanner imageList={skillsIconList} speed={8000} />
       </div>
-      {/* <div className="bg-gray-900 w-[80%] p-2 rounded-lg border-2 border-white">
-        <div className="bg-gray-800 w-full p-5 rounded-md"> */}
       <div className="w-[80%] terminal-outer-container">
         <div className="w-full terminal-inner-container">
           <p>{">"} Hi, I&apos;m Yun Ji How.</p>
