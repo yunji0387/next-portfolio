@@ -2,10 +2,12 @@ import Link from "next/link";
 import { about } from "@/public/infos/about";
 import { skillsIconList } from "@/public/infos/skillsIconList";
 import { ImageBanner } from "../components/ImageBanner";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export function MainCard() {
   return (
     <div className="flex flex-col justify-center items-center w-full h-[70vh]">
+      <ThemeSwitcher />
       <div className="w-[80%]">
         <ImageBanner imageList={skillsIconList} speed={8000} />
       </div>
