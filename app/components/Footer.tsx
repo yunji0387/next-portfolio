@@ -37,7 +37,12 @@ export function Footer() {
             key={item.name}
             className="flex items-center justify-center m-2 w-14"
           >
-            <Link href={item.link} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center">
+            <Link
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center justify-center"
+            >
               <Image
                 src={item.iconPath}
                 alt={item.name}
@@ -49,7 +54,11 @@ export function Footer() {
           </li>
         ))}
       </ul>
-      <p className="text-sm select-none font-light">&copy; {new Date().getFullYear()} Yun Ji How.</p>
+      <div className="border rounded-full px-1 bg-green-900">
+        <p className="text-sm select-none font-light">
+          &copy; {new Date().getFullYear()} Yun Ji How.
+        </p>
+      </div>
     </footer>
   );
 }

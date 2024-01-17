@@ -6,6 +6,9 @@ import { ImageBanner } from "../components/ImageBanner";
 export function MainCard() {
   return (
     <div className="flex flex-col justify-center items-center w-full h-[70vh]">
+      <div className="w-[80%]">
+      <ImageBanner imageList={skillsIconList} speed={8000} />
+      </div>
       <div className="bg-gray-900 w-[80%] p-2 rounded-lg border-2 border-white">
         <div className="bg-gray-800 w-full p-5 rounded-md">
           <p>{">"} Hi, I&apos;m Yun Ji How.</p>
@@ -23,7 +26,6 @@ export function MainCard() {
         </div>
       </div>
       <div className="w-[85%]">
-      <ImageBanner imageList={skillsIconList} speed={8000} />
       </div>
     </div>
   );
