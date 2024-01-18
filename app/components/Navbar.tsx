@@ -33,8 +33,9 @@ export function Navbar() {
   return (
     <nav className="w-full relative">
       {/* Hamburger icon only visible on small screens */}
-      <div className="flex flex-col items-center justify-center md:hidden">
+      <div className="flex flex-row items-center justify-between md:hidden">
         <HamburgerIcon isOpen={isOpen} handleClick={handleClick} />
+        <ThemeSwitcher />
       </div>
 
       {/* Combined Menu */}
