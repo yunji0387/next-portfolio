@@ -19,37 +19,6 @@ export function ThemeSwitcher() {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
-  // return (
-  //   <div className="flex">
-  //     <button
-  //       onClick={toggleTheme}
-  //       className={`flex items-center w-16 h-10 p-1 rounded-full shadow focus:outline-none focus:ring-2 ${
-  //         theme === "dark"
-  //           ? "justify-end bg-white text-gray-800 hover:bg-gray-100 focus:ring-gray-300 dark:focus:ring-gray-700"
-  //           : "justify-start bg-gray-800 text-white hover:bg-gray-700 focus:ring-gray-300 dark:focus:ring-gray-700"
-  //       }`}
-  //     >
-  //       {/* {theme === 'dark' ? 'Light' : 'Dark'} */}
-  //       {theme === "dark" ? (
-  //         <Image
-  //           src={themeIcons.light}
-  //           alt="light mode"
-  //           width={30}
-  //           height={30}
-  //           className=""
-  //         />
-  //       ) : (
-  //         <Image
-  //           src={themeIcons.dark}
-  //           alt="dark mode"
-  //           width={30}
-  //           height={30}
-  //           className=""
-  //         />
-  //       )}
-  //     </button>
-  //   </div>
-  // );
   return (
     <div className="flex">
       <button

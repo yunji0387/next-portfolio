@@ -6,9 +6,6 @@ import { Footer } from "../components/Footer";
 import { TextBanner } from "../components/TextBanner";
 
 export default function Projects() {
-  const scrollStyles = {
-    animation: "scrollLeft 10s linear infinite",
-  };
 
   return (
     <div className="custom-container">
@@ -31,7 +28,7 @@ export default function Projects() {
                         width={0}
                         height={0}
                         layout="responsive"
-                        className="w-full h-auto"
+                        className="select-none w-full h-auto"
                       />
                     </div>
                   </div>
@@ -57,20 +54,9 @@ export default function Projects() {
                         </p>
                       </Link>
                     </div>
-                    {/* <div className="hidden lg:flex flex-wrap gap-x-2 w-full">
-                      {project.tech_stack.map((tech, index) => (
-                        <p
-                          key={index}
-                          className="bg-green-300 dark:bg-green-700 text-xs whitespace-nowrap px-2 py-1 m-1 rounded-full text-center font-semibold"
-                        >
-                          {tech}
-                        </p>
-                      ))}
-                    </div> */}
                     <TextBanner textList={project.tech_stack} />
                   </div>
                 </div>
-                {/* <div className="border-dashed border-b m-2" /> */}
               </div>
             ))}
           </div>

@@ -82,7 +82,7 @@ export default function About() {
                         alt={cert.organization}
                         width={50}
                         height={50}
-                        className="m-1 mr-2"
+                        className="select-none m-1 mr-2"
                       />
                     </div>
                     <div>
