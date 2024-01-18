@@ -56,8 +56,8 @@ export function ThemeSwitcher() {
         onClick={toggleTheme}
         className={`relative flex items-center px-1 pb-[2px] w-16 h-8 rounded-full shadow border ${
           theme === "dark"
-            ? "bg-gray-800 hover:bg-gray-700 focus:ring-gray-300 dark:focus:ring-gray-700"
-            : "bg-white text-gray-800 hover:bg-gray-100 focus:ring-gray-300 dark:focus:ring-gray-700"
+            ? "bg-gray-800 hover:bg-gray-700"
+            : "bg-white text-gray-800 hover:bg-gray-100"
         }`}
       >
         <div
@@ -71,6 +71,7 @@ export function ThemeSwitcher() {
             alt={theme === "dark" ? "dark mode" : "light mode"}
             width={25}
             height={25}
+            className="select-none"
           />
         </div>
       </button>
