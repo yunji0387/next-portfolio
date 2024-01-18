@@ -11,11 +11,11 @@ export function MainCard() {
       </div>
       <div className="w-[80%] terminal-outer-container">
         <div className="w-full terminal-inner-container">
-          <p>{">"} Hi, I&apos;m Yun Ji How.</p>
+          <p>{">"} Hi, I&apos;m {about.name}.</p>
           <p>
-            {">"} {about.title}.
+            {">"} {about.title}
           </p>
-          <p>{">"} Looking for new opportunities.</p>
+          <p>{">"} {about.status}</p>
           <div className="flex flex-row h-6">
             <p className="h-6">{">"} Check out my&nbsp;</p>
             <Link href="/resume" rel="noopener noreferrer">
