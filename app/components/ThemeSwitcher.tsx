@@ -54,23 +54,23 @@ export function ThemeSwitcher() {
     <div className="flex">
       <button
         onClick={toggleTheme}
-        className={`relative flex items-center w-16 h-10 p-1 rounded-full shadow focus:outline-none focus:ring-2 ${
+        className={`relative flex items-center px-1 pb-[2px] w-16 h-8 rounded-full shadow border ${
           theme === "dark"
-            ? "justify-end bg-white text-gray-800 hover:bg-gray-100 focus:ring-gray-300 dark:focus:ring-gray-700"
-            : "justify-start bg-gray-800 text-white hover:bg-gray-700 focus:ring-gray-300 dark:focus:ring-gray-700"
+            ? "bg-gray-800 hover:bg-gray-700 focus:ring-gray-300 dark:focus:ring-gray-700"
+            : "bg-white text-gray-800 hover:bg-gray-100 focus:ring-gray-300 dark:focus:ring-gray-700"
         }`}
       >
         <div
-          className="absolute left-1 top-1 transition-transform duration-300 ease-in-out"
+          className="absolute transition-transform duration-300 ease-in-out"
           style={{
-            transform: theme === "dark" ? "translateX(26px)" : "translateX(0px)",
+            transform: theme === "dark" ? "translateX(0px)" : "translateX(31px)",
           }}
         >
           <Image
-            src={theme === "dark" ? themeIcons.light : themeIcons.dark}
-            alt={theme === "dark" ? "light mode" : "dark mode"}
-            width={30}
-            height={30}
+            src={theme === "dark" ? themeIcons.dark : themeIcons.light}
+            alt={theme === "dark" ? "dark mode" : "light mode"}
+            width={25}
+            height={25}
           />
         </div>
       </button>
