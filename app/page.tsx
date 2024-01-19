@@ -4,7 +4,6 @@ import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
-    <div>
       <main className="custom-container">
         <div className="flex flex-col w-full items-center justify-between font-mono">
           <Navbar />
@@ -12,6 +11,5 @@ export default function Home() {
         </div>
         <Footer />
       </main>
-    </div>
   );
 }
