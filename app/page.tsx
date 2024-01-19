@@ -10,11 +10,13 @@ export default function Home() {
         <ThreeBackground />
       </div>
       <main className="custom-container">
-        {/* <div className="flex flex-col w-full h-full items-center justify-between font-mono"> */}
+        <div className="w-full h-24">
           <Navbar />
-          <MainCard />
+        </div>
+        <MainCard />
+        <div className="w-full h-24">
           <Footer />
-        {/* </div> */}
+        </div>
       </main>
     </>
   );

@@ -26,7 +26,7 @@ const footerItems = [
 
 export function Footer() {
   return (
-    <footer className="flex flex-col justify-center items-center w-full mt-2">
+    <footer className="flex flex-col justify-end items-center w-full mt-2">
       <ul className="flex flex-row items-center justify-center">
         {footerItems.map((item) => (
           <li
