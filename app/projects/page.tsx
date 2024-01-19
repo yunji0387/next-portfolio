@@ -6,7 +6,6 @@ import { Footer } from "../components/Footer";
 import { TextBanner } from "../components/TextBanner";
 
 export default function Projects() {
-
   return (
     <div className="custom-container">
       <Navbar />
@@ -15,7 +14,10 @@ export default function Projects() {
           <div className="w-full terminal-inner-container">
             <p>{">"} Projects Section</p>
             {projectList.map((project, index) => (
-              <div key={index} className="w-full py-2 border-b-2 border-dashed border-black dark:border-white">
+              <div
+                key={index}
+                className="w-full py-2 border-b-2 border-dashed border-black dark:border-white"
+              >
                 <p className="font-semibold">
                   {">"} {project.name}
                 </p>
@@ -42,7 +44,9 @@ export default function Projects() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <p className="p-1 hover:font-bold lg:text-lg">Web Link</p>
+                        <p className="p-1 hover:font-bold lg:text-lg">
+                          Web Link
+                        </p>
                       </Link>
                       <Link
                         href={project.github_repo}

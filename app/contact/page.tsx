@@ -12,7 +12,10 @@ export default function Contact() {
           <div className="flex flex-col justify-center p-1 md:p-5 w-full terminal-inner-container">
             <p className="text-sm md:text-base">{">"} Contact Section</p>
             {contactList.map((contact, index) => (
-              <div key={index} className="flex flex-row w-full py-1 text-sm md:text-base">
+              <div
+                key={index}
+                className="flex flex-row w-full py-1 text-sm md:text-base"
+              >
                 <p className="w-[4.5rem] md:w-24 font-semibold">
                   {">"} {contact.name}
                 </p>
