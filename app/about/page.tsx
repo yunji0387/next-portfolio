@@ -75,7 +75,7 @@ export default function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="flex flex-row items-center p-1 sm:p-2 text-sm w-full hover:bg-indigo-200 dark:hover:bg-gray-700 hover:font-bold transition-all duration-300 ease-in-out">
+                  <div className="flex flex-row items-center p-1 sm:p-2 text-sm w-full hover:bg-amber-300 dark:hover:bg-gray-700 hover:font-bold transition-all duration-300 ease-in-out">
                     <div className="hidden sm:block">
                       <Image
                         src={cert.image}
