@@ -11,42 +11,44 @@ export default function About() {
   return (
     <div className="custom-container">
       <Navbar />
-      <div className="flex flex-col justify-center items-center w-full">
-        <div className="w-full terminal-outer-container">
-          <div className="terminal-inner-container">
-            <p className="text-sm">{">"} About Me</p>
-            <p className="text-sm text-justify sm:p-3">{about.description}</p>
-            <div className="flex flex-row h-6 text-sm">
-              <p className="h-6">{">"} Check out my&nbsp;</p>
-              <Link href="/resume" rel="noopener noreferrer">
-                <span className="underline hover:text-base hover:font-bold transition-all duration-300 ease-in-out">
-                  resume
-                </span>
-              </Link>
-              <p>.</p>
+      <div className="flex flex-col justify-center items-center w-full gap-2">
+        <div className="flex flex-col sm:flex-row gap-2 w-full">
+          <div className="w-full terminal-outer-container">
+            <div className="terminal-inner-container w-full h-full">
+              <p className="text-sm">{">"} About Me</p>
+              <p className="text-sm text-justify sm:p-3">{about.description}</p>
+              <div className="flex flex-row h-6 text-sm">
+                <p className="">{">"} Check out my&nbsp;</p>
+                <Link href="/resume" rel="noopener noreferrer">
+                  <span className="underline hover:text-base hover:font-bold transition-all duration-300 ease-in-out">
+                    resume
+                  </span>
+                </Link>
+                <p>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full terminal-outer-container">
+            <div className="w-full h-full terminal-inner-container">
+              <p className="text-sm">{">"} Education</p>
+              {education.map((edu) => (
+                <div
+                  key={edu.school}
+                  className="w-full sm:p-3 text-sm text-center"
+                >
+                  <p className="font-medium">{edu.school}</p>
+                  <p className="font-bold">{edu.degree}</p>
+                  <p className="font-semibold">{edu.major}</p>
+                  <p className="font-light">{edu.date}</p>
+                  <p className="">{edu.location}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
 
-        <div className="w-full terminal-outer-container m-2">
-          <div className="w-full terminal-inner-container">
-            <p className="text-sm">{">"} Education</p>
-            {education.map((edu) => (
-              <div
-                key={edu.school}
-                className="w-full sm:p-3 text-sm text-center"
-              >
-                <p className="font-medium">{edu.school}</p>
-                <p className="font-bold">{edu.degree}</p>
-                <p className="font-semibold">{edu.major}</p>
-                <p className="font-light">{edu.date}</p>
-                <p className="">{edu.location}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="w-full terminal-outer-container m-2">
+        <div className="w-full terminal-outer-container">
           <div className="w-full terminal-inner-container">
             <p className="text-sm">{">"} Work Experience</p>
             {workExperience.map((work) => (
@@ -64,7 +66,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="w-full terminal-outer-container m-2">
+        <div className="w-full terminal-outer-container">
           <div className="w-full terminal-inner-container">
             <p className="text-sm">{">"} Certifications</p>
             <div className="overflow-auto max-h-64">
