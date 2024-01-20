@@ -11,7 +11,7 @@
 [class="dark"]:root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 51;
-  --background-end-rgb:05 0, 0;
+  --background-end-rgb: 05 0, 0;
 }
 
 body {
