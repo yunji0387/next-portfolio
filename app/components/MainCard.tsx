@@ -19,17 +19,21 @@ export function MainCard() {
               {">"} {about.status}
             </p>
             <div className="flex flex-row">
-              <p>{">"} Check out my&nbsp;<Link href="/resume" rel="noopener noreferrer">
-                <span className="underline hover:text-lg hover:font-bold transition-all duration-300 ease-in-out">
-                  resume
-                </span>
-              </Link>.</p>
+              <p>
+                {">"} Check out my&nbsp;
+                <Link href="/resume" rel="noopener noreferrer">
+                  <span className="underline hover:text-lg hover:font-bold transition-all duration-300 ease-in-out">
+                    resume
+                  </span>
+                </Link>
+                .
+              </p>
+            </div>
+            <div className="w-full pt-3">
+              <ImageBanner imageList={skillsIconList} speed={8000} />
             </div>
           </div>
         </div>
-      </div>
-      <div className="w-[85%] pt-2">
-        <ImageBanner imageList={skillsIconList} speed={8000} />
       </div>
       <div className="w-[85%]"></div>
     </div>
