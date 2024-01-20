@@ -49,39 +49,39 @@ export function ThreeBackground() {
     moon.position.set(0, moonDistance, 0);
     // ----- Moon Object -----
 
-    // ----- Satellite Object -----
-    // Satellite parameters
-    const numberOfSatellites = 6; // Choose how many satellites you want
-    const satelliteDistance = 4.5; // Distance from the Earth to the satellites
-    const satelliteSize = 0.1; // Size of the satellites
-    const satellites: THREE.Mesh[] = []; // Array to hold the satellite meshes
+    // // ----- Satellite Object -----
+    // // Satellite parameters
+    // const numberOfSatellites = 6; // Choose how many satellites you want
+    // const satelliteDistance = 4.5; // Distance from the Earth to the satellites
+    // const satelliteSize = 0.1; // Size of the satellites
+    // const satellites: THREE.Mesh[] = []; // Array to hold the satellite meshes
 
-    for (let i = 0; i < numberOfSatellites; i++) {
-      // Create geometry and material for each satellite
-      const satelliteGeometry = new THREE.BoxGeometry(
-        satelliteSize,
-        satelliteSize,
-        satelliteSize
-      );
-      const satelliteMaterial = new THREE.MeshBasicMaterial({
-        color: 0xaaaaaa,
-      });
+    // for (let i = 0; i < numberOfSatellites; i++) {
+    //   // Create geometry and material for each satellite
+    //   const satelliteGeometry = new THREE.BoxGeometry(
+    //     satelliteSize,
+    //     satelliteSize,
+    //     satelliteSize
+    //   );
+    //   const satelliteMaterial = new THREE.MeshBasicMaterial({
+    //     color: 0xaaaaaa,
+    //   });
 
-      // Create the satellite mesh
-      const satellite = new THREE.Mesh(satelliteGeometry, satelliteMaterial);
+    //   // Create the satellite mesh
+    //   const satellite = new THREE.Mesh(satelliteGeometry, satelliteMaterial);
 
-      // Set an initial position for each satellite
-      satellite.position.set(
-        satelliteDistance * Math.cos(((2 * Math.PI) / numberOfSatellites) * i),
-        satelliteDistance * Math.sin(((2 * Math.PI) / numberOfSatellites) * i),
-        0
-      );
+    //   // Set an initial position for each satellite
+    //   satellite.position.set(
+    //     satelliteDistance * Math.cos(((2 * Math.PI) / numberOfSatellites) * i),
+    //     satelliteDistance * Math.sin(((2 * Math.PI) / numberOfSatellites) * i),
+    //     0
+    //   );
 
-      // Add the satellite mesh to the scene and to the satellites array
-      scene.add(satellite);
-      satellites.push(satellite);
-    }
-    // ----- Satellite Object -----
+    //   // Add the satellite mesh to the scene and to the satellites array
+    //   scene.add(satellite);
+    //   satellites.push(satellite);
+    // }
+    // // ----- Satellite Object -----
 
     camera.position.z = 10; // Adjust camera distance if needed
 
@@ -113,18 +113,18 @@ export function ThreeBackground() {
       moon.position.z =
         moonDistance * Math.sin(time) * Math.cos(orbitalInclination);
 
-      // Update each satellite's orbit
-      satellites.forEach((satellite, index) => {
-        // Calculate the orbital position for each satellite
-        const time = Date.now() * 0.0002 + index; // Offset each satellite's starting position
-        satellite.position.x = satelliteDistance * Math.cos(time);
-        satellite.position.y = satelliteDistance * Math.sin(time);
+      // // Update each satellite's orbit
+      // satellites.forEach((satellite, index) => {
+      //   // Calculate the orbital position for each satellite
+      //   const time = Date.now() * 0.0002 + index; // Offset each satellite's starting position
+      //   satellite.position.x = satelliteDistance * Math.cos(time);
+      //   satellite.position.y = satelliteDistance * Math.sin(time);
 
-        // Optionally rotate each satellite on its axis
-        satellite.rotation.x += 0.05;
-        satellite.rotation.y += 0.05;
-        satellite.rotation.z += 0.05;
-      });
+      //   // Optionally rotate each satellite on its axis
+      //   satellite.rotation.x += 0.05;
+      //   satellite.rotation.y += 0.05;
+      //   satellite.rotation.z += 0.05;
+      // });
 
       renderer.render(scene, camera);
     };
