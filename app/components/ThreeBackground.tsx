@@ -19,6 +19,7 @@ export function ThreeBackground() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     ref.current.appendChild(renderer.domElement);
 
+    // ----- Earth Object -----
     // Load Earth Texture
     const textureLoader = new THREE.TextureLoader();
     const earthTexture = textureLoader.load("/images/earthTexture.jpg");
@@ -34,16 +35,53 @@ export function ThreeBackground() {
     const earthTilt = 23.5 * (Math.PI / 180); // Convert tilt angle to radians
     earth.rotation.y = earthTilt; // Apply the tilt
 
+    // ----- Earth Object -----
+
+    // ----- Moon Object -----
     // Moon Sphere
     const moonGeometry = new THREE.SphereGeometry(0.25, 32, 32); // Smaller sphere for the moon
     const moonMaterial = new THREE.MeshBasicMaterial({ map: moonTexture });
     const moon = new THREE.Mesh(moonGeometry, moonMaterial);
     scene.add(moon);
 
-    // Initial positions
-    // Increase the initial distance of the moon from the Earth
+    // Moon Initial positions - Increase the initial distance of the moon from the Earth
     const moonDistance = 5; // Set this to the distance you want the moon to be from the Earth
     moon.position.set(0, moonDistance, 0);
+    // ----- Moon Object -----
+
+    // ----- Satellite Object -----
+    // Satellite parameters
+    const numberOfSatellites = 6; // Choose how many satellites you want
+    const satelliteDistance = 4.5; // Distance from the Earth to the satellites
+    const satelliteSize = 0.1; // Size of the satellites
+    const satellites: THREE.Mesh[] = []; // Array to hold the satellite meshes
+
+    for (let i = 0; i < numberOfSatellites; i++) {
+      // Create geometry and material for each satellite
+      const satelliteGeometry = new THREE.BoxGeometry(
+        satelliteSize,
+        satelliteSize,
+        satelliteSize
+      );
+      const satelliteMaterial = new THREE.MeshBasicMaterial({
+        color: 0xaaaaaa,
+      });
+
+      // Create the satellite mesh
+      const satellite = new THREE.Mesh(satelliteGeometry, satelliteMaterial);
+
+      // Set an initial position for each satellite
+      satellite.position.set(
+        satelliteDistance * Math.cos(((2 * Math.PI) / numberOfSatellites) * i),
+        satelliteDistance * Math.sin(((2 * Math.PI) / numberOfSatellites) * i),
+        0
+      );
+
+      // Add the satellite mesh to the scene and to the satellites array
+      scene.add(satellite);
+      satellites.push(satellite);
+    }
+    // ----- Satellite Object -----
 
     camera.position.z = 10; // Adjust camera distance if needed
 
@@ -75,6 +113,19 @@ export function ThreeBackground() {
       moon.position.z =
         moonDistance * Math.sin(time) * Math.cos(orbitalInclination);
 
+      // Update each satellite's orbit
+      satellites.forEach((satellite, index) => {
+        // Calculate the orbital position for each satellite
+        const time = Date.now() * 0.0002 + index; // Offset each satellite's starting position
+        satellite.position.x = satelliteDistance * Math.cos(time);
+        satellite.position.y = satelliteDistance * Math.sin(time);
+
+        // Optionally rotate each satellite on its axis
+        satellite.rotation.x += 0.05;
+        satellite.rotation.y += 0.05;
+        satellite.rotation.z += 0.05;
+      });
+
       renderer.render(scene, camera);
     };
 
@@ -105,75 +156,3 @@ export function ThreeBackground() {
 
   return <div ref={ref}></div>;
 }
-
-// import React, { useRef, useEffect } from "react";
-// import * as THREE from "three";
-
-// export function ThreeBackground() {
-//   const ref = useRef<HTMLDivElement>(null);
-
-//   useEffect(() => {
-//     if (!ref.current) return;
-
-//     const scene = new THREE.Scene();
-//     const camera = new THREE.PerspectiveCamera(
-//       75,
-//       window.innerWidth / window.innerHeight,
-//       0.1,
-//       1000
-//     );
-//     const renderer = new THREE.WebGLRenderer({ alpha: true });
-//     renderer.setSize(window.innerWidth, window.innerHeight);
-//     ref.current.appendChild(renderer.domElement);
-
-//     // Load Earth Texture
-//     const textureLoader = new THREE.TextureLoader();
-//     const earthTexture = textureLoader.load("/images/earthTexture.jpg"); // Replace with your texture path
-
-//     // Sphere geometry
-//     const sphereGeometry = new THREE.SphereGeometry(2, 32, 32);
-//     const material = new THREE.MeshBasicMaterial({ map: earthTexture });
-//     const sphere = new THREE.Mesh(sphereGeometry, material);
-//     scene.add(sphere);
-
-//     camera.position.z = 5;
-
-//     const animate = () => {
-//       requestAnimationFrame(animate);
-//       sphere.rotation.y += 0.005; // Rotates the sphere around the y-axis
-//       renderer.render(scene, camera);
-//     };
-
-//     animate();
-
-//     const handleResize = () => {
-//       // Ensure ref.current is not null before proceeding
-//       if (ref.current) {
-//         const containerWidth = ref.current.clientWidth;
-//         const containerHeight = ref.current.clientHeight; // or a fixed height if you prefer
-
-//         // Update camera aspect ratio to match the new container dimensions
-//         camera.aspect = containerWidth / containerHeight;
-//         camera.updateProjectionMatrix();
-
-//         // Update renderer size
-//         renderer.setSize(containerWidth, containerHeight);
-//       }
-//     };
-
-//     // Initial call to handleResize to set the correct dimensions from the start
-//     handleResize(); // Call this function inside your useEffect after setting up the renderer
-
-//     window.addEventListener("resize", handleResize);
-
-//     // Remember to remove the event listener on cleanup
-//     return () => {
-//       if (ref.current) {
-//         ref.current.removeChild(renderer.domElement);
-//       }
-//       window.removeEventListener("resize", handleResize);
-//     };
-//   }, []);
-
-//   return <div ref={ref}></div>;
-// }
