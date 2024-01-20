@@ -23,7 +23,7 @@ export function ThreeBackground() {
     // Load Earth Texture
     const textureLoader = new THREE.TextureLoader();
     const earthTexture = textureLoader.load("/images/earthTexture.jpg");
-    const moonTexture = textureLoader.load("/images/moonTexture.jpg"); // Add your moon texture path
+    const moonTexture = textureLoader.load("/images/moonTexture.png"); // Add your moon texture path
 
     // Earth Sphere
     const sphereGeometry = new THREE.SphereGeometry(4, 32, 32);
