@@ -62,6 +62,9 @@ export function Credit() {
       >
         Image by WikiImages from Pixabay
       </a>
+      <a href="https://www.freepik.com/free-photo/soft-concrete-texture_1128878.htm#query=moon%20texture&position=24&from_view=search&track=ais&uuid=818685a3-2484-4de7-ac56-b418cb2a0a87">
+        Image by kues1 on Freepik
+      </a>
     </div>
   );
 }
