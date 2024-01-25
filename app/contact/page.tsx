@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { contactList } from "@/public/infos/contact";
 import { Navbar } from "../components/Navbar";
@@ -7,35 +8,37 @@ export default function Contact() {
   return (
     <div className="custom-container">
       <Navbar />
-      <div className="flex flex-col justify-center items-center w-full">
+      <div className="flex flex-col justify-center items-center w-full min-w-[280px]">
         <div className="w-full md:w-[80%] terminal-outer-container">
           <div className="flex flex-col justify-center p-1 md:p-5 w-full terminal-inner-container">
             <p className="text-sm md:text-base">&#10148; Contact Section</p>
             {contactList.map((contact, index) => (
-              <div
+              <Link
+                href={contact.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 key={index}
-                className="flex flex-row w-full py-1 text-sm md:text-base"
+                className={`flex flex-row items-center w-full h-6 md:h-8 text-sm md:text-base rounded-lg transition-all duration-200 ease-in-out ${contact.isAvailable ? "hover:bg-amber-300 dark:hover:bg-gray-600" : "disabled cursor-not-allowed"}`}
               >
-                <p className="w-[4.5rem] md:w-24 font-semibold">
-                  &#10148; {contact.name}
-                </p>
+                <div className="w-[1.8rem] h-5 md:h-7 font-semibold hidden sm:flex items-center justify-center">
+                  <Image
+                    src={contact.iconPath}
+                    alt={contact.name}
+                    width={20}
+                    height={20}
+                    className="select-none"
+                  />
+                </div>
+                <p className="w-[5rem] pl-1 md:w-24 font-semibold">{contact.name}</p>
                 <p>:&nbsp;</p>
                 {contact.isAvailable ? (
-                  <Link
-                    href={contact.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <p className="underline hover:font-bold transition-all duration-300 ease-in-out">
-                      {contact.username}
-                    </p>
-                  </Link>
+                  <p className="underline pr-1">{contact.username}</p>
                 ) : (
-                  <p className="text-gray-500 cursor-not-allowed">
+                  <p className="text-gray-500 text-xs sm:text-sm md:text-base">
                     {contact.username}
                   </p>
                 )}
-              </div>
+              </Link>
             ))}
           </div>
         </div>
