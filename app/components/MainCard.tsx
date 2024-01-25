@@ -40,17 +40,17 @@ export function MainCard() {
             </div>
             <div>
               <p>
-                {">"} Hi, I&apos;m {about.name}.
+                &#10148; Hi, I&apos;m {about.name}.
               </p>
               <p>
-                {">"} {about.title}
+                &#10148; {about.title}
               </p>
               <p>
-                {">"} {about.status}
+                &#10148; {about.status}
               </p>
               <div className="flex flex-row">
                 <p>
-                  {">"} Check out my {""}
+                  &#10148; Check out my {""}
                   <Link href="/resume" rel="noopener noreferrer">
                     <span className="underline hover:text-lg hover:font-bold transition-all duration-300 ease-in-out">
                       resume
