@@ -12,14 +12,14 @@ export default function Projects() {
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full terminal-outer-container">
           <div className="w-full terminal-inner-container">
-            <p>{">"} Projects Section</p>
+            <p>&#10148; Projects Section</p>
             {projectList.map((project, index) => (
               <div
                 key={index}
                 className="w-full py-2 border-b-2 border-dashed border-black dark:border-white"
               >
                 <p className="font-semibold">
-                  {">"} {project.name}
+                  &#10148; {project.name}
                 </p>
                 <div className="grid grid-cols-12 gap-1">
                   <div className="col-span-12 md:col-span-4 lg:col-span-3 flex justify-center items-center w-full">
