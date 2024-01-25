@@ -15,10 +15,10 @@ export default function About() {
         <div className="flex flex-col sm:flex-row gap-2 w-full">
           <div className="w-full terminal-outer-container">
             <div className="terminal-inner-container w-full h-full">
-              <p className="text-sm">{">"} About Me</p>
+              <p className="text-sm">&#10148; About Me</p>
               <p className="text-sm text-justify sm:p-3">{about.description}</p>
               <div className="flex flex-row h-6 text-sm">
-                <p className="">{">"} Check out my&nbsp;</p>
+                <p className="">&#10148; Check out my&nbsp;</p>
                 <Link href="/resume" rel="noopener noreferrer">
                   <span className="underline hover:text-base hover:font-bold transition-all duration-300 ease-in-out">
                     resume
@@ -31,7 +31,7 @@ export default function About() {
 
           <div className="w-full terminal-outer-container">
             <div className="w-full h-full terminal-inner-container">
-              <p className="text-sm">{">"} Education</p>
+              <p className="text-sm">&#10148; Education</p>
               {education.map((edu) => (
                 <div
                   key={edu.school}
@@ -50,7 +50,7 @@ export default function About() {
 
         <div className="w-full terminal-outer-container">
           <div className="w-full terminal-inner-container">
-            <p className="text-sm">{">"} Work Experience</p>
+            <p className="text-sm">&#10148; Work Experience</p>
             {workExperience.map((work) => (
               <div key={work.company} className="w-full p-1 sm:p-3 text-sm">
                 <p className="font-bold">{work.company}</p>
@@ -68,7 +68,7 @@ export default function About() {
 
         <div className="w-full terminal-outer-container">
           <div className="w-full terminal-inner-container">
-            <p className="text-sm">{">"} Certifications</p>
+            <p className="text-sm">&#10148; Certifications</p>
             <div className="overflow-auto max-h-64">
               {certificationsList.map((cert) => (
                 <Link
