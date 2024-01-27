@@ -38,7 +38,7 @@ export function MainCard() {
                 height="8"
               />
             </div>
-            <div>
+            <div className="font-black">
               <p>
                 &#10148; Hi, I&apos;m {about.name}.
               </p>

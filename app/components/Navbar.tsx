@@ -52,7 +52,7 @@ export function Navbar() {
             className="flex items-center justify-center w-full border-2 md:border-none border-white dark:border-black rounded-full m-2 bg-yellow-700 dark:bg-indigo-200 md:bg-transparent dark:md:bg-transparent"
           >
             <Link href={item.link} className="w-full flex justify-center items-center h-10 hover:h-14 md:h-8 md:hover:h-8 text-lg hover:text-2xl hover:font-bold transition-all duration-300 ease-in-out">
-              <p className="select-none text-white dark:text-black md:text-[#4d2800] dark:md:text-white">
+              <p className="font-black select-none text-white dark:text-black md:text-[#4d2800] dark:md:text-white">
                 {item.name}
               </p>
             </Link>
