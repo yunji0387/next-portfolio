@@ -17,7 +17,7 @@ export const projectList = [
     },
     {
         name: "Text Mining: Sentiment Analysis and Recommendation System on Yelp Reviews",
-        description: "This project employs text mining and sentiment analysis on Yelp reviews to construct a personalized recommendation system for users and provide businesses with valuable consumer insights.",
+        description: "Employs text mining and sentiment analysis on Yelp reviews to construct a personalized recommendation system for users and provide businesses with valuable consumer insights.",
         link: "https://github.com/Makiato1999/COMP4710_Yelp/blob/main/ProjectReport.pdf",
         github_repo: "https://github.com/Makiato1999/COMP4710_Yelp",
         tech_stack: ['Data Mining', 'Text Mining', 'Data Analysis', 'Jupyter Notebook', 'Pandas', 'Python'],

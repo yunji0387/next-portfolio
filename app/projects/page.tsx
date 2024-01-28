@@ -16,21 +16,24 @@ export default function Projects() {
             {projectList.map((project, index) => (
               <div
                 key={index}
-                className="w-full py-2 border-b-2 border-dashed border-black dark:border-white"
+                // className="w-full py-2 my-2 border-b-2 border-dashed border-black dark:border-white bg-amber-300"
+                className="w-full p-2 my-2 bg-amber-300 dark:bg-gray-700"
               >
-                <p className="font-semibold">
-                  &#10148; {project.name}
+                <p className="pl-1 font-semibold">
+                  {project.name}
                 </p>
                 <div className="grid grid-cols-12 gap-1">
                   <div className="col-span-12 md:col-span-4 lg:col-span-3 flex justify-center items-center w-full">
-                    <div className="w-full max-w-80 m-2 terminal-outer-container border">
+                    {/* <div className="w-full max-w-80 m-2 terminal-outer-container border"> */}
+                    <div className="flex max-w-60 h-36">
                       <Image
                         src={project.image}
                         alt={project.name}
                         width={0}
                         height={0}
                         layout="responsive"
-                        className="select-none w-full h-auto"
+                        // className="select-none w-full h-auto"
+                        className="select-none w-60 h-36 p-1"
                       />
                     </div>
                   </div>
