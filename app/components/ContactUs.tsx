@@ -28,28 +28,45 @@ export const ContactUs = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="flex flex-col">
-      <label className="mt-1">Name</label>
-      <input
-        type="text"
-        name="user_name"
-        required
-        minLength={2}
-        maxLength={50}
-        className="pl-2"
-      />
-      <label className="mt-2">Email</label>
-      <input
-        type="email"
-        name="user_email"
-        required
-        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-        title="Please enter a valid email address."
-        className="pl-2"
-      />
-      <label className="mt-2">Message</label>
-      <textarea name="message" required minLength={10} className="px-2"/>
-      <button type="submit" className="w-full mt-3 p-1 bg-amber-300 dark:bg-green-800 hover:bg-amber-500 dark:hover:bg-green-700 font-semibold hover:font-bold">Send</button>
+    <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-2">
+      <div className="flex flex-col w-full">
+        <label className="">Name</label>
+        <input
+          type="text"
+          name="user_name"
+          required
+          minLength={2}
+          maxLength={50}
+          className="p-2"
+        />
+      </div>
+      <div className="flex flex-col w-full">
+        <label className="">Email</label>
+        <input
+          type="email"
+          name="user_email"
+          required
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          title="Please enter a valid email address."
+          className="p-2"
+        />
+      </div>
+      <div className="flex flex-col w-full max-h-[22rem] overflow-auto">
+        <label className="">Message</label>
+        <textarea
+          name="message"
+          required
+          minLength={10}
+          className="p-1 px-2"
+          placeholder="Write your message here..."
+        />
+      </div>
+      <button
+        type="submit"
+        className="w-full mt-2 p-1 bg-amber-300 dark:bg-green-800 hover:bg-amber-500 dark:hover:bg-green-700 font-semibold hover:font-bold"
+      >
+        Send
+      </button>
     </form>
   );
 };
