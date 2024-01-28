@@ -36,6 +36,7 @@ export const ContactUs = () => {
         required
         minLength={2}
         maxLength={50}
+        className="pl-2"
       />
       <label className="mt-2">Email</label>
       <input
@@ -44,9 +45,10 @@ export const ContactUs = () => {
         required
         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         title="Please enter a valid email address."
+        className="pl-2"
       />
       <label className="mt-2">Message</label>
-      <textarea name="message" required minLength={10} />
+      <textarea name="message" required minLength={10} className="px-2"/>
       <button type="submit" className="w-full mt-3 p-1 bg-amber-300 dark:bg-green-800 hover:bg-amber-500 dark:hover:bg-green-700 font-semibold hover:font-bold">Send</button>
     </form>
   );
