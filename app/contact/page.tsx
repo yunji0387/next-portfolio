@@ -18,7 +18,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={index}
-                className={`flex flex-row items-center w-full h-6 md:h-8 text-sm md:text-base rounded-lg transition-all duration-200 ease-in-out ${contact.isAvailable ? "hover:bg-amber-300 dark:hover:bg-gray-600" : "disabled cursor-not-allowed"}`}
+                className={`flex flex-row items-center w-full h-6 md:h-8 text-sm md:text-base rounded-lg transition-all duration-200 ease-in-out ${contact.isAvailable ? "hover:font-black hover:bg-amber-300 dark:hover:bg-gray-600" : "disabled cursor-not-allowed"}`}
               >
                 <div className="w-[1.8rem] h-5 md:h-7 font-semibold hidden sm:flex items-center justify-center">
                   <Image

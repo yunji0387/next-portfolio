@@ -35,16 +35,16 @@ export default function Projects() {
                     </div>
                   </div>
                   <div className="col-span-12 md:col-span-8 lg:col-span-9 mt-2">
-                    <p className="text-sm md:text-base text-justify font-light px-2">
+                    <p className="text-sm md:text-base text-justify px-2">
                       {project.description}
                     </p>
-                    <div className="flex flex-col sm:flex-row p-1 text-sm md:text-base underline">
+                    <div className="flex flex-col sm:flex-row p-1 text-sm md:text-base font-semibold underline">
                       <Link
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <p className="p-1 hover:font-bold lg:text-lg">
+                        <p className="p-1 hover:font-black lg:text-lg">
                           Web Link
                         </p>
                       </Link>
@@ -53,7 +53,7 @@ export default function Projects() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <p className="p-1 sm:pl-5 hover:font-bold lg:text-lg">
+                        <p className="p-1 sm:pl-5 hover:font-black lg:text-lg">
                           GitHub Repo Link
                         </p>
                       </Link>

@@ -52,7 +52,7 @@ export function MainCard() {
                 <p>
                   &#10148; Check out my {""}
                   <Link href="/resume" rel="noopener noreferrer">
-                    <span className="underline hover:text-lg hover:font-bold transition-all duration-300 ease-in-out">
+                    <span className="underline hover:text-lg hover:text-amber-700 dark:hover:text-gray-300 transition-all duration-300 ease-in-out">
                       resume
                     </span>
                   </Link>
