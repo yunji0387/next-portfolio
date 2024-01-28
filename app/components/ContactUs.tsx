@@ -47,7 +47,7 @@ export const ContactUs = () => {
       />
       <label className="mt-2">Message</label>
       <textarea name="message" required minLength={10} />
-      <button type="submit" className="w-full mt-3 p-1 bg-amber-300 dark:bg-green-800 font-bold">Send</button>
+      <button type="submit" className="w-full mt-3 p-1 bg-amber-300 dark:bg-green-800 hover:bg-amber-500 dark:hover:bg-green-700 font-semibold hover:font-bold">Send</button>
     </form>
   );
 };
