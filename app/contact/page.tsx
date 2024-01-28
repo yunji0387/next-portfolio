@@ -11,7 +11,7 @@ export default function Contact() {
       <div className="flex flex-col justify-center items-center w-full min-w-[280px]">
         <div className="w-full md:w-[80%] terminal-outer-container">
           <div className="flex flex-col justify-center p-1 md:p-5 w-full terminal-inner-container">
-            <p className="text-sm md:text-base">&#10148; Contact Section</p>
+            <p className="text-base font-black">&#128234; Contact Section</p>
             {contactList.map((contact, index) => (
               <Link
                 href={contact.link}
