@@ -16,7 +16,7 @@ export function MinimizeIcon({
   return (
     <button
       onClick={handleClick}
-      className={`flex flex-col justify-center items-center ${sizeStyle} border-2 border-[#4d2800] dark:border-white rounded-md`}
+      className={`flex flex-col justify-center items-center ${sizeStyle} border-2 border-[#4d2800] dark:border-white rounded-md hover:bg-amber-200 dark:hover:bg-gray-700`}
     >
       <span
         className={`absolute bg-[#4d2800] dark:bg-white transition-all duration-300 ease-out
