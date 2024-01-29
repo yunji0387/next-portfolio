@@ -52,7 +52,7 @@ export default function Contact() {
               ))}
             </div>
 
-            <div className="flex flex-col justify-center w-full h-full my-2">
+            <div className="flex flex-col justify-center w-full h-full my-2 mt-6">
             <p className="text-base font-black">&#128231; Contact Me</p>
             <ContactUs />
             </div>

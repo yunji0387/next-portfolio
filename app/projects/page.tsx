@@ -74,7 +74,7 @@ export default function Projects() {
                         width={0}
                         height={0}
                         layout="responsive"
-                        className="select-none w-full h-auto sm:w-60 sm:h-36 p-1"
+                        className="select-none w-full h-auto sm:w-60 sm:h-36 shadow-lg"
                       />
                     </div>
                   </div>

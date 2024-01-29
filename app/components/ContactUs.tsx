@@ -58,6 +58,7 @@ export const ContactUs = () => {
             minLength={2}
             maxLength={50}
             className="p-2"
+            placeholder="Write your Name here..."
           />
         </div>
         <div className="flex flex-col w-full">
@@ -69,6 +70,7 @@ export const ContactUs = () => {
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             title="Please enter a valid email address."
             className="p-2"
+            placeholder="Write your email here..."
           />
         </div>
         <div className="flex flex-col w-full max-h-[22rem] overflow-auto">
