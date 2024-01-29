@@ -58,7 +58,7 @@ export default function Projects() {
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full terminal-outer-container">
           <div className="w-full terminal-inner-container">
-            <p className="font-black">&#128187; Projects Section</p>
+            <p className="font-black text-lg">&#128187; Projects Section</p>
             {projectList.map((project: Project, index: number) => (
               <div
                 key={index}
