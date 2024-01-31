@@ -13,7 +13,7 @@ export default function Contact() {
         <div className="w-full md:w-[80%] terminal-outer-container">
           <div className="flex flex-col justify-center p-1 md:p-5 w-full terminal-inner-container">
             <div className="flex flex-col justify-center w-full h-full p-1 bg-amber-50 bg-opacity-50 dark:bg-gray-700 dark:bg-opacity-60 shadow-lg">
-              <p className="text-lg font-black">&#128234; Contact Section</p>
+              <p className="text-lg font-black select-none">&#128234; Contact Section</p>
               {contactList.map((contact, index) => (
                 <Link
                   href={contact.link}
@@ -53,7 +53,7 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-col justify-center w-full h-full my-2 mt-6">
-            <p className="text-lg font-black">&#128231; Contact Me</p>
+            <p className="text-lg font-black select-none">&#128231; Contact Me</p>
             <ContactUs />
             </div>
           </div>
