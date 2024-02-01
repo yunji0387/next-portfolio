@@ -52,7 +52,7 @@ export default function About() {
           <div className="w-full terminal-inner-container">
             <p className="font-black text-lg select-none">&#10024; Work Experience</p>
             {workExperience.map((work) => (
-              <div key={work.company} className="w-full p-1 sm:p-3 text-sm">
+              <div key={work.company} className="bg-amber-100 dark:bg-gray-700 bg-opacity-90 dark:bg-opacity-60 w-full my-2 p-1 sm:p-3 text-sm shadow-lg">
                 <p className="font-bold">{work.company}</p>
                 <p className="font-semibold">
                   {work.title}{" "}
@@ -77,7 +77,7 @@ export default function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="flex flex-row items-center p-1 sm:p-2 text-sm w-full hover:bg-amber-300 dark:hover:bg-gray-700 hover:font-bold transition-all duration-300 ease-in-out">
+                  <div className="flex flex-row items-center p-1 sm:p-2 text-sm w-full hover:bg-amber-300 dark:hover:bg-gray-700 font-semibold hover:font-black transition-all duration-300 ease-in-out">
                     <div className="hidden sm:block">
                       <Image
                         src={cert.image}
@@ -92,7 +92,7 @@ export default function About() {
                         {cert.name} - {cert.organization}
                       </p>
                       <p className="sm:hidden">{cert.name}</p>
-                      <p className="font-bold sm:hidden">{cert.organization}</p>
+                      <p className="sm:hidden">{cert.organization}</p>
                       <p>{cert.date}</p>
                     </div>
                   </div>
