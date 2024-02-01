@@ -37,12 +37,19 @@ export function Navbar() {
       <div className="flex flex-row items-center justify-between md:hidden">
         <HamburgerIcon isOpen={isOpen} handleClick={handleClick} />
         <Image
-          src="/icons/turtleLogo.png"
-          alt="portfolio logo"
-          width={64}
-          height={64}
-          className="select-none"
-        />
+            src="/icons/logoLight.png"
+            alt="portfolio logo"
+            width={64}
+            height={64}
+            className="select-none dark:hidden"
+          />
+          <Image
+            src="/icons/logoDark.png"
+            alt="portfolio logo"
+            width={64}
+            height={64}
+            className="select-none hidden dark:block"
+          />
         <ThemeSwitcher />
       </div>
 
@@ -56,11 +63,18 @@ export function Navbar() {
       >
         <li className="hidden md:block min-w-16 ">
           <Image
-            src="/icons/turtleLogo.png"
+            src="/icons/logoLight.png"
             alt="portfolio logo"
             width={64}
             height={64}
-            className="select-none"
+            className="select-none dark:hidden"
+          />
+          <Image
+            src="/icons/logoDark.png"
+            alt="portfolio logo"
+            width={64}
+            height={64}
+            className="select-none hidden dark:block"
           />
         </li>
         {navItems.map((item) => (
