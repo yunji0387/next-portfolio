@@ -29,7 +29,7 @@ export function MainCard() {
           />
         </div>
         <div className={`${isMinimize ? "hidden" : "flex"} w-full h-full terminal-outer-container bg-opacity-80`}>
-          <div className="flex flex-col w-full h-full terminal-inner-container text-sm sm:text-base bg-opacity-80">
+          <div className="flex flex-col w-full h-full terminal-inner-container text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-black bg-opacity-80">
             <div className="flex items-end justify-end w-full">
               <MinimizeIcon
                 isMinimize={isMinimize}
@@ -38,7 +38,7 @@ export function MainCard() {
                 height="8"
               />
             </div>
-            <div className="font-black">
+            <div>
               <p>
                 &#10148; Hi, I&apos;m {about.name}.
               </p>
@@ -52,7 +52,7 @@ export function MainCard() {
                 <p>
                   &#10148; Check out my {""}
                   <Link href="/resume" rel="noopener noreferrer">
-                    <span className="underline hover:text-lg hover:text-amber-700 dark:hover:text-gray-300 transition-all duration-300 ease-in-out">
+                    <span className="underline hover:text-base hover:sm:text-lg hover:md:text-xl hover:lg:text-2xl hover:xl:text-3xl hover:text-amber-700 dark:hover:text-gray-300 transition-all duration-300 ease-in-out">
                       resume
                     </span>
                   </Link>
