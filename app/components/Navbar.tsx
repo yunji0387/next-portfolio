@@ -34,28 +34,30 @@ export function Navbar() {
   return (
     <nav className="w-full relative">
       {/* Hamburger icon only visible on small screens */}
-      <div className="flex flex-row items-center justify-between md:hidden">
+      <div className="flex flex-row items-center justify-between md:hidden w-full min-h-16">
         <HamburgerIcon isOpen={isOpen} handleClick={handleClick} />
-        <Image
+        <div className="flex justify-center items-center min-w-16">
+          <Image
             src="/icons/logoLight.png"
             alt="portfolio logo"
-            width={64}
-            height={64}
+            width={50}
+            height={50}
             className="select-none dark:hidden"
           />
           <Image
             src="/icons/logoDark.png"
             alt="portfolio logo"
-            width={64}
-            height={64}
+            width={50}
+            height={50}
             className="select-none hidden dark:block"
           />
+        </div>
         <ThemeSwitcher />
       </div>
 
       {/* Combined Menu */}
       <ul
-        className={`flex flex-col md:flex-row items-center justify-center md:space-x-4 overflow-hidden absolute md:relative w-full ${
+        className={`flex flex-col md:flex-row items-center justify-center md:space-x-4 overflow-hidden absolute md:relative w-full h-16 ${
           isOpen
             ? "max-h-96 opacity-100 transition-all duration-500 ease-in-out"
             : "max-h-0 opacity-0 md:max-h-full md:opacity-100"
@@ -65,15 +67,15 @@ export function Navbar() {
           <Image
             src="/icons/logoLight.png"
             alt="portfolio logo"
-            width={64}
-            height={64}
+            width={50}
+            height={50}
             className="select-none dark:hidden"
           />
           <Image
             src="/icons/logoDark.png"
             alt="portfolio logo"
-            width={64}
-            height={64}
+            width={50}
+            height={50}
             className="select-none hidden dark:block"
           />
         </li>
