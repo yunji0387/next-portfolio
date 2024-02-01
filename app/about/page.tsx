@@ -16,11 +16,11 @@ export default function About() {
           <div className="w-full terminal-outer-container">
             <div className="terminal-inner-container w-full h-full">
               <p className="font-black text-lg select-none">&#128020; About Me</p>
-              <p className="text-sm text-justify sm:p-3">{about.description}</p>
-              <div className="flex flex-row h-6 text-sm">
-                <p className="">&#10148; Check out my&nbsp;</p>
+              <p className="text-sm md:text-base text-justify sm:p-3">{about.description}</p>
+              <div className="flex flex-row h-6 text-sm md:text-base">
+                <p>&#10148; Check out my&nbsp;</p>
                 <Link href="/resume" rel="noopener noreferrer">
-                  <span className="underline hover:text-base hover:font-bold transition-all duration-300 ease-in-out">
+                  <span className="underline hover:text-lg hover:font-bold transition-all duration-300 ease-in-out">
                     resume
                   </span>
                 </Link>
@@ -35,7 +35,7 @@ export default function About() {
               {education.map((edu) => (
                 <div
                   key={edu.school}
-                  className="w-full sm:p-3 text-sm text-center"
+                  className="w-full sm:p-3 text-sm md:text-base text-center"
                 >
                   <p className="font-medium">{edu.school}</p>
                   <p className="font-bold">{edu.degree}</p>
@@ -52,7 +52,7 @@ export default function About() {
           <div className="w-full terminal-inner-container">
             <p className="font-black text-lg select-none">&#10024; Work Experience</p>
             {workExperience.map((work) => (
-              <div key={work.company} className="bg-amber-100 dark:bg-gray-700 bg-opacity-90 dark:bg-opacity-60 w-full my-2 p-1 sm:p-3 text-sm shadow-lg">
+              <div key={work.company} className="bg-amber-100 dark:bg-gray-700 bg-opacity-90 dark:bg-opacity-60 w-full my-2 p-1 sm:p-3 text-sm md:text-base shadow-lg">
                 <p className="font-bold">{work.company}</p>
                 <p className="font-semibold">
                   {work.title}{" "}
@@ -77,7 +77,7 @@ export default function About() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="flex flex-row items-center p-1 sm:p-2 text-sm w-full hover:bg-amber-300 dark:hover:bg-gray-700 font-semibold hover:font-black transition-all duration-300 ease-in-out">
+                  <div className="flex flex-row w-full items-center p-1 sm:p-2 text-sm md:text-base hover:bg-amber-300 dark:hover:bg-gray-700 font-semibold hover:font-black transition-all duration-300 ease-in-out">
                     <div className="hidden sm:block">
                       <Image
                         src={cert.image}
