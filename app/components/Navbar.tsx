@@ -94,7 +94,7 @@ export function Navbar() {
           >
             <Link
               href={item.link}
-              className={`w-full flex justify-center items-center font-black h-10 md:h-8 md:hover:h-8 transition-all duration-300 ease-in-out ${
+              className={`w-full flex justify-center items-center font-black h-10 md:h-8 md:hover:h-8 transition-all duration-200 ease-in-out ${
                 currPath === item.link
                   ? "text-amber-50 dark:text-black text-2xl md:text-amber-50"
                   : "text-amber-50 dark:text-white md:text-[#4d2800] text-lg hover:text-2xl"
