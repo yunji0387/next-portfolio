@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { HamburgerIcon } from "./HamburgerIcon";
 import { ThemeSwitcher } from "./ThemeSwitcher";
@@ -35,31 +36,50 @@ export function Navbar() {
       {/* Hamburger icon only visible on small screens */}
       <div className="flex flex-row items-center justify-between md:hidden">
         <HamburgerIcon isOpen={isOpen} handleClick={handleClick} />
+        <Image
+          src="/icons/turtleLogo.png"
+          alt="portfolio logo"
+          width={64}
+          height={64}
+          className="select-none"
+        />
         <ThemeSwitcher />
       </div>
 
       {/* Combined Menu */}
       <ul
-          className={`flex flex-col md:flex-row items-center justify-center md:space-x-4 overflow-hidden absolute md:relative w-full ${
+        className={`flex flex-col md:flex-row items-center justify-center md:space-x-4 overflow-hidden absolute md:relative w-full ${
           isOpen
             ? "max-h-96 opacity-100 transition-all duration-500 ease-in-out"
             : "max-h-0 opacity-0 md:max-h-full md:opacity-100"
         } top-full md:top-0 left-0 z-50 md:z-auto w-full`}
       >
+        <li className="hidden md:block min-w-16 ">
+          <Image
+            src="/icons/turtleLogo.png"
+            alt="portfolio logo"
+            width={64}
+            height={64}
+            className="select-none"
+          />
+        </li>
         {navItems.map((item) => (
           <li
             key={item.name}
             className="flex items-center justify-center w-full border-2 md:border-none border-white dark:border-black rounded-full m-2 bg-yellow-700 dark:bg-indigo-200 md:bg-transparent dark:md:bg-transparent"
           >
-            <Link href={item.link} className="w-full flex justify-center items-center h-10 hover:h-14 md:h-8 md:hover:h-8 text-lg hover:text-2xl hover:font-bold transition-all duration-300 ease-in-out">
+            <Link
+              href={item.link}
+              className="w-full flex justify-center items-center h-10 hover:h-14 md:h-8 md:hover:h-8 text-lg hover:text-2xl hover:font-bold transition-all duration-300 ease-in-out"
+            >
               <p className="font-black select-none text-white dark:text-black md:text-[#4d2800] dark:md:text-white">
                 {item.name}
               </p>
             </Link>
           </li>
         ))}
-        <li className="hidden md:block">
-            <ThemeSwitcher />
+        <li className="">
+          <ThemeSwitcher />
         </li>
       </ul>
     </nav>
