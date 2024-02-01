@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { HamburgerIcon } from "./HamburgerIcon";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
@@ -27,9 +28,12 @@ const navItems = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+
+  const currPath = usePathname();
 
   return (
     <nav className="w-full relative">
@@ -57,7 +61,7 @@ export function Navbar() {
 
       {/* Combined Menu */}
       <ul
-        className={`flex flex-col md:flex-row items-center justify-center md:space-x-4 overflow-hidden absolute md:relative w-full h-16 ${
+        className={`flex flex-col md:flex-row items-center justify-center md:space-x-4 overflow-hidden absolute md:relative w-full md:h-16 ${
           isOpen
             ? "max-h-96 opacity-100 transition-all duration-500 ease-in-out"
             : "max-h-0 opacity-0 md:max-h-full md:opacity-100"
@@ -82,19 +86,27 @@ export function Navbar() {
         {navItems.map((item) => (
           <li
             key={item.name}
-            className="flex items-center justify-center w-full border-2 md:border-none border-white dark:border-black rounded-full m-2 bg-yellow-700 dark:bg-indigo-200 md:bg-transparent dark:md:bg-transparent"
+            className={`flex items-center justify-center w-full rounded-full m-2 border-2 ${
+              currPath === item.link
+                ? "md:bg-opacity-70 md:dark:bg-opacity-50 bg-yellow-700 dark:bg-indigo-200 border-indigo-950 dark:border-black"
+                : "bg-yellow-600 dark:bg-indigo-950 md:bg-transparent dark:md:bg-transparent md:border-none border-indigo-950 dark:border-white"
+            }`}
           >
             <Link
               href={item.link}
-              className="w-full flex justify-center items-center h-10 hover:h-14 md:h-8 md:hover:h-8 text-lg hover:text-2xl hover:font-bold transition-all duration-300 ease-in-out"
+              className={`w-full flex justify-center items-center font-black h-10 md:h-8 md:hover:h-8 transition-all duration-300 ease-in-out ${
+                currPath === item.link
+                  ? "text-amber-50 dark:text-black text-2xl md:text-amber-50"
+                  : "text-amber-50 dark:text-white md:text-[#4d2800] text-lg hover:text-2xl"
+              } dark:md:text-white`}
             >
-              <p className="font-black select-none text-white dark:text-black md:text-[#4d2800] dark:md:text-white">
+              <p className={`select-none`}>
                 {item.name}
               </p>
             </Link>
           </li>
         ))}
-        <li className="">
+        <li className="hidden md:block">
           <ThemeSwitcher />
         </li>
       </ul>
