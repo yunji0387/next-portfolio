@@ -56,6 +56,14 @@ export const projectList = [
         image: "/images/projects/reactPortfolio.png",
     },
     {
+        name: "WordPress Portfolio Website",
+        description: "This website is a WordPress portfolio web app.",
+        link: "https://yunjiportfolio.wordpress.com/",
+        github_repo: "https://github.com/yunji0387/",
+        tech_stack: ['WordPress', 'HTML', 'CSS','Responsive Design'],
+        image: "/images/projects/wordpressPortfolio.png",
+    },
+    {
         name: "React Mini Games Website",
         description: "This website is a React-based mini games web app.",
         link:"https://yunji0387.github.io/react-game-web/",
