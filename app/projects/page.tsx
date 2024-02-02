@@ -58,13 +58,13 @@ export default function Projects() {
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full terminal-outer-container">
           <div className="w-full terminal-inner-container">
-            <p className="font-black text-lg select-none">&#128187; Projects Section</p>
+            <p className="font-black text-lg sm:text-2xl select-none">&#128187; Projects Section</p>
             {projectList.map((project: Project, index: number) => (
               <div
                 key={index}
                 className="flex flex-col w-full p-2 my-2 bg-amber-50 bg-opacity-50 dark:bg-gray-700 dark:bg-opacity-80 shadow-lg"
               >
-                <p className="pl-1 font-semibold">{project.name}</p>
+                <p className="pl-1 font-semibold sm:text-lg md:text-xl">{project.name}</p>
                 <div className="flex flex-col sm:flex-row gap-1">
                   <div className="flex justify-center items-center w-full sm:w-60 sm:min-w-60 sm:h-36">
                     <div className="flex w-full sm:max-w-60 sm:h-36">
