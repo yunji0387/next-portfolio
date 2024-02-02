@@ -16,11 +16,11 @@ export default function About() {
           <div className="w-full terminal-outer-container">
             <div className="terminal-inner-container w-full h-full">
               <p className="font-black text-lg sm:text-2xl select-none">&#128020; About Me</p>
-              <p className="text-sm md:text-base text-justify sm:p-3">{about.description}</p>
-              <div className="flex flex-row h-6 text-sm md:text-base">
+              <p className="text-sm md:text-base lg:text-lg text-justify sm:p-3">{about.description}</p>
+              <div className="flex flex-row h-6 text-sm md:text-base lg:text-lg">
                 <p>&#10148; Check out my&nbsp;</p>
                 <Link href="/resume" rel="noopener noreferrer">
-                  <span className="underline hover:text-lg hover:font-bold transition-all duration-300 ease-in-out">
+                  <span className="underline hover:text-lg lg:hover:text-xl hover:font-bold transition-all duration-300 ease-in-out">
                     resume
                   </span>
                 </Link>
@@ -35,7 +35,7 @@ export default function About() {
               {education.map((edu) => (
                 <div
                   key={edu.school}
-                  className="w-full sm:p-3 text-sm md:text-base text-center"
+                  className="w-full sm:p-3 text-sm md:text-base lg:text-lg text-center"
                 >
                   <p className="font-medium">{edu.school}</p>
                   <p className="font-bold">{edu.degree}</p>
@@ -52,7 +52,7 @@ export default function About() {
           <div className="w-full terminal-inner-container">
             <p className="font-black text-lg sm:text-2xl select-none">&#10024; Work Experience</p>
             {workExperience.map((work) => (
-              <div key={work.company} className="bg-amber-100 dark:bg-gray-700 bg-opacity-90 dark:bg-opacity-60 w-full my-2 p-1 sm:p-3 text-sm md:text-base shadow-lg">
+              <div key={work.company} className="bg-amber-100 dark:bg-gray-700 bg-opacity-90 dark:bg-opacity-60 w-full my-2 p-1 sm:p-3 text-sm md:text-base lg:text-lg shadow-lg">
                 <p className="font-bold">{work.company}</p>
                 <p className="font-semibold">
                   {work.title}{" "}
