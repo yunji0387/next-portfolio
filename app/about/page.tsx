@@ -15,7 +15,7 @@ export default function About() {
         <div className="flex flex-col sm:flex-row gap-2 w-full">
           <div className="w-full terminal-outer-container">
             <div className="terminal-inner-container w-full h-full">
-              <p className="font-black text-lg select-none">&#128020; About Me</p>
+              <p className="font-black text-lg sm:text-2xl select-none">&#128020; About Me</p>
               <p className="text-sm md:text-base text-justify sm:p-3">{about.description}</p>
               <div className="flex flex-row h-6 text-sm md:text-base">
                 <p>&#10148; Check out my&nbsp;</p>
@@ -31,7 +31,7 @@ export default function About() {
 
           <div className="w-full terminal-outer-container">
             <div className="w-full h-full terminal-inner-container">
-              <p className="font-black text-lg select-none">&#127891; Education</p>
+              <p className="font-black text-lg sm:text-2xl select-none">&#127891; Education</p>
               {education.map((edu) => (
                 <div
                   key={edu.school}
@@ -50,7 +50,7 @@ export default function About() {
 
         <div className="w-full terminal-outer-container">
           <div className="w-full terminal-inner-container">
-            <p className="font-black text-lg select-none">&#10024; Work Experience</p>
+            <p className="font-black text-lg sm:text-2xl select-none">&#10024; Work Experience</p>
             {workExperience.map((work) => (
               <div key={work.company} className="bg-amber-100 dark:bg-gray-700 bg-opacity-90 dark:bg-opacity-60 w-full my-2 p-1 sm:p-3 text-sm md:text-base shadow-lg">
                 <p className="font-bold">{work.company}</p>
@@ -68,7 +68,7 @@ export default function About() {
 
         <div className="w-full terminal-outer-container">
           <div className="w-full terminal-inner-container">
-            <p className="font-black text-lg select-none">&#129495; Certifications</p>
+            <p className="font-black text-lg sm:text-2xl select-none">&#129495; Certifications</p>
             <div className="overflow-auto max-h-64">
               {certificationsList.map((cert) => (
                 <Link
