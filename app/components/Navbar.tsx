@@ -89,7 +89,7 @@ export function Navbar() {
             className={`flex items-center justify-center w-full rounded-full m-2 border-2 ${
               currPath === item.link
                 ? "md:bg-opacity-70 md:dark:bg-opacity-50 bg-yellow-700 dark:bg-indigo-200 border-indigo-950 dark:border-black"
-                : "bg-yellow-600 dark:bg-indigo-950 md:bg-transparent dark:md:bg-transparent md:border-none border-indigo-950 dark:border-white"
+                : "bg-yellow-600 dark:bg-indigo-950 hover:bg-yellow-500 dark:hover:bg-indigo-800  md:bg-transparent dark:md:bg-transparent hover:md:bg-transparent dark:hover:md:bg-transparent md:border-none border-indigo-950 dark:border-white"
             }`}
           >
             <Link
