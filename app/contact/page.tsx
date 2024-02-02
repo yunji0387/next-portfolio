@@ -13,14 +13,14 @@ export default function Contact() {
         <div className="w-full md:w-[80%] terminal-outer-container">
           <div className="flex flex-col justify-center p-1 md:p-5 w-full terminal-inner-container">
             <div className="flex flex-col justify-center w-full h-full p-1 bg-amber-50 bg-opacity-50 dark:bg-gray-700 dark:bg-opacity-60 shadow-lg">
-              <p className="text-lg font-black select-none">&#128234; Contact Section</p>
+              <p className="text-lg sm:text-2xl font-black select-none">&#128234; Contact Section</p>
               {contactList.map((contact, index) => (
                 <Link
                   href={contact.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   key={index}
-                  className={`flex flex-row items-center w-full h-6 md:h-8 text-sm md:text-base rounded-lg transition-all duration-200 ease-in-out ${
+                  className={`flex flex-row items-center w-full h-6 md:h-8 rounded-lg transition-all duration-200 ease-in-out ${
                     contact.isAvailable
                       ? "hover:font-black hover:bg-amber-300 dark:hover:bg-gray-600"
                       : "disabled cursor-not-allowed"
@@ -35,16 +35,16 @@ export default function Contact() {
                       className="select-none"
                     />
                   </div>
-                  <p className="w-[5rem] pl-1 md:w-24 font-semibold">
+                  <p className="w-20 sm:w-24 md:w-24 pl-1 font-semibold text-sm sm:text-lg md:text-xl">
                     {contact.name}
                   </p>
                   <p>:&nbsp;</p>
                   {contact.isAvailable ? (
-                    <p className="underline pr-1 text-xs sm:text-sm md:text-base">
+                    <p className="underline pr-1 text-xs sm:text-lg md:text-xl">
                       {contact.username}
                     </p>
                   ) : (
-                    <p className="text-gray-500 text-xs sm:text-sm md:text-base">
+                    <p className="text-gray-500 text-xs sm:text-lg md:text-x;">
                       {contact.username}
                     </p>
                   )}
@@ -53,7 +53,7 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-col justify-center w-full h-full my-2 mt-6">
-            <p className="text-lg font-black select-none">&#128231; Contact Me</p>
+            <p className="text-lg sm:text-2xl font-black select-none">&#128231; Contact Me</p>
             <ContactUs />
             </div>
           </div>
