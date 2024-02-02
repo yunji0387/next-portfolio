@@ -88,16 +88,16 @@ export function Navbar() {
             key={item.name}
             className={`flex items-center justify-center w-full rounded-full m-2 border-2 ${
               currPath === item.link
-                ? "md:bg-opacity-70 md:dark:bg-opacity-50 bg-yellow-700 dark:bg-indigo-200 border-indigo-950 dark:border-black"
+                ? "md:bg-opacity-70 md:dark:bg-opacity-50 bg-yellow-700 dark:bg-indigo-200 border-indigo-950 dark:border-white"
                 : "bg-yellow-600 dark:bg-indigo-950 hover:bg-yellow-500 dark:hover:bg-indigo-800  md:bg-transparent dark:md:bg-transparent hover:md:bg-transparent dark:hover:md:bg-transparent md:border-none border-indigo-950 dark:border-white"
             }`}
           >
             <Link
               href={item.link}
-              className={`w-full flex justify-center items-center font-black h-10 md:h-8 md:hover:h-8 transition-all duration-200 ease-in-out ${
+              className={`w-full flex justify-center items-center font-black h-10 md:h-8 md:hover:h-8 xl:h-10 xl:hover:h-10 transition-all duration-200 ease-in-out ${
                 currPath === item.link
-                  ? "text-amber-50 dark:text-black text-2xl md:text-amber-50"
-                  : "text-amber-50 dark:text-white md:text-[#4d2800] text-lg hover:text-2xl"
+                  ? "text-amber-50 dark:text-black text-2xl xl:text-3xl 2xl:text-4xl md:text-amber-50"
+                  : "text-amber-50 dark:text-white md:text-[#4d2800] text-lg xl:text-xl 2xl:text-2xl hover:text-2xl xl:hover:text-3xl 2xl:hover:text-4xl"
               } dark:md:text-white`}
             >
               <p className={`select-none`}>
@@ -106,7 +106,7 @@ export function Navbar() {
             </Link>
           </li>
         ))}
-        <li className="hidden md:block">
+        <li className="hidden md:block xl:min-w-20 xl:scale-125">
           <ThemeSwitcher />
         </li>
       </ul>
