@@ -51,7 +51,7 @@ export function Footer() {
         ))}
       </ul>
       <div className="dark:border rounded-full px-1 dark:bg-green-900">
-        <p className="text-sm select-none font-light">
+        <p className="text-sm md:text-base select-none font-light">
           &copy; {new Date().getFullYear()} Yun Ji How.
         </p>
       </div>
