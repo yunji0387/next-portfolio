@@ -10,8 +10,8 @@ export default function Contact() {
     <div className="custom-container">
       <Navbar />
       <div className="flex flex-col justify-center items-center w-full min-w-[280px]">
-        <div className="w-full md:w-[80%] terminal-outer-container">
-          <div className="flex flex-col justify-center p-1 md:p-5 w-full terminal-inner-container">
+        <div className="w-full">
+          <div className="flex flex-col justify-center p-1 md:p-5 w-full">
             <div className="flex flex-col justify-center w-full h-full p-1 bg-amber-50 bg-opacity-50 dark:bg-gray-700 dark:bg-opacity-60 shadow-lg">
               <p className="text-lg sm:text-2xl font-black select-none">&#128234; Contact Section</p>
               {contactList.map((contact, index) => (
@@ -40,11 +40,11 @@ export default function Contact() {
                   </p>
                   <p>:&nbsp;</p>
                   {contact.isAvailable ? (
-                    <p className="underline pr-1 text-xs sm:text-lg md:text-xl">
+                    <p className="underline pr-1 text-sm sm:text-lg md:text-xl">
                       {contact.username}
                     </p>
                   ) : (
-                    <p className="text-gray-500 text-xs sm:text-lg md:text-x;">
+                    <p className="text-gray-500 text-sm sm:text-lg md:text-x;">
                       {contact.username}
                     </p>
                   )}
