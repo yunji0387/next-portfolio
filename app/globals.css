@@ -167,3 +167,7 @@ body {
 .terminal-inner-container {
   @apply bg-opacity-70 dark:bg-opacity-50 bg-amber-100 dark:bg-gray-800 w-full p-5 rounded-md;
 }
+
+.styled-card {
+  @apply bg-amber-50 dark:bg-gray-700 bg-opacity-50 dark:bg-opacity-60 shadow-lg;
+}
