@@ -85,19 +85,19 @@ export function Navbar() {
         {navItems.map((item) => (
           <li
             key={item.name}
-            className={`flex items-center justify-center w-full rounded-full border-2 mx-2 ${
+            className={`flex items-center justify-center w-full rounded-lg border-2 mx-2 my-1 md:my-0 ${
               currPath === item.link
-                ? "md:bg-opacity-70 md:dark:bg-opacity-50 bg-yellow-700 dark:bg-indigo-200 border-indigo-950 dark:border-white"
-                : "bg-yellow-600 dark:bg-indigo-950 hover:bg-yellow-500 dark:hover:bg-indigo-800  md:bg-transparent dark:md:bg-transparent hover:md:bg-transparent dark:hover:md:bg-transparent md:border-none border-indigo-950 dark:border-white"
-            }`}
+                ? "bg-amber-100 dark:bg-green-900"
+                : "bg-sky-200 dark:bg-indigo-950 hover:bg-yellow-500 dark:hover:bg-indigo-800  md:bg-transparent dark:md:bg-transparent hover:md:bg-transparent dark:hover:md:bg-transparent md:border-none border-indigo-950 dark:border-white"
+            } border-yellow-950 dark:border-white`}
           >
               <Link
                 href={item.link}
                 className={`w-full flex justify-center items-center font-black h-10 md:h-8 md:hover:h-8 xl:h-10 xl:hover:h-10 transition-all duration-200 ease-in-out ${
                   currPath === item.link
-                    ? "text-amber-50 dark:text-black text-2xl xl:text-3xl 2xl:text-4xl md:text-amber-50"
-                    : "text-amber-50 dark:text-white md:text-[#4d2800] text-lg xl:text-xl 2xl:text-2xl hover:text-2xl xl:hover:text-3xl 2xl:hover:text-4xl"
-                } dark:md:text-white`}
+                    ? " text-2xl xl:text-3xl 2xl:text-4xl"
+                    : "text-lg xl:text-xl 2xl:text-2xl hover:text-2xl xl:hover:text-3xl 2xl:hover:text-4xl"
+                } text-[#4d2800] dark:text-white`}
               >
                 <p className={`select-none`}>{item.name}</p>
               </Link>
