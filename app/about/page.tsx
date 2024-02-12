@@ -45,15 +45,11 @@ export default function About() {
               {about.description}
             </p>
 
-            <div className="flex flex-row h-6 text-sm md:text-base lg:text-lg">
-              <p>&#10148; Check out my&nbsp;</p>
-              <Link href="/resume" rel="noopener noreferrer">
-                <span className="underline hover:text-lg lg:hover:text-xl hover:font-bold transition-all duration-300 ease-in-out">
-                  resume
-                </span>
-              </Link>
-              <p>.</p>
-            </div>
+            <Link href="/resume" rel="noopener noreferrer" className="mt-2">
+              <button className="rounded-full bg-amber-300 dark:bg-green-900 border-2 border-yellow-950 dark:border-white p-2 px-3 bg-opacity-100 hover:bg-amber-500 font-extrabold transition-all duration-300 ease-in-out">
+                Resume
+              </button>
+            </Link>
           </div>
 
           {/* <div className="flex flex-col w-full sm:w-[50%]">
