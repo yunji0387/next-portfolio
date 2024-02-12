@@ -22,13 +22,13 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   key={index}
-                  className={`flex flex-row items-center w-full h-6 md:h-8 transition-all duration-200 ease-in-out ${
+                  className={`flex flex-row items-center w-full h-8 transition-all duration-200 ease-in-out ${
                     contact.isAvailable
                       ? "hover:font-black hover:bg-amber-300 dark:hover:bg-gray-600"
                       : "disabled cursor-not-allowed"
                   }`}
                 >
-                  <div className="w-[1.8rem] h-5 md:h-7 font-semibold hidden sm:flex items-center justify-center">
+                  <div className="w-[1.8rem] h-5 md:h-7 font-semibold hidden xs:flex items-center justify-center">
                     <Image
                       src={contact.iconPath}
                       alt={contact.name}
@@ -37,16 +37,16 @@ export default function Contact() {
                       className="select-none"
                     />
                   </div>
-                  <p className="w-20 sm:w-24 md:w-24 pl-1 font-semibold text-sm sm:text-lg md:text-xl">
+                  <p className="w-20 sm:w-24 md:w-24 pl-1 font-semibold text-sm xs:text-base sm:text-lg md:text-xl">
                     {contact.name}
                   </p>
                   <p>:&nbsp;</p>
                   {contact.isAvailable ? (
-                    <p className="underline pr-1 text-sm sm:text-lg md:text-xl">
+                    <p className="underline pr-1 text-sm xs:text-base sm:text-lg md:text-xl">
                       {contact.username}
                     </p>
                   ) : (
-                    <p className="text-gray-500 text-sm sm:text-lg md:text-x;">
+                    <p className="text-gray-500 text-sm xs:text-base sm:text-lg md:text-x;">
                       {contact.username}
                     </p>
                   )}
