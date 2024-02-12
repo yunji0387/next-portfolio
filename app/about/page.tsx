@@ -19,7 +19,14 @@ export default function About() {
               alt="developmentImg"
               width={200}
               height={200}
-              className="select-none min-w-[200px] opacity-10 md:opacity-100" // Adjust opacity as needed
+              className="select-none min-w-[200px] opacity-10 md:opacity-100 dark:hidden" // Adjust opacity as needed
+            />
+            <Image
+              src="/images/developmentImgDark.png"
+              alt="developmentImg"
+              width={200}
+              height={200}
+              className="select-none min-w-[200px] opacity-10 md:opacity-100 hidden dark:block" // Adjust opacity as needed
             />
           </div>
 
