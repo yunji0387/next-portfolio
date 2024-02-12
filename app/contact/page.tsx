@@ -22,7 +22,7 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   key={index}
-                  className={`flex flex-row items-center w-full h-8 transition-all duration-200 ease-in-out ${
+                  className={`sm:my-1 flex flex-row items-center w-full h-8 transition-all duration-200 ease-in-out ${
                     contact.isAvailable
                       ? "hover:font-black hover:bg-amber-300 dark:hover:bg-gray-600"
                       : "disabled cursor-not-allowed"

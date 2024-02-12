@@ -13,57 +13,7 @@ export default function About() {
       <Navbar />
       <div className="flex flex-col justify-center items-center w-full gap-2">
         <div className="flex flex-col sm:flex-row gap-2 w-full relative">
-          {/* <div className="flex flex-col w-full sm:w-[50%]">
-            <p className="font-black text-lg sm:text-2xl select-none">
-              &#128020; About Me
-            </p>
-            <div className="styled-card w-full h-full my-2 p-5">
-              <p className="text-sm md:text-base lg:text-lg text-justify sm:p-3">
-                {about.description}
-              </p>
-              <div className="flex flex-row h-6 text-sm md:text-base lg:text-lg">
-                <p>&#10148; Check out my&nbsp;</p>
-                <Link href="/resume" rel="noopener noreferrer">
-                  <span className="underline hover:text-lg lg:hover:text-xl hover:font-bold transition-all duration-300 ease-in-out">
-                    resume
-                  </span>
-                </Link>
-                <p>.</p>
-              </div>
-            </div>
-          </div> */}
-
-          {/* <div className="flex flex-col w-full sm:w-[50%]">
-            <p className="font-black text-lg sm:text-2xl select-none">
-              &#127891; Education
-            </p>
-            <div className="styled-card w-full h-full my-2 p-5">
-              {education.map((edu) => (
-                <div
-                  key={edu.school}
-                  className="w-full sm:p-3 text-sm md:text-base lg:text-lg text-center"
-                >
-                  <p className="font-medium">{edu.school}</p>
-                  <p className="font-bold">{edu.degree}</p>
-                  <p className="font-semibold">{edu.major}</p>
-                  <p className="font-light">{edu.date}</p>
-                  <p className="">{edu.location}</p>
-                </div>
-              ))}
-            </div>
-          </div> */}
-          {/* <div className="relative hidden xs:w-full xs:flex items-center justify-center ">
-            <div className="xs:absolute xs:inset-0 xs:z-0 min-w-72">
-              <Image
-                src="/images/developmentImg.png"
-                alt="developmentImg"
-                width={280}
-                height={280}
-                className="select-none m-1 mr-2 opacity-20 md:opacity-100"
-              />
-            </div>
-          </div> */}
-          <div className="absolute inset-0 z-0 md:static flex items-center justify-center w-full md:w-56 md:h-56 bg-opacity-20">
+          <div className="absolute inset-0 z-0 md:static w-full md:w-56 md:h-56 bg-opacity-20 flex items-center justify-center">
             <Image
               src="/images/developmentImg.png"
               alt="developmentImg"
