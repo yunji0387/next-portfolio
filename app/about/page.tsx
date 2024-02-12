@@ -23,7 +23,7 @@ export default function About() {
             />
             <Image
               src="/images/developmentImgDark.png"
-              alt="developmentImg"
+              alt="developmentImgDark"
               width={200}
               height={200}
               className="select-none min-w-[200px] opacity-10 md:opacity-100 hidden dark:block" // Adjust opacity as needed
