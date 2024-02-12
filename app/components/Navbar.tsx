@@ -87,7 +87,7 @@ export function Navbar() {
             key={item.name}
             className={`flex items-center justify-center w-full rounded-lg border-2 mx-2 my-1 md:my-0 ${
               currPath === item.link
-                ? "bg-amber-100 dark:bg-green-900"
+                ? "bg-amber-100 dark:bg-green-900 md:bg-transparent dark:md:bg-transparent md:border-none md:underline md:decoration-[3px] lg:decoration-4"
                 : "bg-sky-200 dark:bg-indigo-950 hover:bg-yellow-500 dark:hover:bg-indigo-800  md:bg-transparent dark:md:bg-transparent hover:md:bg-transparent dark:hover:md:bg-transparent md:border-none border-indigo-950 dark:border-white"
             } border-yellow-950 dark:border-white`}
           >
