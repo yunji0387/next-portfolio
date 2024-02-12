@@ -68,36 +68,24 @@ export function MainCard() {
               </div>
               <div className="flex flex-col justify-center z-10 md:ml-5">
                 <p className="text-xl md:text-2xl font-medium select-none">
-                  Hi, I&apos;m {about.firstname}.
+                  Hi, I&apos;m&nbsp;
+                  <span className="text-2xl md:text-3xl font-medium select-none">
+                    {about.firstname}
+                  </span>
+                  .
                 </p>
-                <p className="text-2xl md:text-3xl font-semibold select-none">
+                <p className="text-2xl md:text-3xl font-bold select-none">
                   {about.title}
                 </p>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
                   {about.status}
                 </p>
                 <Link href="/resume" rel="noopener noreferrer" className="mt-2">
-                  <button className="rounded-full bg-amber-300 dark:bg-green-900 border-2 border-yellow-950 dark:border-white p-1 px-3 bg-opacity-100 hover:bg-amber-500 font-extrabold transition-all duration-300 ease-in-out">
+                  <button className="rounded-full bg-amber-300 dark:bg-green-800 border-2 border-yellow-950 dark:border-white p-1 px-3 bg-opacity-100 hover:bg-amber-500 dark:hover:bg-green-700 font-extrabold transition-all duration-100 ease-in-out">
                     Resume
                   </button>
                 </Link>
               </div>
-              {/* <div className="flex flex-col justify-center lg:ml-5">
-                <p>&#10148; Hi, I&apos;m {about.firstname}.</p>
-                <p>&#10148; {about.title}</p>
-                <p>&#10148; {about.status}</p>
-                <div className="flex flex-row">
-                  <p>
-                    &#10148; Check out my {""}
-                    <Link href="/resume" rel="noopener noreferrer">
-                      <span className="underline hover:text-base hover:sm:text-lg hover:md:text-xl hover:lg:text-2xl hover:xl:text-3xl hover:text-amber-700 dark:hover:text-gray-300 transition-all duration-300 ease-in-out">
-                        resume
-                      </span>
-                    </Link>
-                    .
-                  </p>
-                </div>
-              </div> */}
             </div>
             <div className="w-full pt-3">
               <ImageBanner imageList={skillsIconList} speed={8000} />
