@@ -12,7 +12,7 @@ export default function About() {
     <div className="custom-container">
       <Navbar />
       <div className="flex flex-col justify-center items-center w-full gap-2">
-        <div className="flex flex-col sm:flex-row gap-2 w-full">
+        <div className="flex flex-col sm:flex-row gap-2 w-full relative">
           {/* <div className="flex flex-col w-full sm:w-[50%]">
             <p className="font-black text-lg sm:text-2xl select-none">
               &#128020; About Me
@@ -32,25 +32,6 @@ export default function About() {
               </div>
             </div>
           </div> */}
-          <div className="flex flex-col w-full sm:w-[50%] p-5">
-            <p className="font-black text-xl select-none">
-              Hi, I am {about.firstname} {about.lastname}
-            </p>
-
-            <p className="font-black text-2xl select-none">
-              {about.title}
-            </p>
-
-            <p className="text-justify">
-              {about.description}
-            </p>
-
-            <Link href="/resume" rel="noopener noreferrer" className="mt-2">
-              <button className="rounded-full bg-amber-300 dark:bg-green-900 border-2 border-yellow-950 dark:border-white p-2 px-3 bg-opacity-100 hover:bg-amber-500 font-extrabold transition-all duration-300 ease-in-out">
-                Resume
-              </button>
-            </Link>
-          </div>
 
           {/* <div className="flex flex-col w-full sm:w-[50%]">
             <p className="font-black text-lg sm:text-2xl select-none">
@@ -71,10 +52,41 @@ export default function About() {
               ))}
             </div>
           </div> */}
-          <div className="flex flex-col w-full sm:w-[50%]">
-            <div className="styled-card w-full h-full my-2 p-5">
-
+          {/* <div className="relative hidden xs:w-full xs:flex items-center justify-center ">
+            <div className="xs:absolute xs:inset-0 xs:z-0 min-w-72">
+              <Image
+                src="/images/developmentImg.png"
+                alt="developmentImg"
+                width={280}
+                height={280}
+                className="select-none m-1 mr-2 opacity-20 md:opacity-100"
+              />
             </div>
+          </div> */}
+          <div className="absolute inset-0 z-0 md:static flex items-center justify-center w-full md:w-56 md:h-56 bg-opacity-20">
+            <Image
+              src="/images/developmentImg.png"
+              alt="developmentImg"
+              width={200}
+              height={200}
+              className="select-none min-w-[200px] opacity-10 md:opacity-100" // Adjust opacity as needed
+            />
+          </div>
+
+          <div className="flex flex-col w-full p-5 z-10">
+            <p className="font-black text-xl md:text-2xl select-none">
+              Hi, I am {about.firstname} {about.lastname}
+            </p>
+
+            <p className="font-black text-2xl md:text-3xl select-none">{about.title}</p>
+
+            <p className="text-justify md:text-lg font-medium">{about.description}</p>
+
+            <Link href="/resume" rel="noopener noreferrer" className="mt-2">
+              <button className="rounded-full bg-amber-300 dark:bg-green-900 border-2 border-yellow-950 dark:border-white p-2 px-3 bg-opacity-100 hover:bg-amber-500 font-extrabold transition-all duration-300 ease-in-out">
+                Resume
+              </button>
+            </Link>
           </div>
         </div>
 
