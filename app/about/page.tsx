@@ -31,7 +31,7 @@ export default function About() {
           </div>
 
           <div className="flex flex-col w-full p-5 z-10">
-            <p className="font-black text-xl md:text-2xl select-none">
+            <p className="font-bold text-xl md:text-2xl select-none">
               Hi, I am {about.firstname} {about.lastname}
             </p>
 
@@ -40,7 +40,7 @@ export default function About() {
             <p className="text-justify md:text-lg font-medium">{about.description}</p>
 
             <Link href="/resume" rel="noopener noreferrer" className="mt-2">
-              <button className="rounded-full bg-amber-300 dark:bg-green-900 border-2 border-yellow-950 dark:border-white p-2 px-3 bg-opacity-100 hover:bg-amber-500 font-extrabold transition-all duration-300 ease-in-out">
+              <button className="rounded-full bg-amber-300 dark:bg-green-900 border-2 border-yellow-950 dark:border-white p-1 px-3 bg-opacity-100 hover:bg-amber-500 font-extrabold transition-all duration-300 ease-in-out">
                 Resume
               </button>
             </Link>
