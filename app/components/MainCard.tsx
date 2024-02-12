@@ -40,7 +40,7 @@ export function MainCard() {
             </div>
             <div>
               <p>
-                &#10148; Hi, I&apos;m {about.name}.
+                &#10148; Hi, I&apos;m {about.firstname}.
               </p>
               <p>
                 &#10148; {about.title}
