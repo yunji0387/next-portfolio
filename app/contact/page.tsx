@@ -14,7 +14,7 @@ export default function Contact() {
           <div className="flex flex-col justify-center p-1 md:p-5 w-full">
             {/* <p className="text-lg sm:text-2xl font-light select-none">
               Contact Section
-            </p> */}
+            </p>
             <div className="flex flex-col justify-center w-full h-full styled-card p-3 my-2">
               {contactList.map((contact, index) => (
                 <Link
@@ -52,11 +52,44 @@ export default function Contact() {
                   )}
                 </Link>
               ))}
+            </div> */}
+
+            <div className="flex flex-row max-w-full h-full">
+              {contactList.map((contact, index) => (
+                <Link
+                  href={contact.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={index}
+                  className={`mx-1 flex flex-row items-center ${
+                    contact.isAvailable
+                      ? "rounded-full hover:border-2 border-yellow-950 dark:border-white p-2 font-black transition-all duration-200 ease-in-out"
+                      : "disabled cursor-not-allowed"
+                  }`}
+                >
+                  <div className="flex items-center justify-center">
+                    <Image
+                      src={contact.iconLight}
+                      alt={contact.name}
+                      width={30}
+                      height={30}
+                      className="select-none dark:hidden"
+                    />
+                    <Image
+                      src={contact.iconDark}
+                      alt={contact.name}
+                      width={30}
+                      height={30}
+                      className="select-none hidden dark:block"
+                    />
+                  </div>
+                </Link>
+              ))}
             </div>
 
             <div className="flex flex-col justify-center w-full h-full my-2 mt-2">
               <p className="text-lg sm:text-2xl font-light select-none">
-                Contact Me
+                Send Me a Message.
               </p>
               <ContactUs />
             </div>

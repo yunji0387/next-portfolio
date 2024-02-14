@@ -48,7 +48,7 @@ export const ContactUs = () => {
 
   return (
     <div className="relative">
-      <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-2">
+      <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-5">
         <div className="flex flex-col w-full">
           <label className="font-light">Name</label>
           <input
@@ -57,7 +57,7 @@ export const ContactUs = () => {
             required
             minLength={2}
             maxLength={50}
-            className="p-2 font-light"
+            className="p-1 font-light bg-transparent border-b"
             placeholder="Write your Name here..."
           />
         </div>
@@ -69,7 +69,7 @@ export const ContactUs = () => {
             required
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             title="Please enter a valid email address."
-            className="p-2 font-light"
+            className="p-1 font-light bg-transparent border-b"
             placeholder="Write your email here..."
           />
         </div>
@@ -79,7 +79,7 @@ export const ContactUs = () => {
             name="message"
             required
             minLength={10}
-            className="p-1 px-2 font-light"
+            className="p-1 font-light bg-transparent border-b"
             placeholder="Write your message here..."
           />
         </div>
