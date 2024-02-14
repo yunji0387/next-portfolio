@@ -48,8 +48,8 @@ export default function About() {
         </div>
 
         <div className="w-full">
-          <p className="font-black text-lg sm:text-2xl select-none">
-            &#127891; Education
+          <p className="font-light text-lg sm:text-2xl select-none">
+            Education
           </p>
           <div className="styled-card w-full h-full my-2 p-5">
             {education.map((edu) => (
@@ -68,8 +68,8 @@ export default function About() {
         </div>
 
         <div className="w-full">
-          <p className="font-black text-lg sm:text-2xl select-none">
-            &#10024; Work Experience
+          <p className="font-light text-lg sm:text-2xl select-none">
+            Work Experience
           </p>
           {workExperience.map((work) => (
             <div
@@ -89,8 +89,8 @@ export default function About() {
         </div>
 
         <div className="w-full">
-          <p className="font-black text-lg sm:text-2xl select-none">
-            &#129495; Certifications
+          <p className="font-light text-lg sm:text-2xl select-none">
+            Certifications
           </p>
           <div className="styled-card my-2 p-3 overflow-auto max-h-64">
             {certificationsList.map((cert) => (

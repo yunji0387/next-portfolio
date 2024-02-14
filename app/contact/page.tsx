@@ -12,9 +12,9 @@ export default function Contact() {
       <div className="flex flex-col justify-center items-center w-full min-w-[280px]">
         <div className="w-full">
           <div className="flex flex-col justify-center p-1 md:p-5 w-full">
-            <p className="text-lg sm:text-2xl font-black select-none">
-              &#128234; Contact Section
-            </p>
+            {/* <p className="text-lg sm:text-2xl font-light select-none">
+              Contact Section
+            </p> */}
             <div className="flex flex-col justify-center w-full h-full styled-card p-3 my-2">
               {contactList.map((contact, index) => (
                 <Link
@@ -55,8 +55,8 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-col justify-center w-full h-full my-2 mt-2">
-              <p className="text-lg sm:text-2xl font-black select-none">
-                &#128231; Contact Me
+              <p className="text-lg sm:text-2xl font-light select-none">
+                Contact Me
               </p>
               <ContactUs />
             </div>

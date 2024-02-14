@@ -58,7 +58,7 @@ export default function Projects() {
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full">
           <div className="w-full">
-            <p className="font-black text-lg sm:text-2xl select-none">&#128187; Projects Section</p>
+            {/* <p className="font-light text-lg sm:text-2xl select-none">Projects Section</p> */}
             {projectList.map((project: Project, index: number) => (
               <div
                 key={index}
