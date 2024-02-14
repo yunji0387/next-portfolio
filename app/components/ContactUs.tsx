@@ -50,36 +50,36 @@ export const ContactUs = () => {
     <div className="relative">
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-2">
         <div className="flex flex-col w-full">
-          <label className="font-semibold">Name</label>
+          <label className="font-light">Name</label>
           <input
             type="text"
             name="user_name"
             required
             minLength={2}
             maxLength={50}
-            className="p-2"
+            className="p-2 font-light"
             placeholder="Write your Name here..."
           />
         </div>
         <div className="flex flex-col w-full">
-          <label className="font-semibold">Email</label>
+          <label className="font-light">Email</label>
           <input
             type="email"
             name="user_email"
             required
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             title="Please enter a valid email address."
-            className="p-2"
+            className="p-2 font-light"
             placeholder="Write your email here..."
           />
         </div>
         <div className="flex flex-col w-full max-h-[22rem] overflow-auto">
-          <label className="font-semibold">Message</label>
+          <label className="font-light">Message</label>
           <textarea
             name="message"
             required
             minLength={10}
-            className="p-1 px-2"
+            className="p-1 px-2 font-light"
             placeholder="Write your message here..."
           />
         </div>
@@ -93,10 +93,10 @@ export const ContactUs = () => {
       {showSuccessMessage && (
         <div className="absolute inset-0">
           <div className="bg-amber-100 dark:bg-gray-800 flex flex-col justify-center items-center w-full h-full gap-5 p-4 text-center">
-            <p className="font-bold">Message sent successfully!</p>
+            <p className="font-light">Message sent successfully!</p>
             <button
               onClick={closeSuccessMessage}
-              className="bg-amber-300 dark:bg-green-800 hover:bg-amber-500 dark:hover:bg-green-700 w-full max-w-52 rounded-md border border-indigo-950 dark:border-white text-amber-900 dark:text-white font-bold py-1"
+              className="bg-amber-300 dark:bg-green-800 hover:bg-amber-500 dark:hover:bg-green-700 w-full max-w-52 rounded-md border border-indigo-950 dark:border-white text-amber-900 dark:text-white font-light py-1"
             >
               OK
             </button>
@@ -106,10 +106,10 @@ export const ContactUs = () => {
       {showErrorMessage && (
         <div className="absolute inset-0">
           <div className="bg-amber-100 dark:bg-gray-800 flex flex-col justify-center items-center w-full h-full gap-5 p-4 text-center">
-            <p className="font-bold text-red-500 dark:text-red-300">Failed to send message. Please try again later or contact me via my email.</p>
+            <p className="font-light text-red-500 dark:text-red-300">Failed to send message. Please try again later or contact me via my email.</p>
             <button
               onClick={closeMessage}
-              className="bg-amber-300 dark:bg-green-800 hover:bg-amber-500 dark:hover:bg-green-700 w-full max-w-52 rounded-md border border-indigo-950 dark:border-white text-amber-900 dark:text-white font-bold py-1"
+              className="bg-amber-300 dark:bg-green-800 hover:bg-amber-500 dark:hover:bg-green-700 w-full max-w-52 rounded-md border border-indigo-950 dark:border-white text-amber-900 dark:text-white font-light py-1"
             >
               Try Again
             </button>

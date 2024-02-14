@@ -40,8 +40,8 @@ export default function About() {
             <p className="text-justify md:text-lg font-medium">{about.description}</p>
 
             <Link href="/resume" rel="noopener noreferrer" className="mt-2">
-              <button className="rounded-full bg-amber-300 dark:bg-green-900 border-2 border-yellow-950 dark:border-white p-1 px-3 bg-opacity-100 hover:bg-amber-500 dark:hover:bg-green-700 font-extrabold transition-all duration-100 ease-in-out">
-                Resume
+              <button className="rounded-full bg-amber-300 dark:bg-green-900 border-2 border-yellow-950 dark:border-white p-1 px-3 bg-opacity-100 hover:bg-amber-500 dark:hover:bg-green-700 font-light transition-all duration-100 ease-in-out">
+                CV
               </button>
             </Link>
           </div>

@@ -4,6 +4,8 @@ export const contactList = [
         link: "mailto:yunji0387@gmail.com",
         username: "yunji0387@gmail.com",
         iconPath: "/icons/gmail.png",
+        iconLight: "/icons/gmailLight.png",
+        iconDark: "/icons/gmailDark.png",
         isAvailable: true,
     },
     {
@@ -11,6 +13,8 @@ export const contactList = [
         link: "https://github.com/yunji0387",
         username: "yunji0387",
         iconPath: "/icons/github.png",
+        iconLight: "/icons/githubLight.png",
+        iconDark: "/icons/githubDark.png",
         isAvailable: true,
     },
     {
@@ -18,6 +22,8 @@ export const contactList = [
         link: "https://www.linkedin.com/in/yun-ji-how-64025220a/",
         username: "Yun Ji How",
         iconPath: "/icons/linkedin.png",
+        iconLight: "/icons/linkedinLight.png",
+        iconDark: "/icons/linkedinDark.png",
         isAvailable: true,
     },
     {
@@ -25,6 +31,8 @@ export const contactList = [
         link: "https://twitter.com/",
         username: "currently unavailable",
         iconPath: "/icons/twitter.png",
+        iconLight: "/icons/twitterLight.png",
+        iconDark: "/icons/twitterDark.png",
         isAvailable: false,
     },
 ];
