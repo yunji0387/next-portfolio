@@ -19,14 +19,14 @@ export default function About() {
               alt="developmentImg"
               width={200}
               height={200}
-              className="select-none min-w-[200px] opacity-10 md:opacity-100 dark:hidden" // Adjust opacity as needed
+              className="select-none min-w-[200px] opacity-10 md:opacity-100 dark:hidden"
             />
             <Image
               src="/images/developmentImgDark.png"
               alt="developmentImgDark"
               width={200}
               height={200}
-              className="select-none min-w-[200px] opacity-10 md:opacity-100 hidden dark:block" // Adjust opacity as needed
+              className="select-none min-w-[200px] opacity-10 md:opacity-100 hidden dark:block"
             />
           </div>
 
@@ -45,7 +45,11 @@ export default function About() {
 
             <p className="text-justify md:text-lg">{about.description}</p>
 
-            <Link href="/resume" rel="noopener noreferrer" className="rounded-full w-fit">
+            <Link
+              href="/resume"
+              rel="noopener noreferrer"
+              className="rounded-full w-fit"
+            >
               <button className="select-none rounded-full hover:border-2 border-yellow-950 dark:border-white p-3 font-black transition-all duration-200 ease-in-out">
                 CV
               </button>
@@ -53,8 +57,8 @@ export default function About() {
           </div>
         </div>
 
-        <div className="flex flex-row w-full">
-          <div className="w-full lg:w-[900px] lg:min-w-[900px] flex flex-col">
+        <div className="flex flex-row w-full justify-between relative">
+          <div className="w-full xl:min-w-[900px] flex flex-col">
             <div className="w-full">
               <p className="font-light text-lg sm:text-2xl select-none">
                 Work Experience
@@ -75,12 +79,12 @@ export default function About() {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-2 w-full">
-              <div className="my-2 w-full lg:w-[350px] lg:min-w-[350px]">
+            <div className="flex flex-col xl:flex-row gap-2 w-full">
+              <div className="my-2 w-full xl:w-[350px] xl:min-w-[350px]">
                 <p className="font-light text-lg sm:text-2xl select-none">
                   Education
                 </p>
-                <div className="flex items-center styled-card w-full my-2 lg:h-60">
+                <div className="flex items-center styled-card w-full my-2 xl:h-60">
                   {education.map((edu) => (
                     <div
                       key={edu.school}
@@ -96,7 +100,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="my-2 w-full lg:w-[500px] lg:min-w-[500px]">
+              <div className="my-2 w-full xl:w-[500px] xl:min-w-[500px]">
                 <p className="font-light text-lg sm:text-2xl select-none">
                   Certifications
                 </p>
@@ -141,25 +145,24 @@ export default function About() {
             </div>
           </div>
 
-          {/* <div className="hidden lg:flex w-full justify-center items-center opacity-50 relative">
-            <div className="absolute inset-0 z-[-1] lg:static w-full flex items-center justify-center"> */}
-            <div className="hidden lg:flex w-full justify-center items-center opacity-50 relative">
-            <div className="relative lg:static w-full h-full flex items-center justify-center">
-              <Image
-                src="/images/footballLight.png"
-                alt="footballLight"
-                layout="fill"
-                objectFit="cover"
-                className="select-none opacity-10 w-[500px] lg:opacity-100 dark:hidden" // Adjust opacity as needed
-              />
-              <Image
-                src="/images/footballDark.png"
-                alt="footballDark"
-                width={500}
-                height={500}
-                className="select-none opacity-10 lg:opacity-100 hidden dark:block" // Adjust opacity as needed
-              />
-            </div>
+          {/* <div className="hidden lg:flex w-[500px] max-w-[500px] opacity-50 relative">
+            <div className="w-full h-full flex items-end"> */}
+
+          <div className="absolute inset-0 z-0 xl:static w-fit flex items-end justify-end">
+            <Image
+              src="/images/footballLight.png"
+              alt="footballLight"
+              width={500}
+              height={500}
+              className="select-none opacity-10 w-[500px] max-w-[500px] xl:opacity-100 dark:hidden"
+            />
+            <Image
+              src="/images/footballDark.png"
+              alt="footballDark"
+              width={500}
+              height={500}
+              className="select-none opacity-10 w-[500px] max-w-[500px] xl:opacity-100 hidden dark:block"
+            />
           </div>
         </div>
       </div>
