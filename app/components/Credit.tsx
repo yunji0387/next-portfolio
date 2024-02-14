@@ -2,43 +2,29 @@ export function Credit() {
   return (
     <div>
       <p>
-        Github icons created by
         <a
           href="https://www.flaticon.com/free-icons/github"
-          target="_blank"
-          rel="noopener noreferrer"
+          title="github icons"
         >
-          Ruslan Babkin - Flaticon
+          Github icons created by Laisa Islam Ani - Flaticon
         </a>
       </p>
       <p>
-        Linkedin icons created by
         <a
           href="https://www.flaticon.com/free-icons/linkedin"
-          target="_blank"
-          rel="noopener noreferrer"
+          title="linkedin icons"
         >
-          riajulislam - Flaticon
+          Linkedin icons created by NajmunNahar - Flaticon
         </a>
       </p>
       <p>
-        Twitter icons created by
-        <a
-          href="https://www.flaticon.com/free-icons/twitter"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Pixel perfect - Flaticon
+        <a href="https://www.flaticon.com/free-icons/tweet" title="tweet icons">
+          Tweet icons created by Freepik - Flaticon
         </a>
       </p>
       <p>
-        Gmail icons created by
-        <a
-          href="https://www.flaticon.com/free-icons/gmail"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Pixel perfect - Flaticon
+        <a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">
+          Gmail icons created by Pixel perfect - Flaticon
         </a>
       </p>
       <a href="https://www.flaticon.com/free-icons/meta" title="meta icons">
