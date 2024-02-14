@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+import { contactList } from "@/public/infos/contact";
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -46,6 +48,8 @@ export const ContactUs = () => {
     }
   };
 
+  const emailContact = contactList.find(contact => contact.name === "Email");
+
   return (
     <div className="relative">
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-5">
@@ -85,20 +89,26 @@ export const ContactUs = () => {
         </div>
         <button
           type="submit"
-          className="w-full mt-2 p-1 lg:p-2 bg-amber-300 dark:bg-green-800 hover:bg-amber-500 dark:hover:bg-green-700 font-black text-lg lg:text-xl"
+          className="w-full mt-2 p-1 rounded-md bg-yellow-950 dark:bg-gray-400 hover:bg-yellow-900 dark:hover:bg-gray-300 text-white dark:text-black text-lg lg:text-xl"
         >
           Send
         </button>
       </form>
       {showSuccessMessage && (
         <div className="absolute inset-0">
-          <div className="bg-amber-100 dark:bg-gray-800 flex flex-col justify-center items-center w-full h-full gap-5 p-4 text-center">
-            <p className="font-light">Message sent successfully!</p>
+          <div className="bg-amber-100 dark:bg-indigo-950 flex flex-col justify-center items-center w-full h-full gap-3 p-4 text-center">
+            <p className="text-2xl font-medium">Message sent successfully!</p>
             <button
               onClick={closeSuccessMessage}
-              className="bg-amber-300 dark:bg-green-800 hover:bg-amber-500 dark:hover:bg-green-700 w-full max-w-52 rounded-md border border-indigo-950 dark:border-white text-amber-900 dark:text-white font-light py-1"
+              className="text-lg hover:font-bold w-full font-light"
             >
-              OK
+              &#10005; Close Window
+            </button>
+            <button
+              onClick={closeSuccessMessage}
+              className="text-lg hover:font-bold w-full font-light"
+            >
+              &#8635; Send Another Message
             </button>
           </div>
         </div>
@@ -106,12 +116,27 @@ export const ContactUs = () => {
       {showErrorMessage && (
         <div className="absolute inset-0">
           <div className="bg-amber-100 dark:bg-gray-800 flex flex-col justify-center items-center w-full h-full gap-5 p-4 text-center">
-            <p className="font-light text-red-500 dark:text-red-300">Failed to send message. Please try again later or contact me via my email.</p>
+            <p className="text-2xl font-medium text-red-700 dark:text-red-200">
+              Failed to send message. Please try again later or contact me via
+              my email.
+            </p>
             <button
               onClick={closeMessage}
-              className="bg-amber-300 dark:bg-green-800 hover:bg-amber-500 dark:hover:bg-green-700 w-full max-w-52 rounded-md border border-indigo-950 dark:border-white text-amber-900 dark:text-white font-light py-1"
+              className="text-lg hover:font-bold w-full font-light"
             >
-              Try Again
+              &#8635; Try Again
+            </button>
+            <Link
+              href={emailContact ? emailContact.link : "#"}
+              className="text-lg hover:font-bold w-full font-light"
+            >
+              &#9993; Contact via Email
+            </Link>
+            <button
+              onClick={closeMessage}
+              className="text-lg hover:font-bold w-full font-light"
+            >
+              &#10005; Close Window
             </button>
           </div>
         </div>

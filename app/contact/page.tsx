@@ -6,6 +6,8 @@ import { Footer } from "../components/Footer";
 import { ContactUs } from "../components/ContactUs";
 
 export default function Contact() {
+  const emailContact = contactList.find(contact => contact.name === "Email");
+
   return (
     <div className="custom-container">
       <Navbar />
@@ -53,6 +55,11 @@ export default function Contact() {
                 </Link>
               ))}
             </div> */}
+
+            <div className="p-2 flex flex-row gap-2 items-end">
+              <p className="text-3xl">Email</p>
+              <Link href={emailContact ? emailContact.link : "#"} className="underline hover:text-blue-500 dark:hover:text-blue-300">yunji0387@gmail.com</Link>
+            </div>
 
             <div className="flex flex-row max-w-full h-full">
               {contactList.map((contact, index) => (
