@@ -6,6 +6,7 @@ import { about } from "@/public/infos/about";
 import { education } from "@/public/infos/education";
 import { workExperience } from "@/public/infos/workExperience";
 import { certificationsList } from "@/public/infos/certifications";
+import { ContactIconList } from "../components/ContactIconList";
 
 export default function About() {
   return (
@@ -45,15 +46,9 @@ export default function About() {
 
             <p className="text-justify md:text-lg">{about.description}</p>
 
-            <Link
-              href="/resume"
-              rel="noopener noreferrer"
-              className="rounded-full w-fit"
-            >
-              <button className="select-none rounded-full hover:border-2 border-yellow-950 dark:border-white p-3 font-black transition-all duration-200 ease-in-out">
-                CV
-              </button>
-            </Link>
+            <div className="m-2">
+              <ContactIconList showResume={true} />
+            </div>
           </div>
         </div>
 

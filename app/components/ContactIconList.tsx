@@ -8,7 +8,7 @@ type ContactIconListProps = {
 
 export function ContactIconList({ showResume = false }: ContactIconListProps) {
   return (
-    <div className="flex flex-row max-w-full h-full">
+    <div className="flex flex-row max-w-full h-full m-0">
         {showResume && (
                 <Link href="/resume" rel="noopener noreferrer" className="">
                 <button className="select-none rounded-full hover:border-2 border-yellow-950 dark:border-white p-3 font-black transition-all duration-200 ease-in-out">
