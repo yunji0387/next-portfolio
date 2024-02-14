@@ -6,6 +6,7 @@ import { about } from "@/public/infos/about";
 import { skillsIconList } from "@/public/infos/skillsIconList";
 import { contactList } from "@/public/infos/contact";
 import { ImageBanner } from "../components/ImageBanner";
+import { ContactIconList } from "./ContactIconList";
 
 export function MainCard() {
   return (
@@ -82,6 +83,7 @@ export function MainCard() {
           </div>
         </div>
       </div>
+      <ContactIconList showResume={true} />
       <div className="grayscale w-full max-w-[800px]">
         <div>
           <ImageBanner imageList={skillsIconList} speed={8000} />
