@@ -51,6 +51,16 @@ export function Credit() {
       <a href="https://www.freepik.com/free-photo/soft-concrete-texture_1128878.htm#query=moon%20texture&position=24&from_view=search&track=ais&uuid=818685a3-2484-4de7-ac56-b418cb2a0a87">
         Image by kues1 on Freepik
       </a>
+      <p>
+        Image by{" "}
+        <a href="https://pixabay.com/users/klaushausmann-1332067/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1430017">
+          Klaus Hausmann
+        </a>{" "}
+        from{" "}
+        <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1430017">
+          Pixabay
+        </a>
+      </p>
     </div>
   );
 }
