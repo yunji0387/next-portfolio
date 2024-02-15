@@ -85,22 +85,27 @@ export function Navbar() {
         {navItems.map((item) => (
           <li
             key={item.name}
-            className={`flex items-center justify-center w-full rounded-lg border-2 mx-2 my-1 md:my-0 ${
+            className={`flex items-center justify-center w-full rounded-lg border mx-2 my-1 md:my-0 ${
               currPath === item.link
-                ? "bg-amber-100 dark:bg-indigo-900 md:bg-transparent dark:md:bg-transparent md:border-none md:underline md:decoration-[2px]"
+                ? "bg-amber-100 dark:bg-indigo-900 md:bg-transparent dark:md:bg-transparent md:border-none"
                 : "bg-white dark:bg-black hover:bg-gray-100 dark:hover:bg-gray-800 md:bg-transparent dark:md:bg-transparent hover:md:bg-transparent dark:hover:md:bg-transparent md:border-none border-indigo-950 dark:border-white"
             } border-yellow-950 dark:border-white`}
           >
-              <Link
-                href={item.link}
-                className={`w-full flex justify-center items-center h-10 md:h-8 md:hover:h-8 xl:h-10 xl:hover:h-10 transition-all duration-200 ease-in-out ${
-                  currPath === item.link
-                    ? "font-medium text-2xl xl:text-3xl 2xl:text-4xl"
-                    : "font-light text-lg xl:text-xl 2xl:text-2xl hover:text-2xl xl:hover:text-3xl 2xl:hover:text-4xl"
-                } text-[#4d2800] dark:text-white`}
-              >
-                <p className={`select-none`}>{item.name}</p>
-              </Link>
+            <Link
+              href={item.link}
+              className={`w-full flex justify-center items-center h-10 md:h-8 md:hover:h-8 xl:h-10 xl:hover:h-10 transition-all duration-200 ease-in-out ${
+                currPath === item.link
+                  ? "font-medium text-2xl xl:text-3xl 2xl:text-4xl"
+                  : "font-light text-lg xl:text-xl 2xl:text-2xl hover:text-2xl xl:hover:text-3xl 2xl:hover:text-4xl"
+              } text-[#4d2800] dark:text-white`}
+            >
+              <p className="select-none relative">
+                {item.name}
+                {currPath === item.link && (
+                  <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
+                )}
+              </p>
+            </Link>
           </li>
         ))}
         <li className="hidden md:flex md:justify-center md:items-center xl:min-w-20 xl:scale-125">
