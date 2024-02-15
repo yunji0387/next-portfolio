@@ -57,7 +57,7 @@ export function Footer({ showIcons = false }: FooterProps) {
         </ul>
       )}
       <div className="px-1">
-        <p className="text-base xs:text-xl select-none font-light">
+        <p className="text-base select-none font-light">
           &copy; {new Date().getFullYear()} Yun Ji How.
         </p>
       </div>
