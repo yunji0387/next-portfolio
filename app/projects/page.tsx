@@ -65,7 +65,7 @@ export default function Projects() {
                   {project.name}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-1">
-                  <div className="hidden group-hover:flex justify-center items-center w-full sm:w-60 sm:min-w-60 sm:h-36 transform scale-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 ease-in-out">
+                  <div className="hidden group-hover:flex justify-center items-center w-full sm:w-60 sm:min-w-60 sm:h-36 transition-all duration-500 ease-in-out">
                     <div className="flex w-full sm:max-w-60 sm:h-36">
                       <Image
                         src={project.image}
@@ -73,7 +73,7 @@ export default function Projects() {
                         width={0}
                         height={0}
                         layout="responsive"
-                        className="select-none w-full h-auto sm:w-60 sm:h-36 shadow-lg"
+                        className="select-none w-full h-auto sm:w-60 sm:h-36 shadow-lg "
                       />
                     </div>
                   </div>
