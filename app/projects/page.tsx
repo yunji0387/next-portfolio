@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { TextBanner } from "../components/TextBanner";
-import { projectList } from "@/public/infos/projects"; // Ensure this path is correct
+import { projectList } from "@/public/infos/projects";
 
 interface Project {
   name: string;

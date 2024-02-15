@@ -52,17 +52,17 @@ export default function About() {
           </div>
         </div>
 
-        <div className="flex flex-row w-full justify-between relative">
-          <div className="w-full xl:min-w-[900px] flex flex-col">
+        <div className="flex flex-row w-full items-center justify-center xl:justify-between relative">
+          <div className="w-full xl:min-w-[915px] flex flex-col">
             <div className="w-full">
-              <p className="font-light text-lg sm:text-2xl select-none">
+              <p className="font-light text-2xl sm:text-4xl select-none">
                 Work Experience
               </p>
               <div className="flex flex-col gap-5">
                 {workExperience.map((work) => (
                   <div
                     key={work.company}
-                    className="w-full text-sm md:text-base lg:text-lg"
+                    className="w-full p-1 text-sm xs:text-base md:text-base lg:text-lg"
                   >
                     <p className="font-bold">{work.company}</p>
                     <p className="font-medium">{work.title}</p>
@@ -74,16 +74,16 @@ export default function About() {
               </div>
             </div>
 
-            <div className="flex flex-col xl:flex-row gap-2 w-full">
+            <div className="mt-5 flex flex-col xl:flex-row gap-2 w-full">
               <div className="my-2 w-full xl:w-[350px] xl:min-w-[350px]">
-                <p className="font-light text-lg sm:text-2xl select-none">
+                <p className="font-light text-2xl sm:text-4xl select-none">
                   Education
                 </p>
-                <div className="flex items-center styled-card w-full my-2 xl:h-60">
+                <div className="flex items-center justify-center md:justify-start xl:justify-center w-full my-2 xl:h-60">
                   {education.map((edu) => (
                     <div
                       key={edu.school}
-                      className="w-full sm:p-3 text-sm md:text-base lg:text-lg text-center italic"
+                      className="p-2 sm:p-3 text-sm xs:text-base lg:text-lg text-center italic"
                     >
                       <p className="font-medium">{edu.school}</p>
                       <p className="font-normal">{edu.degree}</p>
@@ -96,10 +96,10 @@ export default function About() {
               </div>
 
               <div className="my-2 w-full xl:w-[500px] xl:min-w-[500px]">
-                <p className="font-light text-lg sm:text-2xl select-none">
+                <p className="font-light text-2xl sm:text-4xl select-none">
                   Certifications
                 </p>
-                <div className="styled-card my-2 p-3 overflow-auto h-60 max-h-60">
+                <div className="my-2 overflow-auto h-60 max-h-60">
                   {certificationsList.map((cert) => (
                     <Link
                       key={cert.name}
@@ -140,23 +140,20 @@ export default function About() {
             </div>
           </div>
 
-          {/* <div className="hidden lg:flex w-[500px] max-w-[500px] opacity-50 relative">
-            <div className="w-full h-full flex items-end"> */}
-
-          <div className="absolute inset-0 z-0 xl:static w-fit flex items-end justify-end">
+          <div className="absolute inset-0 z-[-1] xl:static w-full xl:w-fit flex items-center justify-center xl:items-end xl:justify-end">
             <Image
               src="/images/footballLight.png"
               alt="footballLight"
               width={500}
               height={500}
-              className="select-none opacity-10 w-[500px] max-w-[500px] xl:opacity-100 dark:hidden"
+              className="select-none opacity-10 w-[500px] max-w-[500px] xl:opacity-80 dark:hidden"
             />
             <Image
               src="/images/footballDark.png"
               alt="footballDark"
               width={500}
               height={500}
-              className="select-none opacity-10 w-[500px] max-w-[500px] xl:opacity-100 hidden dark:block"
+              className="select-none opacity-10 w-[500px] max-w-[500px] xl:opacity-80 hidden dark:block"
             />
           </div>
         </div>
