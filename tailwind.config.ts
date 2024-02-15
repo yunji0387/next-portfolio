@@ -17,6 +17,7 @@ const config: Config = {
       },
       screens: {
         'xs' : '360px',
+        'short': {'raw': '(min-height: 300px)'},
         ...defaultTheme.screens,
       },
     },

@@ -16,14 +16,16 @@ export function MainCard() {
             alt="faceImg"
             width={200}
             height={200}
-            className="select-none min-w-[200px] dark:hidden"
+            priority={true}
+            className="select-none min-w-[200px] w-auto h-auto dark:hidden"
           />
           <Image
             src="/images/faceDark.png"
             alt="faceImgDark"
             width={200}
             height={200}
-            className="select-none min-w-[200px] hidden dark:block"
+            priority={true}
+            className="select-none min-w-[200px] w-auto h-auto hidden dark:block"
           />
         </div>
         <div className="flex flex-col justify-center z-10 md:ml-5">

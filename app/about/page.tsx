@@ -14,7 +14,7 @@ export default function About() {
       <Navbar />
       <div className="flex flex-col justify-center items-center w-full gap-2">
         <div className="flex flex-col sm:flex-row gap-2 w-full relative">
-          <div className="absolute inset-0 z-0 md:static w-full md:w-56 md:h-56 flex items-center justify-center">
+          <div className="absolute inset-0 z-0 md:static w-full md:w-56 md:h-56 flex items-center justify-center grayscale">
             <Image
               src="/images/developmentImg.png"
               alt="developmentImg"
