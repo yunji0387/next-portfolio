@@ -40,8 +40,9 @@ export default function About() {
               .
             </p>
 
-            <p className="font-black text-2xl md:text-3xl select-none">
+            <p className="font-black text-2xl md:text-3xl select-none w-fit relative">
               {about.title}
+              <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
             </p>
 
             <p className="text-justify md:text-lg">{about.description}</p>
