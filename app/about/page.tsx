@@ -107,7 +107,7 @@ export default function About() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="flex flex-row gap-2 w-full items-center p-1 sm:p-2 text-sm md:text-base hover:bg-amber-50 dark:hover:bg-gray-700 bg-opacity-90 transition-all duration-300 ease-in-out">
+                      <div className="flex flex-row gap-2 w-full items-center p-1 sm:p-2 text-sm md:text-base hover:bg-gray-200 dark:hover:bg-gray-700 bg-opacity-90 transition-all duration-300 ease-in-out">
                         <div>
                           <p className="">{cert.name}</p>
                           <p className="font-normal">{cert.organization}</p>
