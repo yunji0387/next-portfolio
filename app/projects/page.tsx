@@ -31,7 +31,7 @@ const ExpandableText: React.FC<ExpandableTextProps> = ({ text }) => {
   return (
     <div>
       <p
-        className="text-xs sm:text-sm md:text-base text-justify px-2 cursor-pointer"
+        className="text-xs sm:text-sm md:text-base text-justify cursor-pointer"
         onClick={toggleExpanded}
       >
         {isExpanded ? text : `${text.substring(0, 100)}`}
@@ -60,13 +60,12 @@ export default function Projects() {
           <div className="w-full">
             {/* <p className="font-light text-lg sm:text-2xl select-none">Projects Section</p> */}
             {projectList.map((project: Project, index: number) => (
-              <div
-                key={index}
-                className="flex flex-col w-full p-2 my-3 bg-amber-50 bg-opacity-50 dark:bg-gray-700 dark:bg-opacity-50 shadow-lg"
-              >
-                <p className="pl-1 font-semibold sm:text-lg md:text-xl">{project.name}</p>
+              <div key={index} className="group flex flex-col w-full p-2 my-5">
+                <p className="pl-1 font-light sm:text-lg md:text-xl">
+                  {project.name}
+                </p>
                 <div className="flex flex-col sm:flex-row gap-1">
-                  <div className="flex justify-center items-center w-full sm:w-60 sm:min-w-60 sm:h-36">
+                  <div className="hidden group-hover:flex justify-center items-center w-full sm:w-60 sm:min-w-60 sm:h-36 transform scale-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 ease-in-out">
                     <div className="flex w-full sm:max-w-60 sm:h-36">
                       <Image
                         src={project.image}
@@ -78,21 +77,25 @@ export default function Projects() {
                       />
                     </div>
                   </div>
-                  <div className="w-full mt-2">
-                    <ExpandableText text={project.description} />
-                    <div className="flex flex-col sm:flex-row p-1 text-sm md:text-base font-semibold underline">
-                      <Link href={project.link} passHref>
-                        <p className="p-1 hover:font-black lg:text-lg">
-                          Web Link
-                        </p>
+                  <div className="w-full mt-2 font-light">
+                    <div className="font-light px-1">
+                      <ExpandableText text={project.description} />
+                    </div>
+                    <div className="w-fit flex flex-col sm:flex-row text-sm md:text-base underline">
+                      <Link href={project.link} passHref className="w-fit">
+                        <p className="p-1 hover:font-medium w-fit">Web Link</p>
                       </Link>
-                      <Link href={project.github_repo} passHref>
-                        <p className="p-1 sm:pl-5 hover:font-black lg:text-lg">
+                      <Link
+                        href={project.github_repo}
+                        passHref
+                        className="w-fit"
+                      >
+                        <p className="p-1 sm:pl-5 hover:font-medium w-fit">
                           GitHub Repo Link
                         </p>
                       </Link>
                     </div>
-                    <TextBanner textList={project.tech_stack} />
+                    {/* <TextBanner textList={project.tech_stack} /> */}
                   </div>
                 </div>
               </div>
