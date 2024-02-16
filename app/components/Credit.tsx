@@ -71,6 +71,16 @@ export function Credit() {
           Pixabay
         </a>
       </p>
+      <p>
+        Image by{" "}
+        <a href="https://pixabay.com/users/jatocreate-5529266/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5014814">
+          Joshua Choate
+        </a>{" "}
+        from{" "}
+        <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5014814">
+          Pixabay
+        </a>
+      </p>
     </div>
   );
 }

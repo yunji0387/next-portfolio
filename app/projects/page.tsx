@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import { TextBanner } from "../components/TextBanner";
+// import { TextBanner } from "../components/TextBanner";
 import { projectList } from "@/public/infos/projects";
 
 interface Project {
@@ -55,35 +55,36 @@ export default function Projects() {
   return (
     <div className="custom-container">
       <Navbar />
+      <div className="relative w-full h-full">
+        <div className="fixed inset-0 z-[-1] flex items-end justify-end p-5">
+          <Image
+            src="/images/rabbit.png"
+            alt="peaceSignLight"
+            width={300}
+            height={300}
+            priority={false}
+            className="select-none opacity-30 short:xl:opacity-80 dark:hidden"
+            style={{ maxWidth: "300px", width: "auto", height: "auto" }}
+          />
+          <Image
+            src="/images/rabbit.png"
+            alt="peaceSignDark"
+            width={300}
+            height={300}
+            priority={false}
+            className="select-none opacity-30 short:xl:opacity-80 hidden dark:block"
+            style={{ maxWidth: "300px", width: "auto", height: "auto" }}
+          />
+        </div>
+      </div>
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full">
           <div className="w-full">
-            {/* <p className="font-light text-lg sm:text-2xl select-none">Projects Section</p> */}
             {projectList.map((project: Project, index: number) => (
               <div key={index} className="group flex flex-col w-full p-2 my-5">
                 <p className="w-full pl-1 font-light sm:text-lg md:text-xl">
                   {project.name}
                 </p>
-                {/* <div className="hidden group-hover:flex group-hover:flex-col group-hover:sm:flex-row gap-1 group-hover:transition-all group-hover:duration-500 group-hover:ease-in-out">
-                  <div className="flex justify-center items-center w-full sm:w-60 sm:min-w-60 sm:h-36">
-                    <div className="flex w-full sm:max-w-60 sm:h-36">
-                      <Image
-                        src={project.image}
-                        alt={project.name}
-                        width={0}
-                        height={0}
-                        layout="responsive"
-                        className="select-none w-full h-auto sm:w-60 sm:h-36 shadow-lg "
-                      />
-                    </div>
-                  </div>
-                  <div className="w-full mt-2 font-light">
-                    <div className="font-light px-1">
-                      <ExpandableText text={project.description} />
-                    </div>
-                    <TextBanner textList={project.tech_stack} />
-                  </div>
-                </div> */}
                 <div className="font-light px-1">
                   <ExpandableText text={project.description} />
                 </div>
