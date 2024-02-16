@@ -82,7 +82,7 @@ export default function Projects() {
           <div className="w-full">
             {projectList.map((project: Project, index: number) => (
               <div key={index} className="group flex flex-col w-full p-2 my-5">
-                <p className="w-full pl-1 font-light sm:text-lg md:text-xl">
+                <p className="w-full pl-1 font-light sm:text-lg md:text-xl lg:text-2xl">
                   {project.name}
                 </p>
                 <div className="font-light px-1">

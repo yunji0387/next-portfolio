@@ -29,18 +29,18 @@ export function MainCard() {
           />
         </div>
         <div className="flex flex-col justify-center z-10 md:ml-5">
-          <p className="text-xl md:text-2xl font-medium select-none">
+          <p className="text-xl md:text-2xl lg:text-3xl select-none">
             Hi, I&apos;m&nbsp;
-            <span className="text-2xl md:text-3xl font-medium select-none">
+            <span className="text-2xl md:text-4xl lg:text-5xl font-medium select-none">
               {about.firstname}
             </span>
             .
           </p>
-          <p className="text-2xl md:text-3xl font-bold select-none relative">
+          <p className="text-2xl md:text-3xl lg:text-4xl font-bold select-none relative">
             {about.title}
             <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
           </p>
-          <p className="select-none text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+          <p className="select-none text-sm sm:text-base md:text-lg lg:text-2xl xl:text-2xl">
             {about.status}
           </p>
           <div className="flex flex-row items-center mt-3">

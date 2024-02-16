@@ -95,11 +95,11 @@ export function Navbar() {
               href={item.link}
               className={`w-full flex justify-center items-center h-10 md:h-8 md:hover:h-8 xl:h-10 xl:hover:h-10 transition-all duration-200 ease-in-out ${
                 currPath === item.link
-                  ? "font-medium text-2xl xl:text-3xl 2xl:text-4xl"
-                  : "font-light text-lg xl:text-xl 2xl:text-2xl hover:text-2xl xl:hover:text-3xl 2xl:hover:text-4xl"
+                  ? "font-medium text-2xl lg:text-3xl 2xl:text-4xl"
+                  : "font-light text-lg lg:text-2xl 2xl:text-3xl hover:text-2xl xl:hover:text-3xl 2xl:hover:text-4xl"
               } text-[#4d2800] dark:text-white`}
             >
-              <p className="select-none relative">
+              <p className="select-none mt-1 lg:mt-2 relative">
                 {item.name}
                 {currPath === item.link && (
                   <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>

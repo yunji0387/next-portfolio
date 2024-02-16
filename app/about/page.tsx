@@ -32,20 +32,20 @@ export default function About() {
           </div>
 
           <div className="flex flex-col w-full p-5 z-10">
-            <p className="font-light text-lg md:text-xl select-none">
+            <p className="font-light text-lg md:text-xl lg:text-2xl select-none">
               Hi, I am{" "}
-              <span className="text-xl md:text-2xl font-medium">
+              <span className="text-xl md:text-2xl lg:text-4xl font-medium">
                 {about.firstname} {about.lastname}
               </span>
               .
             </p>
 
-            <p className="font-black text-xl xs:text-2xl md:text-3xl select-none w-fit relative underline underline-full sm:no-underline decoration-2">
+            <p className="font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl select-none w-fit relative underline underline-full sm:no-underline decoration-2">
               {about.title}
               <span className="hidden sm:block absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
             </p>
 
-            <p className="select-none text-justify text-sm xs:text-base md:text-lg">
+            <p className="select-none text-justify text-sm sm:text-base md:text-lg lg:text-xl">
               {about.description}
             </p>
 
@@ -65,7 +65,7 @@ export default function About() {
                 {workExperience.map((work) => (
                   <div
                     key={work.company}
-                    className="w-full p-1 text-sm xs:text-base md:text-base lg:text-lg"
+                    className="w-full p-1 text-sm sm:text-base md:text-base lg:text-lg"
                   >
                     <p className="font-bold">{work.company}</p>
                     <p className="font-medium">{work.title}</p>
@@ -86,7 +86,7 @@ export default function About() {
                   {education.map((edu) => (
                     <div
                       key={edu.school}
-                      className="p-2 sm:p-3 text-sm xs:text-base lg:text-lg text-center italic"
+                      className="p-2 sm:p-3 text-sm sm:text-base lg:text-lg text-center italic"
                     >
                       <p className="font-medium">{edu.school}</p>
                       <p className="font-normal">{edu.degree}</p>
@@ -110,7 +110,7 @@ export default function About() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="flex flex-row gap-2 w-full items-center p-1 sm:p-2 text-sm md:text-base hover:bg-gray-200 dark:hover:bg-gray-700 bg-opacity-90 transition-all duration-300 ease-in-out">
+                      <div className="flex flex-row gap-2 w-full items-center p-1 sm:p-2 text-sm md:text-base hover:bg-amber-200 dark:hover:bg-gray-700 hover:bg-opacity-30 dark:hover:bg-opacity-30 transition-all duration-300 ease-in-out">
                         <div>
                           <p className="">{cert.name}</p>
                           <p className="font-normal">{cert.organization}</p>

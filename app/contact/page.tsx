@@ -34,8 +34,8 @@ export default function Contact() {
         <div className="w-full relative"></div>
         <div className="w-full">
           <div className="flex flex-col justify-center p-1 md:p-5 w-full">
-            <div className="p-2 flex flex-row gap-2 items-end">
-              <p className="select-none font-light text-3xl">Email</p>
+            <div className="p-2 flex flex-row gap-2 items-center">
+              <p className="select-none font-light text-3xl md:text-4xl">Email</p>
               <Link
                 href={emailContact ? emailContact.link : "#"}
                 className="underline hover:font-bold hover:text-blue-500 dark:hover:text-blue-300 transition-all duration-100 ease-in-out"
@@ -49,7 +49,7 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-col justify-center w-full h-full my-2 mt-2">
-              <p className="text-lg sm:text-2xl font-light select-none">
+              <p className="text-lg sm:text-2xl md:text-3xl font-light select-none">
                 Send Me a Message.
               </p>
               <ContactUs />
