@@ -40,12 +40,14 @@ export default function About() {
               .
             </p>
 
-            <p className="font-black text-2xl md:text-3xl select-none w-fit relative">
+            <p className="font-black text-xl xs:text-2xl md:text-3xl select-none w-fit relative underline underline-full sm:no-underline decoration-2">
               {about.title}
-              <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
+              <span className="hidden sm:block absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
             </p>
 
-            <p className="text-justify md:text-lg">{about.description}</p>
+            <p className="text-justify text-sm xs:text-base md:text-lg">
+              {about.description}
+            </p>
 
             <div className="m-2">
               <ContactIconList showResume={true} />
