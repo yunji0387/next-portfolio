@@ -52,7 +52,6 @@ export function MainCard() {
         <div>
           <ImageBanner imageList={skillsIconList} speed={8000} />
         </div>
-        {/* <div className="absolute inset-0 bg-[rgba(76,47,39,0.5)] mix-blend-multiply" /> */}
       </div>
     </div>
   );

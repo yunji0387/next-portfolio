@@ -91,8 +91,8 @@ export default function About() {
                       <p className="font-medium">{edu.school}</p>
                       <p className="font-normal">{edu.degree}</p>
                       <p className="font-semibold">{edu.major}</p>
-                      <p className="font-thin">{edu.date}</p>
-                      <p className="font-light">{edu.location}</p>
+                      <p className="font-light">{edu.date}</p>
+                      <p className="font-medium">{edu.location}</p>
                     </div>
                   ))}
                 </div>
@@ -116,25 +116,6 @@ export default function About() {
                           <p className="font-normal">{cert.organization}</p>
                           <p className="font-light">{cert.date}</p>
                         </div>
-                        {/* <div className="hidden xl:block">
-                      <Image
-                        src={cert.image}
-                        alt={cert.organization}
-                        width={50}
-                        height={50}
-                        className="select-none m-1 mr-2"
-                      />
-                    </div>
-                    <div>
-                      <p className="hidden xl:block">
-                        {cert.name} - {cert.organization}
-                      </p>
-                      <p className="xl:hidden">{cert.name}</p>
-                      <p className="font-normal xl:hidden">
-                        {cert.organization}
-                      </p>
-                      <p className="font-light">{cert.date}</p>
-                    </div> */}
                       </div>
                     </Link>
                   ))}

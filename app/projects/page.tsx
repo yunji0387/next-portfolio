@@ -59,20 +59,20 @@ export default function Projects() {
         <div className="fixed inset-0 z-[-1] flex items-end justify-end m-5">
           <Image
             src="/images/rabbit.png"
-            alt="peaceSignLight"
+            alt="rabbit"
             width={500}
             height={500}
             priority={false}
-            className="select-none opacity-30 tall:xl:opacity-50 tall:2xl:opacity-80 dark:hidden"
+            className="w-auto h-auto select-none opacity-10 tall:xl:opacity-50 tall:2xl:opacity-80 dark:hidden"
             style={{ maxWidth: "500px", width: "auto", height: "auto" }}
           />
           <Image
             src="/images/rabbit.png"
-            alt="peaceSignDark"
+            alt="rabbit"
             width={500}
             height={500}
             priority={false}
-            className="select-none opacity-30 tall:xl:opacity-50 tall:2xl:opacity-80 hidden dark:block"
+            className="w-auto h-auto select-none opacity-30 tall:xl:opacity-50 tall:2xl:opacity-80 hidden dark:block"
             style={{ maxWidth: "500px", width: "auto", height: "auto" }}
           />
         </div>
@@ -103,7 +103,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer showIcons={true} />
     </div>
   );
 

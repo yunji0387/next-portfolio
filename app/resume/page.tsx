@@ -6,7 +6,6 @@ export default function Resume() {
     <div className="custom-container h-[80vh]">
       <Navbar />
       <div className="w-full h-full flex flex-col justify-center items-center m-2">
-      {/* <p className="w-full font-light text-lg sm:text-2xl select-none">Resume</p> */}
         <object
           data="/resume.pdf"
           type="application/pdf"
