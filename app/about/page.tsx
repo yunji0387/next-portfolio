@@ -16,14 +16,14 @@ export default function About() {
         <div className="flex flex-col sm:flex-row gap-2 w-full relative">
           <div className="absolute inset-0 z-0 md:static w-full md:w-56 md:h-56 flex items-center justify-center grayscale">
             <Image
-              src="/images/developmentImg.png"
-              alt="developmentImg"
+              src="/images/developmentLight.png"
+              alt="developmentImgLight"
               width={200}
               height={200}
               className="select-none min-w-[200px] opacity-10 md:opacity-100 dark:hidden"
             />
             <Image
-              src="/images/developmentImgDark.png"
+              src="/images/developmentDark.png"
               alt="developmentImgDark"
               width={200}
               height={200}

@@ -56,24 +56,24 @@ export default function Projects() {
     <div className="custom-container">
       <Navbar />
       <div className="relative w-full h-full">
-        <div className="fixed inset-0 z-[-1] flex items-end justify-end p-5">
+        <div className="fixed inset-0 z-[-1] flex items-end justify-end m-5">
           <Image
             src="/images/rabbit.png"
             alt="peaceSignLight"
-            width={300}
-            height={300}
+            width={500}
+            height={500}
             priority={false}
-            className="select-none opacity-30 short:xl:opacity-80 dark:hidden"
-            style={{ maxWidth: "300px", width: "auto", height: "auto" }}
+            className="select-none opacity-30 tall:xl:opacity-50 tall:2xl:opacity-80 dark:hidden"
+            style={{ maxWidth: "500px", width: "auto", height: "auto" }}
           />
           <Image
             src="/images/rabbit.png"
             alt="peaceSignDark"
-            width={300}
-            height={300}
+            width={500}
+            height={500}
             priority={false}
-            className="select-none opacity-30 short:xl:opacity-80 hidden dark:block"
-            style={{ maxWidth: "300px", width: "auto", height: "auto" }}
+            className="select-none opacity-30 tall:xl:opacity-50 tall:2xl:opacity-80 hidden dark:block"
+            style={{ maxWidth: "500px", width: "auto", height: "auto" }}
           />
         </div>
       </div>
