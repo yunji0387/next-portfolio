@@ -45,7 +45,7 @@ export default function About() {
               <span className="hidden sm:block absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
             </p>
 
-            <p className="text-justify text-sm xs:text-base md:text-lg">
+            <p className="select-none text-justify text-sm xs:text-base md:text-lg">
               {about.description}
             </p>
 

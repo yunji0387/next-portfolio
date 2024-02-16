@@ -40,7 +40,7 @@ export function MainCard() {
             {about.title}
             <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
           </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+          <p className="select-none text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
             {about.status}
           </p>
           <div className="flex flex-row items-center mt-3">
