@@ -70,8 +70,8 @@ export default function About() {
                     <p className="font-bold">{work.company}</p>
                     <p className="font-medium">{work.title}</p>
                     <p className="font-light">{work.date}</p>
-                    <p className="">{work.location}</p>
-                    <p className="font-extralight">{work.description}</p>
+                    <p className="font-normal">{work.location}</p>
+                    <p className="font-light">{work.description}</p>
                   </div>
                 ))}
               </div>

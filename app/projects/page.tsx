@@ -39,7 +39,7 @@ const ExpandableText: React.FC<ExpandableTextProps> = ({ text }) => {
           {text.length > 100 && (
             <button
               onClick={toggleExpanded}
-              className="text-sm text-blue-500 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-500"
+              className="text-sm text-blue-600 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-200"
             >
               {isExpanded ? "Show Less" : "... Read More"}
             </button>
@@ -82,18 +82,18 @@ export default function Projects() {
           <div className="w-full">
             {projectList.map((project: Project, index: number) => (
               <div key={index} className="group flex flex-col w-full p-2 my-5">
-                <p className="w-full pl-1 font-light sm:text-lg md:text-xl lg:text-2xl">
+                <p className="w-full pl-1 font-medium sm:text-lg md:text-xl lg:text-2xl">
                   {project.name}
                 </p>
-                <div className="font-light px-1">
+                <div className="px-1">
                   <ExpandableText text={project.description} />
                 </div>
                 <div className="w-fit flex flex-col xs:flex-row text-sm md:text-base underline">
                   <Link href={project.link} passHref className="w-fit">
-                    <p className="p-1 hover:font-semibold w-fit">Web Link</p>
+                    <p className="p-1 hover:font-semibold hover:text-blue-600 dark:hover:text-blue-300 w-fit">Web Link</p>
                   </Link>
                   <Link href={project.github_repo} passHref className="w-fit">
-                    <p className="p-1 sm:pl-5 hover:font-medium w-fit">
+                    <p className="p-1 sm:pl-5 hover:font-medium hover:text-blue-600 dark:hover:text-blue-300 w-fit">
                       GitHub Repo Link
                     </p>
                   </Link>

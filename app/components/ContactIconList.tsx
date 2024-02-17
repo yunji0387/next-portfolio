@@ -21,6 +21,8 @@ export function ContactIconList({ showResume = false }: ContactIconListProps) {
           href={contact.link}
           target="_blank"
           rel="noopener noreferrer"
+          aria-disabled={!contact.isAvailable}
+          tabIndex={contact.isAvailable ? 0 : -1}
           key={index}
           className={`mx-1 flex flex-row items-center ${
             contact.isAvailable

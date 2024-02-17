@@ -49,7 +49,7 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-col justify-center w-full h-full my-2 mt-2">
-              <p className="text-lg sm:text-2xl md:text-3xl font-light select-none">
+              <p className="text-lg sm:text-2xl md:text-3xl select-none">
                 Send Me a Message.
               </p>
               <ContactUs />
