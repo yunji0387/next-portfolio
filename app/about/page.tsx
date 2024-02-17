@@ -20,14 +20,14 @@ export default function About() {
               alt="developmentImgLight"
               width={200}
               height={200}
-              className="select-none min-w-[200px] opacity-10 md:opacity-100 dark:hidden"
+              className="select-none min-w-[200px] opacity-20 md:opacity-100 dark:hidden"
             />
             <Image
               src="/images/developmentDark.png"
               alt="developmentImgDark"
               width={200}
               height={200}
-              className="select-none min-w-[200px] opacity-10 md:opacity-100 hidden dark:block"
+              className="select-none min-w-[200px] opacity-20 md:opacity-100 hidden dark:block"
             />
           </div>
 
@@ -130,14 +130,14 @@ export default function About() {
               alt="footballLight"
               width={500}
               height={500}
-              className="select-none opacity-10 w-[500px] max-w-[500px] xl:opacity-80 dark:hidden"
+              className="select-none opacity-20 w-[500px] max-w-[500px] xl:opacity-80 dark:hidden"
             />
             <Image
               src="/images/footballDark.png"
               alt="footballDark"
               width={500}
               height={500}
-              className="select-none opacity-10 w-[500px] max-w-[500px] xl:opacity-80 hidden dark:block"
+              className="select-none opacity-20 w-[500px] max-w-[500px] xl:opacity-80 hidden dark:block"
             />
           </div>
         </div>

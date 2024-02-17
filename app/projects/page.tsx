@@ -58,7 +58,7 @@ export default function Projects() {
       <div className="relative w-full h-full">
         <div className="fixed inset-0 z-[-1] flex items-end justify-end m-5">
           <Image
-            src="/images/rabbit.png"
+            src="/images/rabbitLight.png"
             alt="rabbit"
             width={500}
             height={500}
@@ -67,8 +67,8 @@ export default function Projects() {
             style={{ maxWidth: "500px", width: "auto", height: "auto" }}
           />
           <Image
-            src="/images/rabbit.png"
-            alt="rabbit"
+            src="/images/rabbitDark.png"
+            alt="rabbitDark"
             width={500}
             height={500}
             priority={false}
