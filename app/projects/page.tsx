@@ -39,7 +39,7 @@ const ExpandableText: React.FC<ExpandableTextProps> = ({ text }) => {
           {text.length > 100 && (
             <button
               onClick={toggleExpanded}
-              className="text-sm text-blue-600 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-200"
+              className="text-sm text-blue-600 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-200 hover:font-semibold"
             >
               {isExpanded ? "Show Less" : "... Read More"}
             </button>
@@ -90,10 +90,10 @@ export default function Projects() {
                 </div>
                 <div className="w-fit flex flex-col xs:flex-row text-sm md:text-base underline">
                   <Link href={project.link} passHref className="w-fit">
-                    <p className="p-1 hover:font-semibold hover:text-blue-600 dark:hover:text-blue-300 w-fit">Web Link</p>
+                    <p className="p-1 hover:font-bold hover:text-blue-600 dark:hover:text-blue-300 w-fit transition-all duration-200">Web Link</p>
                   </Link>
                   <Link href={project.github_repo} passHref className="w-fit">
-                    <p className="p-1 sm:pl-5 hover:font-medium hover:text-blue-600 dark:hover:text-blue-300 w-fit">
+                    <p className="p-1 sm:pl-5 hover:font-bold hover:text-blue-600 dark:hover:text-blue-300 w-fit transition-all duration-200">
                       GitHub Repo Link
                     </p>
                   </Link>
