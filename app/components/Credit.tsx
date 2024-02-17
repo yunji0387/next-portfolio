@@ -42,12 +42,6 @@ export function Credit() {
       >
         Dark mode icons created by Uniconlabs - Flaticon
       </a>
-      <a
-        href="https://pixabay.com/users/wikiimages-1897/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=11048"
-        title="Earth, Map, Atlas image. Free for use."
-      >
-        Image by WikiImages from Pixabay
-      </a>
       <a href="https://www.freepik.com/free-photo/soft-concrete-texture_1128878.htm#query=moon%20texture&position=24&from_view=search&track=ais&uuid=818685a3-2484-4de7-ac56-b418cb2a0a87">
         Image by kues1 on Freepik
       </a>
