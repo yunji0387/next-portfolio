@@ -130,14 +130,14 @@ export default function About() {
               alt="footballLight"
               width={500}
               height={500}
-              className="select-none opacity-20 w-[500px] max-w-[500px] xl:opacity-80 dark:hidden"
+              className="select-none opacity-20 w-[500px] max-w-[500px] xl:opacity-100 dark:hidden"
             />
             <Image
               src="/images/footballDark.png"
               alt="footballDark"
               width={500}
               height={500}
-              className="select-none opacity-20 w-[500px] max-w-[500px] xl:opacity-80 hidden dark:block"
+              className="select-none opacity-20 w-[500px] max-w-[500px] xl:opacity-100 hidden dark:block"
             />
           </div>
         </div>

@@ -89,7 +89,7 @@ export const ContactUs = () => {
         </div>
         <button
           type="submit"
-          className="w-full mt-2 p-1 rounded-md bg-yellow-950 dark:bg-gray-400 hover:bg-yellow-900 dark:hover:bg-gray-300 text-white dark:text-black text-lg lg:text-xl"
+          className="w-full mt-2 p-1 rounded-md bg-yellow-950 dark:bg-gray-100 hover:bg-yellow-900 dark:hover:bg-gray-200 text-white dark:text-black text-lg lg:text-xl"
         >
           Send
         </button>

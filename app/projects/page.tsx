@@ -63,7 +63,7 @@ export default function Projects() {
             width={500}
             height={500}
             priority={false}
-            className="w-auto h-auto select-none opacity-10 tall:xl:opacity-50 tall:2xl:opacity-80 dark:hidden"
+            className="w-auto h-auto select-none opacity-10 tall:xl:opacity-80 tall:2xl:opacity-100 dark:hidden"
             style={{ maxWidth: "500px", width: "auto", height: "auto" }}
           />
           <Image
@@ -72,7 +72,7 @@ export default function Projects() {
             width={500}
             height={500}
             priority={false}
-            className="w-auto h-auto select-none opacity-30 tall:xl:opacity-50 tall:2xl:opacity-80 hidden dark:block"
+            className="w-auto h-auto select-none opacity-30 tall:xl:opacity-80 tall:2xl:opacity-100 hidden dark:block"
             style={{ maxWidth: "500px", width: "auto", height: "auto" }}
           />
         </div>
