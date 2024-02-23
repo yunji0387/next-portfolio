@@ -91,12 +91,20 @@ export function Navbar() {
                 : "bg-white dark:bg-black hover:bg-gray-100 dark:hover:bg-gray-800 md:bg-transparent dark:md:bg-transparent hover:md:bg-transparent dark:hover:md:bg-transparent md:border-none border-indigo-950 dark:border-white"
             } border-yellow-950 dark:border-white`}
           >
-            <Link
+            {/* <Link
               href={item.link}
               className={`w-full flex justify-center items-center h-10 md:h-8 md:hover:h-8 xl:h-10 xl:hover:h-10 transition-all duration-200 ease-in-out ${
                 currPath === item.link
                   ? "font-semibold text-2xl lg:text-3xl 2xl:text-4xl"
                   : "font-normal text-lg lg:text-2xl 2xl:text-3xl hover:text-2xl xl:hover:text-3xl 2xl:hover:text-4xl"
+              } text-[#4d2800] dark:text-white`}
+            > */}
+            <Link
+              href={item.link}
+              className={`w-full flex justify-center items-center h-10 md:h-8 md:hover:h-8 xl:h-10 xl:hover:h-10 transition-all duration-200 ease-in-out ${
+                currPath === item.link
+                  ? "font-semibold text-2xl xl:text-3xl"
+                  : "font-normal text-lg xl:text-xl"
               } text-[#4d2800] dark:text-white`}
             >
               <p className="select-none mt-1 lg:mt-2 relative">
@@ -108,7 +116,10 @@ export function Navbar() {
             </Link>
           </li>
         ))}
-        <li className="hidden md:flex md:justify-center md:items-center xl:min-w-20 xl:scale-125">
+        {/* <li className="hidden md:flex md:justify-center md:items-center xl:min-w-20 xl:scale-125">
+          <ThemeSwitcher />
+        </li> */}
+        <li className="hidden md:flex md:justify-center md:items-center">
           <ThemeSwitcher />
         </li>
       </ul>
