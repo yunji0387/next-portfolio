@@ -10,7 +10,7 @@ import { projectList } from "@/public/infos/projects";
 interface Project {
   name: string;
   description: string;
-  image: string;
+  image?: string;
   link: string;
   github_repo: string;
   tech_stack: string[];
