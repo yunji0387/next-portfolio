@@ -1,5 +1,12 @@
 export const projectList = [
     {
+        name: "Football League Standings API Server",
+        description: "This Node.js backend server is designed to manage football league standings, including creating, updating, retrieving, and deleting standings. It leverages MongoDB, a NoSQL database, to store competition data and interacts with the 'api.football-data.org' API to fetch real-time competition standings.",
+        link: "https://football-standings-backend-9c023af5d229.herokuapp.com/",
+        github_repo: "https://github.com/yunji0387/football-standings-backend",
+        tech_stack: ['Node.js', 'Express', 'MongoDB', 'RESTful API', 'Heroku', 'NoSQL', 'Mongoose', 'Chai', 'Supertest', 'API Testing', 'GitHub Actions'],
+    },
+    {
         name: "Sky Cast Weather App",
         description: "Sky Cast is a React-based web app providing current weather updates and forecasts using Google Maps APIs.",
         link: "https://sky-cast-854836ef4892.herokuapp.com/",
