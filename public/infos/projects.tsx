@@ -55,6 +55,13 @@ export const projectList = [
         image: "/images/projects/hydrologicalAnalysis.png",
     },
     {
+        name: "Next.js Multi-Step Form App",
+        description: "This web app is a multi-step form built with Next.js and TailwindCSS, designed to collect user information and submit it to the server.",
+        link: "https://next-form-app-pi.vercel.app/",
+        github_repo: "https://github.com/yunji0387/next-form-app",
+        tech_stack: ['Next.js', 'TypeScript', 'TailwindCSS', 'Responsive Design', 'Vercel'],
+    },
+    {
         name: "React Portfolio Website",
         description: "This website is a React-based portfolio web app.",
         link: "https://yunji0387.github.io/my-portfolio/",
