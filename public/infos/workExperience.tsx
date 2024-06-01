@@ -3,7 +3,7 @@ export const workExperience = [
         company: "Dollarama",
         title: "Store Associate",
         jobType: "Part-time",
-        date: "Nov 2023 - Present",
+        date: "Nov 2023 - Jun 2024",
         location: "Winnipeg, Manitoba, Canada",
         description: "Merchandised products, managed cash register operations, and provided customer service.",
     },
