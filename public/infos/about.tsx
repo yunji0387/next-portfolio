@@ -3,5 +3,6 @@ export const about = {
     lastname: "How",
     title: "Aspiring Software Engineer",
     status: "Looking for new opportunities.",
+    slogan: "Starting Small, Dreaming Big.",
     description: "Passionate about software engineering, ready to apply skills in practical software development environments.",
 }

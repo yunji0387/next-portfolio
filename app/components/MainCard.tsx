@@ -40,8 +40,11 @@ export function MainCard() {
             {about.title}
             <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
           </p>
-          <p className="select-none text-sm sm:text-base md:text-lg lg:text-2xl xl:text-2xl">
+          {/* <p className="select-none text-sm sm:text-base md:text-lg lg:text-2xl xl:text-2xl">
             {about.status}
+          </p> */}
+          <p className="select-none text-base sm:text-lg md:text-xl lg:text-2xl">
+            {about.slogan}
           </p>
           <div className="flex flex-row items-center mt-3">
             <ContactIconList showResume={true} />
