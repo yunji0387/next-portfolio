@@ -67,7 +67,7 @@ export const ContactUs = () => {
       >
         <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-5">
           <div className="flex flex-col w-full">
-            <label className="font-light select-none">Name</label>
+            <label className="select-none">Name</label>
             <input
               type="text"
               name="user_name"
@@ -79,7 +79,7 @@ export const ContactUs = () => {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label className="font-light select-none">Email</label>
+            <label className="select-none">Email</label>
             <input
               type="email"
               name="user_email"
@@ -91,7 +91,7 @@ export const ContactUs = () => {
             />
           </div>
           <div className="flex flex-col w-full max-h-[22rem] overflow-auto">
-            <label className="font-light select-none">Message</label>
+            <label className="select-none">Message</label>
             <textarea
               name="message"
               required
