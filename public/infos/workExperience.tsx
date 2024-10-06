@@ -1,5 +1,13 @@
 export const workExperience = [
     {
+        company: "RBC Capital Markets",
+        title: "Systems Analyst",
+        jobType: "Full-time",
+        date: "Jul 2024 - Present",
+        location: "Putrajaya, Malaysia",
+        description: "Collaborate with cross-functional teams to analyze and improve financial systems, streamline processes, and ensure efficient system operations.",
+    },
+    {
         company: "Dollarama",
         title: "Store Associate",
         jobType: "Part-time",
