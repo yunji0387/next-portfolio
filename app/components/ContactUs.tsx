@@ -74,7 +74,7 @@ export const ContactUs = () => {
               required
               minLength={2}
               maxLength={50}
-              className="p-1 pl-2 font-light bg-transparent border-b border-yellow-950 dark:border-white"
+              className="p-1 pl-2 font-light bg-transparent border-b border-yellow-950 dark:border-white placeholder-yellow-800 dark:placeholder-gray-300"
               placeholder="Write your Name here..."
             />
           </div>
@@ -86,7 +86,7 @@ export const ContactUs = () => {
               required
               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
               title="Please enter a valid email address."
-              className="p-1 pl-2 font-light bg-transparent border-b border-yellow-950 dark:border-white"
+              className="p-1 pl-2 font-light bg-transparent border-b border-yellow-950 dark:border-white placeholder-yellow-800 dark:placeholder-gray-300"
               placeholder="Write your email here..."
             />
           </div>
@@ -96,7 +96,7 @@ export const ContactUs = () => {
               name="message"
               required
               minLength={10}
-              className="p-1 px-2 font-light bg-transparent border-b border-yellow-950 dark:border-white"
+              className="p-1 px-2 font-light bg-transparent border-b border-yellow-950 dark:border-white placeholder-yellow-800 dark:placeholder-gray-300"
               placeholder="Write your message here..."
             />
           </div>
