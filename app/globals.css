@@ -43,6 +43,7 @@ body {
   align-items: center;
   justify-content: center;
   animation: scrollLeft var(--speed) linear infinite backwards;
+  color: rgb(77, 40, 0);
 }
 
 @keyframes scrollLeft {
