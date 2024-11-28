@@ -46,7 +46,7 @@ export default function About() {
             </p>
 
             <p className="select-none text-justify text-sm sm:text-base md:text-lg lg:text-xl">
-              {about.description}
+              {about.slogan}
             </p>
 
             <div className="m-2">
