@@ -65,10 +65,10 @@ export default function About() {
                 {workExperience.map((work) => (
                   <div
                     key={work.company}
-                    className="w-full p-1 text-sm sm:text-base md:text-base lg:text-lg"
+                    className="w-full p-2 text-sm sm:text-base md:text-base lg:text-lg"
                   >
-                    <p className="font-bold">{work.company}</p>
-                    <p className="font-medium">{work.title}</p>
+                    <p className="font-bold">{work.title}</p>
+                    <p className="font-medium">{work.company}</p>
                     <p className="font-light">{work.date}</p>
                     <p className="font-normal">{work.location}</p>
                     <p className="font-light">{work.description}</p>
@@ -82,15 +82,15 @@ export default function About() {
                 <p className="font-light text-2xl sm:text-4xl select-none">
                   Education
                 </p>
-                <div className="flex items-center justify-center md:justify-start xl:justify-center w-full my-2 xl:h-60">
+                <div className="flex w-full xl:h-60">
                   {education.map((edu) => (
                     <div
                       key={edu.school}
-                      className="p-2 sm:p-3 text-sm sm:text-base lg:text-lg text-center italic"
+                      className="p-2 text-sm sm:text-base lg:text-lg italic"
                     >
-                      <p className="font-medium">{edu.school}</p>
                       <p className="font-normal">{edu.degree}</p>
                       <p className="font-semibold">{edu.major}</p>
+                      <p className="font-medium">{edu.school}</p>
                       <p className="font-light">{edu.date}</p>
                       <p className="font-medium">{edu.location}</p>
                     </div>
