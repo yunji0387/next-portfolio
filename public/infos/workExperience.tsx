@@ -5,7 +5,7 @@ export const workExperience = [
         jobType: "Full-time",
         date: "Jul 2024 - Present",
         location: "Putrajaya, Malaysia",
-        description: "Collaborate with cross-functional teams to analyze and improve financial systems, streamline processes, and ensure efficient system operations.",
+        description: "Collateral management, Agile (Scrum), Jira, Confluence, GitHub, Django, React",
     },
     {
         company: "Dollarama",
@@ -13,7 +13,7 @@ export const workExperience = [
         jobType: "Part-time",
         date: "Nov 2023 - Jun 2024",
         location: "Winnipeg, Manitoba, Canada",
-        description: "Merchandised products, managed cash register operations, and provided customer service.",
+        description: "POS system, merchandising, transactions, heavy lifting",
     },
     {
         company: "Genting Group",
@@ -21,6 +21,6 @@ export const workExperience = [
         jobType: "Contract Part-time",
         date: "Dec 2017 - Mar 2018",
         location: "Genting Highlands, Pahang, Malaysia",
-        description: "Consistently dealt cards for table games, ensuring fair gameplay, managed bet calculations and transactions.",
+        description: "Baccarat, Three Pictures, chip & card handling",
     },
 ];
