@@ -5,7 +5,7 @@ export const workExperience = [
         jobType: "Full-time",
         date: "Jul 2024 - Present",
         location: "Putrajaya, Malaysia",
-        description: "Collateral management, Agile (Scrum), Jira, Confluence, GitHub, Django, React",
+        description: "Agile (Scrum), Jira, Confluence, GitHub, Django, React, Copilot",
     },
     {
         company: "Dollarama",
