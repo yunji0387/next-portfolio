@@ -51,11 +51,11 @@ export function MainCard() {
           </div>
         </div>
       </div>
-      <div className="grayscale w-full max-w-[800px]">
+      {/* <div className="grayscale w-full max-w-[800px]">
         <div>
           <ImageBanner imageList={skillsIconList} speed={8000} />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
