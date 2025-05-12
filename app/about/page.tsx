@@ -56,7 +56,7 @@ export default function About() {
         </div>
 
         <div className="flex flex-row w-full items-center justify-center xl:justify-between relative">
-          <div className="w-full xl:min-w-[915px] flex flex-col">
+          <div className="w-full xl:min-w-[915px] flex flex-col gap-6">
             <div className="w-full">
               <p className="font-light text-2xl sm:text-4xl select-none">
                 Work Experience
@@ -71,55 +71,53 @@ export default function About() {
                     <p className="font-medium">{work.company}</p>
                     <p className="font-light">{work.date}</p>
                     <p className="font-normal">{work.location}</p>
-                    <p className="font-light">{work.description}</p>
+                    {/* <p className="font-light">{work.description}</p> */}
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="mt-5 flex flex-col xl:flex-row gap-2 w-full">
-              <div className="my-2 w-full xl:w-[350px] xl:min-w-[350px]">
-                <p className="font-light text-2xl sm:text-4xl select-none">
-                  Education
-                </p>
-                <div className="flex w-full xl:h-60">
-                  {education.map((edu) => (
-                    <div
-                      key={edu.school}
-                      className="p-2 text-sm sm:text-base lg:text-lg italic"
-                    >
-                      <p className="font-normal">{edu.degree}</p>
-                      <p className="font-semibold">{edu.major}</p>
-                      <p className="font-medium">{edu.school}</p>
-                      <p className="font-light">{edu.date}</p>
-                      <p className="font-medium">{edu.location}</p>
-                    </div>
-                  ))}
-                </div>
+            <div className="w-full xl:w-[350px] xl:min-w-[350px]">
+              <p className="font-light text-2xl sm:text-4xl select-none">
+                Education
+              </p>
+              <div className="flex w-full">
+                {education.map((edu) => (
+                  <div
+                    key={edu.school}
+                    className="p-2 text-sm sm:text-base lg:text-lg italic"
+                  >
+                    <p className="font-normal">{edu.degree}</p>
+                    <p className="font-semibold">{edu.major}</p>
+                    <p className="font-medium">{edu.school}</p>
+                    <p className="font-light">{edu.date}</p>
+                    <p className="font-medium">{edu.location}</p>
+                  </div>
+                ))}
               </div>
+            </div>
 
-              <div className="my-2 w-full xl:w-[500px] xl:min-w-[500px]">
-                <p className="font-light text-2xl sm:text-4xl select-none">
-                  Certifications
-                </p>
-                <div className="my-2 overflow-auto h-60 max-h-60">
-                  {certificationsList.map((cert) => (
-                    <Link
-                      key={cert.name}
-                      href={cert.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <div className="flex flex-row gap-2 w-full items-center p-1 sm:p-2 text-sm md:text-base hover:bg-amber-200 dark:hover:bg-gray-700 hover:bg-opacity-30 dark:hover:bg-opacity-30 transition-all duration-300 ease-in-out">
-                        <div>
-                          <p className="">{cert.name}</p>
-                          <p className="font-normal">{cert.organization}</p>
-                          <p className="font-light">{cert.date}</p>
-                        </div>
+            <div className="w-full xl:w-[500px] xl:min-w-[500px]">
+              <p className="font-light text-2xl sm:text-4xl select-none">
+                Certifications
+              </p>
+              <div className="p-1">
+                {certificationsList.map((cert) => (
+                  <Link
+                    key={cert.name}
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="flex flex-row gap-2 w-full items-center p-1 sm:p-2 text-sm md:text-base hover:bg-amber-200 dark:hover:bg-gray-700 hover:bg-opacity-30 dark:hover:bg-opacity-30 transition-all duration-300 ease-in-out">
+                      <div>
+                        <p className="font-medium">{cert.name}</p>
+                        <p>{cert.organization}</p>
+                        <p className="font-light">{cert.date}</p>
                       </div>
-                    </Link>
-                  ))}
-                </div>
+                    </div>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
