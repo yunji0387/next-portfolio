@@ -55,7 +55,7 @@ export function Navbar() {
             className="select-none hidden dark:block"
           />
         </div>
-        <ThemeSwitcher />
+          <ThemeSwitcher />
       </div>
 
       {/* Combined Menu */}
@@ -108,7 +108,7 @@ export function Navbar() {
             </Link>
           </li>
         ))}
-        <li className="hidden md:flex md:justify-center md:items-center xl:min-w-20 xl:scale-125">
+        <li className="hidden md:h-full md:flex md:justify-center md:items-center lg:items-end lg:min-w-24 lg:scale-125 lg:mb-8">
           <ThemeSwitcher />
         </li>
       </ul>
