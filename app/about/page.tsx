@@ -32,17 +32,21 @@ export default function About() {
           </div>
 
           <div className="flex flex-col w-full p-5 z-10">
-            <p className="font-light text-lg md:text-xl lg:text-2xl select-none">
+            <p className="mt-4 md:mt-6 font-light text-lg md:text-xl lg:text-2xl select-none">
               Hi, I am{" "}
-              <span className="text-xl md:text-2xl lg:text-4xl font-medium">
-                {about.firstname} {about.lastname}
+              <span className="text-3xl md:text-4xl font-medium">
+                {about.firstname}
               </span>
               .
             </p>
 
-            <p className="font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl select-none w-fit relative underline underline-full sm:no-underline decoration-2">
+            {/* <p className="font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl select-none w-fit relative underline underline-full sm:no-underline decoration-2">
               {about.title}
               <span className="hidden sm:block absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
+            </p> */}
+            <p className="font-black text-2xl md:text-3xl lg:text-4xl select-none w-fit relative decoration-2">
+              {about.title}
+              <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-1 sm:h-2 w-full"></span>
             </p>
 
             {/* <p className="select-none text-justify text-sm sm:text-base md:text-lg lg:text-xl">
