@@ -13,7 +13,7 @@ export default function About() {
     <div className="custom-container">
       <Navbar />
       <div className="flex flex-col justify-center items-center w-full gap-2">
-        <div className="flex flex-col sm:flex-row gap-2 w-full relative">
+        <div className="flex flex-col items-center sm:flex-row gap-2 w-full relative">
           <div className="absolute inset-0 z-0 md:static w-full md:w-56 md:h-56 flex items-center justify-center grayscale">
             <Image
               src="/images/developmentLight.png"
@@ -45,9 +45,9 @@ export default function About() {
               <span className="hidden sm:block absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
             </p>
 
-            <p className="select-none text-justify text-sm sm:text-base md:text-lg lg:text-xl">
+            {/* <p className="select-none text-justify text-sm sm:text-base md:text-lg lg:text-xl">
               {about.slogan}
-            </p>
+            </p> */}
 
             <div className="m-2">
               <ContactIconList showResume={true} />
