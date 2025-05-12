@@ -60,7 +60,7 @@ export function Navbar() {
 
       {/* Combined Menu */}
       <ul
-        className={`flex flex-col md:flex-row items-center justify-center overflow-hidden absolute md:relative w-full md:h-16 ${
+        className={`flex flex-col gap-2 md:flex-row md:items-center justify-center overflow-hidden absolute md:relative w-full md:h-16 ${
           isOpen
             ? "max-h-96 opacity-100 transition-all duration-500 ease-in-out"
             : "max-h-0 opacity-0 md:max-h-full md:opacity-100"
@@ -85,10 +85,10 @@ export function Navbar() {
         {navItems.map((item) => (
           <li
             key={item.name}
-            className={`flex items-center justify-center w-full rounded-lg border mx-2 my-1 md:my-0 ${
+            className={`flex items-center justify-center w-36 md:w-full rounded-lg border ${
               currPath === item.link
                 ? "bg-amber-100 dark:bg-indigo-900 md:bg-transparent dark:md:bg-transparent md:border-none"
-                : "bg-white dark:bg-black hover:bg-gray-100 dark:hover:bg-gray-800 md:bg-transparent dark:md:bg-transparent hover:md:bg-transparent dark:hover:md:bg-transparent md:border-none border-indigo-950 dark:border-white"
+                : "bg-white dark:bg-[#020021] hover:bg-gray-100 dark:hover:bg-gray-800 md:bg-transparent dark:md:bg-transparent hover:md:bg-transparent dark:hover:md:bg-transparent md:border-none border-indigo-950 dark:border-white"
             } border-yellow-950 dark:border-white`}
           >
             <Link
