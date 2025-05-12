@@ -65,7 +65,7 @@ export default function About() {
                 {workExperience.map((work) => (
                   <div
                     key={work.company}
-                    className="w-full p-2 text-sm sm:text-base md:text-base lg:text-lg"
+                    className="w-full px-4 py-2 text-sm sm:text-base md:text-base lg:text-lg"
                   >
                     <p className="font-bold">{work.title}</p>
                     <p className="font-medium">{work.company}</p>
@@ -85,7 +85,7 @@ export default function About() {
                 {education.map((edu) => (
                   <div
                     key={edu.school}
-                    className="p-2 text-sm sm:text-base lg:text-lg italic"
+                    className="px-4 py-2 text-sm sm:text-base lg:text-lg italic"
                   >
                     <p className="font-normal">{edu.degree}</p>
                     <p className="font-semibold">{edu.major}</p>
@@ -101,7 +101,7 @@ export default function About() {
               <p className="font-light text-2xl sm:text-4xl select-none">
                 Certifications
               </p>
-              <div className="p-1">
+              <div className="px-4 py-1">
                 {certificationsList.map((cert) => (
                   <Link
                     key={cert.name}
