@@ -28,7 +28,7 @@ export function MainCard() {
             className="select-none min-w-[200px] w-auto h-auto hidden dark:block"
           />
         </div>
-        <div className="flex flex-col justify-center z-10 md:ml-5">
+        <div className="flex flex-col items-center md:items-start justify-center z-10 md:ml-5">
           <p className="text-xl md:text-2xl lg:text-3xl select-none">
             Hi, I&apos;m&nbsp;
             <span className="text-3xl md:text-4xl lg:text-5xl font-medium select-none">
@@ -46,7 +46,7 @@ export function MainCard() {
           {/* <p className="select-none text-base sm:text-lg md:text-xl lg:text-2xl">
             {about.slogan}
           </p> */}
-          <div className="flex flex-row items-center mt-3">
+          <div className="mt-3">
             <ContactIconList showResume={true} />
           </div>
         </div>
