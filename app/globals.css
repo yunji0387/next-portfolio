@@ -14,6 +14,18 @@
   --background-end-rgb: 05 0, 0;
 }
 
+[class="tsuyu"]:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 22, 110, 14;
+  --background-end-rgb: 22, 110, 14;
+}
+
+[class="oak"]:root {
+  --foreground-rgb: 188, 179, 158;
+  --background-start-rgb: 59, 54, 75;
+  --background-end-rgb: 59, 54, 75;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
