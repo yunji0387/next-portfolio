@@ -19,7 +19,7 @@ export const contactList = [
     },
     {
         name: "LinkedIn",
-        link: "https://www.linkedin.com/in/yun-ji-how-64025220a/",
+        link: "https://www.linkedin.com/in/yunjih/",
         username: "Yun Ji How",
         iconPath: "/icons/linkedin.png",
         iconLight: "/icons/linkedinLight.png",
