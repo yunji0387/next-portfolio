@@ -48,7 +48,8 @@ export function MainCard() {
             {about.slogan}
           </p> */}
           <div className="mt-3">
-            <ContactIconList showResume={true} />
+            {/* <ContactIconList showResume={true} /> */}
+            <ContactIconList showResume={false} />
           </div>
         </div>
       </div>
