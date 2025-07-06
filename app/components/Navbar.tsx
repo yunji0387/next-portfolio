@@ -19,10 +19,10 @@ const navItems = [
     name: "Contact",
     link: "/contact",
   },
-  {
-    name: "About",
-    link: "/about",
-  },
+  // {
+  //   name: "About",
+  //   link: "/about",
+  // },
 ];
 
 export function Navbar() {
