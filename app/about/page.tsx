@@ -44,7 +44,7 @@ export default function About() {
               {about.title}
               <span className="hidden sm:block absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
             </p> */}
-            <p className="font-black text-2xl md:text-3xl lg:text-4xl select-none w-fit relative decoration-2">
+            <p className="font-medium text-2xl md:text-3xl lg:text-4xl select-none w-fit relative decoration-2">
               {about.title}
               <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-1 sm:h-2 w-full"></span>
             </p>

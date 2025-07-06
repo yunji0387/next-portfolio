@@ -1,13 +1,13 @@
 "use client";
-import { useEffect } from "react";
-import { useTheme } from "next-themes";
+// import { useEffect } from "react";
+// import { useTheme } from "next-themes";
 
 export default function Home() {
-    const { setTheme } = useTheme();
+    // const { setTheme } = useTheme();
 
-    useEffect(() => {
-        setTheme("tsuyu");
-    }, [setTheme]);
+    // useEffect(() => {
+    //     setTheme("tsuyu");
+    // }, [setTheme]);
 
     return (
         <main className="hidden">
