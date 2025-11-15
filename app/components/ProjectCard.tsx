@@ -36,35 +36,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <div className="flex flex-col bg-white/25 dark:bg-white/10 rounded-xl overflow-hidden transition-all duration-300 cursor-pointer h-full hover:bg-white/40 dark:hover:bg-white/20 hover:shadow-2xl">
-      {/* Project Thumbnail */}
-      {/* <div className="w-full aspect-video overflow-hidden bg-black/10 relative">
-        {image ? (
-          <Image
-            src={image}
-            alt={name}
-            width={400}
-            height={225}
-            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-            priority={false}
-          />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-black/10 to-black/20">
-            <svg
-              className="w-16 h-16 opacity-50"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </div>
-        )}
-      </div> */}
-
       {/* Project Content */}
       <div className="p-4 flex flex-col gap-3 flex-1">
         {/* Project Title */}
