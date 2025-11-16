@@ -49,6 +49,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           {description.length > DESCRIPTION_LENGTH && (
             <button
               onClick={toggleExpanded}
+              aria-label={isExpanded ? "Show less description" : "Read more description"}
               className="text-indigo-600 dark:text-blue-400 font-medium hover:underline hover:text-indigo-800 dark:hover:text-blue-300 transition-all duration-200"
             >
               {isExpanded ? " Show Less" : " Read More"}
