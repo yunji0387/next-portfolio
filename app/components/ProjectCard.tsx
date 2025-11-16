@@ -35,7 +35,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     : description;
 
   return (
-    <div className="flex flex-col bg-white/25 dark:bg-white/10 rounded-xl overflow-hidden transition-all duration-300 cursor-pointer h-full hover:bg-white/40 dark:hover:bg-white/20 hover:shadow-2xl">
+    <div className="flex flex-col bg-white/25 dark:bg-white/10 rounded-xl overflow-hidden transition-all duration-300 h-full hover:bg-white/40 dark:hover:bg-white/20 hover:shadow-2xl">
       {/* Project Content */}
       <div className="p-4 flex flex-col gap-3 flex-1">
         {/* Project Title */}
