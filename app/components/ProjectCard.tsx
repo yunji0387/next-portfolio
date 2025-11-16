@@ -58,9 +58,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-2 mt-auto">
-          {tech_stack.slice(0, 4).map((tech, index) => (
+          {tech_stack.slice(0, 4).map((tech) => (
             <span 
-              key={index} 
+              key={tech} 
               className="text-xs px-2 pt-2 pb-1 text-yellow-950 dark:bg-blue-400/10 dark:text-gray-50 rounded-full border border-yellow-950 dark:border-gray-50 whitespace-nowrap font-light"
             >
               {tech}
