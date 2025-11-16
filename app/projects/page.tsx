@@ -47,9 +47,9 @@ export default function Projects() {
 
       {/* Projects Grid - YouTube style layout */}
       <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 w-full mb-8">
-        {projectList.map((project: Project, index: number) => (
+        {projectList.map((project: Project) => (
           <ProjectCard
-            key={index}
+            key={project.name}
             name={project.name}
             description={project.description}
             image={project.image}
