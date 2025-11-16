@@ -173,3 +173,61 @@ body {
   scale: 0.8;
 }
 /* ImageBanner style above */
+
+/* Skeleton Loading Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(
+    90deg,
+    rgba(200, 200, 200, 0.1) 0%,
+    rgba(200, 200, 200, 0.3) 50%,
+    rgba(200, 200, 200, 0.1) 100%
+  );
+  background-size: 1000px 100%;
+}
+
+[class="dark"]:root .shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(100, 100, 100, 0.1) 0%,
+    rgba(100, 100, 100, 0.3) 50%,
+    rgba(100, 100, 100, 0.1) 100%
+  );
+  background-size: 1000px 100%;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .shimmer {
+    animation: none;
+    background: rgba(200, 200, 200, 0.2);
+  }
+  
+  [class="dark"]:root .shimmer {
+    background: rgba(100, 100, 100, 0.2);
+  }
+}
+
+/* Screen reader only class for accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Skeleton Loading Animation above */
