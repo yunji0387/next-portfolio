@@ -23,8 +23,8 @@ export function ThemeSwitcher() {
     <div className="flex">
       <button
         onClick={toggleTheme}
-        className={`relative flex items-center px-1 w-16 h-8 rounded-full shadow border grayscale hover:grayscale-0 ${theme !== "dark" && "border-yellow-900"
-          } transition-all duration-200 ease-in-out`}
+        className={`relative flex items-center px-1 w-16 h-8 rounded-full shadow border ${theme !== "dark" ? "border-yellow-900" : "border-txt"
+          } dark:hover:bg-btn/30 transition-all duration-200 ease-in-out`}
       >
         <div
           className="absolute transition-transform duration-300 ease-in-out"
