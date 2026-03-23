@@ -17,6 +17,7 @@
   --color-bg-secondary: 5 52 80; /* #053450 — secondary bg */
   --color-text: 237 233 201;    /* #ede9c9 — main text */
   --color-text-secondary: 188 179 158; /* #bcb39e — secondary text */
+  --color-btn: 134 123 123;      /* #867b7b — button */
 }
 
 [class="tsuyu"]:root {

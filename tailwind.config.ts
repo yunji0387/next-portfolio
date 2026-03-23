@@ -15,6 +15,7 @@ const config: Config = {
         'bg-secondary':   'rgb(var(--color-bg-secondary) / <alpha-value>)',
         'txt':            'rgb(var(--color-text) / <alpha-value>)',
         'txt-secondary':  'rgb(var(--color-text-secondary) / <alpha-value>)',
+        'btn':            'rgb(var(--color-btn) / <alpha-value>)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
