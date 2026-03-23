@@ -74,7 +74,7 @@ export const ContactUs = () => {
               required
               minLength={2}
               maxLength={50}
-              className="p-1 pl-2 font-light bg-transparent border-b border-yellow-950 dark:border-white placeholder-yellow-800 dark:placeholder-gray-300"
+              className="p-1 pl-2 font-light bg-transparent border-b border-yellow-950 dark:border-txt placeholder-yellow-800 dark:placeholder-txt-secondary focus:outline focus:outline-2 dark:focus:outline-btn"
               placeholder="Write your Name here..."
             />
           </div>
@@ -86,23 +86,23 @@ export const ContactUs = () => {
               required
               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
               title="Please enter a valid email address."
-              className="p-1 pl-2 font-light bg-transparent border-b border-yellow-950 dark:border-white placeholder-yellow-800 dark:placeholder-gray-300"
+              className="p-1 pl-2 font-light bg-transparent border-b border-yellow-950 dark:border-txt placeholder-yellow-800 dark:placeholder-txt-secondary focus:outline focus:outline-2 dark:focus:outline-btn"
               placeholder="Write your email here..."
             />
           </div>
-          <div className="flex flex-col w-full max-h-[22rem] overflow-auto">
+          <div className="flex flex-col w-full max-h-[22rem] overflow-y-auto">
             <label className="select-none">Message</label>
             <textarea
               name="message"
               required
               minLength={10}
-              className="p-1 px-2 font-light bg-transparent border-b border-yellow-950 dark:border-white placeholder-yellow-800 dark:placeholder-gray-300"
+              className="p-1 px-2 mx-[2px] font-light bg-transparent border-b border-yellow-950 dark:border-txt placeholder-yellow-800 dark:placeholder-txt-secondary focus:outline focus:outline-2 dark:focus:outline-btn"
               placeholder="Write your message here..."
             />
           </div>
           <button
             type="submit"
-            className="w-full mt-2 p-1 rounded-md bg-yellow-950 dark:bg-gray-100 hover:bg-yellow-900 dark:hover:bg-gray-200 text-white dark:text-black text-lg lg:text-xl"
+            className="w-full mt-2 p-1 rounded-md bg-yellow-950 dark:bg-txt-secondary hover:bg-yellow-900 dark:hover:bg-txt text-white dark:text-black text-lg lg:text-xl"
           >
             {isLoading ? (
               <div className="flex justify-center items-center py-1">
