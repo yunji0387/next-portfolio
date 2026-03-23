@@ -102,7 +102,7 @@ export const ContactUs = () => {
           </div>
           <button
             type="submit"
-            className="w-full mt-2 p-1 rounded-md bg-yellow-950 dark:bg-txt-secondary hover:bg-yellow-900 dark:hover:bg-txt text-white dark:text-black text-lg lg:text-xl"
+            className="w-full mt-2 p-1 rounded-md bg-yellow-950 dark:bg-txt/85 hover:bg-yellow-900 dark:hover:bg-txt text-white dark:text-bg text-lg lg:text-xl"
           >
             {isLoading ? (
               <div className="flex justify-center items-center py-1">
