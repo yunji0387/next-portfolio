@@ -11,9 +11,9 @@ export function MainCard() {
     <div className={`w-full h-full flex flex-col justify-center items-center`}>
       <div className="flex flex-row justify-center items-center w-full relative py-8">
         <div className="absolute inset-0 z-0 md:static w-full md:w-56 md:h-56 flex items-center justify-center opacity-20 dark:opacity-30 md:opacity-100 dark:md:opacity-100">
-          <div className="bg-yellow-300 dark:bg-txt-secondary rounded-full md:w-56 md:h-56">
+          <div className="bg-bg-secondary dark:bg-txt-secondary rounded-full md:w-56 md:h-56">
             <Image
-              src="/images/face.png"
+              src="/images/face_v2.png"
               alt="faceImg"
               width={200}
               height={200}
@@ -21,7 +21,7 @@ export function MainCard() {
               className="select-none min-w-[200px] w-auto h-auto dark:hidden"
             />
             <Image
-              src="/images/face_v3_dark.png"
+              src="/images/face_v3.png"
               alt="faceImgDark"
               width={200}
               height={200}
