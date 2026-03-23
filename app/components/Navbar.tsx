@@ -41,7 +41,7 @@ export function Navbar() {
         <HamburgerIcon isOpen={isOpen} handleClick={handleClick} />
         <div className="flex justify-center items-center min-w-16">
           <Image
-            src="/icons/logoLight.png"
+            src="/icons/logo_light.png"
             alt="portfolio logo"
             width={50}
             height={50}
@@ -68,7 +68,7 @@ export function Navbar() {
       >
         <li className="hidden md:flex md:items-center md:justify-center min-w-16">
           <Image
-            src="/icons/logoLight.png"
+            src="/icons/logo_light.png"
             alt="portfolio logo"
             width={50}
             height={50}
