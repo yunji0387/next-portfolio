@@ -62,13 +62,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           {tech_stack.slice(0, 4).map((tech) => (
             <span 
               key={tech} 
-              className="text-xs px-2 pt-2 pb-1 text-yellow-950 dark:bg-btn/10 dark:text-txt rounded-full border border-yellow-950 dark:border-txt whitespace-nowrap font-light"
+              className="text-xs px-2 pt-2 pb-1 bg-btn/10 dark:text-txt rounded-full border border-txt whitespace-nowrap font-light"
             >
               {tech}
             </span>
           ))}
           {tech_stack.length > 4 && (
-            <span className="text-xs px-2 pt-2 pb-1 text-yellow-950 dark:bg-btn/10 dark:text-txt rounded-full border border-yellow-950 dark:border-txt whitespace-nowrap font-medium">
+            <span className="text-xs px-2 pt-2 pb-1 bg-btn/10 dark:text-txt rounded-full border border-txt whitespace-nowrap font-medium">
               +{tech_stack.length - 4}
             </span>
           )}
@@ -80,7 +80,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-yellow-950 dark:bg-btn/70 text-txt rounded-lg text-sm font-medium transition-all duration-200 hover:bg-yellow-900 dark:hover:bg-btn hover:shadow-lg max-sm:w-full"
+            className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-btn/70 text-txt rounded-lg text-sm font-medium transition-all duration-200 hover:bg-btn/50 dark:hover:bg-btn hover:shadow-lg max-sm:w-full"
           >
             <svg
               className="w-4 h-4"
@@ -102,7 +102,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             href={github_repo}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-transparent rounded-lg text-sm font-medium border border-white/20 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/10 hover:border-black/30 dark:hover:border-white/30 max-sm:w-full"
+            className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-transparent rounded-lg text-sm font-medium border border-btn/70 hover:bg-bg-secondary/40 max-sm:w-full"
           >
             <Image
               src="/icons/githubLight.png"
