@@ -3,9 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 77, 40, 0;
-  --background-start-rgb: 248, 248, 247;
-  --background-end-rgb: 231, 230, 197;
+  --foreground-rgb: 55, 50, 70;
+  --background-start-rgb: 237, 233, 201;
+  --background-end-rgb: 237, 233, 201;
+
+  --color-bg: 237, 233, 201;         /* #ede9c9 — main bg */
+  --color-bg-secondary: 188 179 158; /* #bcb39e — secondary bg */
+  --color-text: 55 50 70;   /* #373246 — main text */
+  --color-text-secondary: 5 52 80; /* #053450 — secondary text */
+  --color-btn: 134 123 123;      /* #867b7b — button */
 }
 
 [class="dark"]:root {
