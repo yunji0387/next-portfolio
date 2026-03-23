@@ -10,6 +10,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'bg':             'rgb(var(--color-bg) / <alpha-value>)',
+        'bg-secondary':   'rgb(var(--color-bg-secondary) / <alpha-value>)',
+        'txt':            'rgb(var(--color-text) / <alpha-value>)',
+        'txt-secondary':  'rgb(var(--color-text-secondary) / <alpha-value>)',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

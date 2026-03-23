@@ -9,9 +9,14 @@
 }
 
 [class="dark"]:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 51;
-  --background-end-rgb: 05 0, 0;
+  --foreground-rgb: 237, 233, 201;
+  --background-start-rgb: 55, 50, 70;
+  --background-end-rgb: 55, 50, 70;
+
+  --color-bg: 55 50 70;         /* #373246 — main bg */
+  --color-bg-secondary: 5 52 80; /* #053450 — secondary bg */
+  --color-text: 237 233 201;    /* #ede9c9 — main text */
+  --color-text-secondary: 188 179 158; /* #bcb39e — secondary text */
 }
 
 [class="tsuyu"]:root {
