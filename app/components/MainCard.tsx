@@ -9,24 +9,26 @@ import { ContactIconList } from "./ContactIconList";
 export function MainCard() {
   return (
     <div className={`w-full h-full flex flex-col justify-center items-center`}>
-      <div className="flex flex-row justify-center w-full relative py-8">
-        <div className="absolute inset-0 z-0 md:static w-full md:w-56 flex items-center justify-center opacity-20 dark:opacity-30 md:opacity-100 dark:md:opacity-100 bg-yellow-300 dark:bg-indigo-900 rounded-full">
-          {/* <Image
-            src="/images/face.png"
-            alt="faceImg"
-            width={200}
-            height={200}
-            priority={true}
-            className="select-none min-w-[200px] w-auto h-auto dark:hidden"
-          />
-          <Image
-            src="/images/faceDark.png"
-            alt="faceImgDark"
-            width={200}
-            height={200}
-            priority={true}
-            className="select-none min-w-[200px] w-auto h-auto hidden dark:block"
-          /> */}
+      <div className="flex flex-row justify-center items-center w-full relative py-8">
+        <div className="absolute inset-0 z-0 md:static w-full md:w-56 md:h-56 flex items-center justify-center opacity-20 dark:opacity-30 md:opacity-100 dark:md:opacity-100">
+          <div className="bg-bg-secondary dark:bg-txt-secondary rounded-full md:w-56 md:h-56">
+            <Image
+              src="/images/face_v2.png"
+              alt="faceImg"
+              width={200}
+              height={200}
+              priority={true}
+              className="select-none min-w-[200px] w-auto h-auto dark:hidden"
+            />
+            <Image
+              src="/images/face_v3.png"
+              alt="faceImgDark"
+              width={200}
+              height={200}
+              priority={true}
+              className="select-none w-56 h-56 hidden dark:block"
+            />
+          </div>
         </div>
         <div className="flex flex-col items-center md:items-start justify-center z-10 md:ml-5">
           <p className="text-xl md:text-2xl lg:text-3xl select-none font-light">
@@ -39,7 +41,7 @@ export function MainCard() {
           <p className="text-2xl md:text-3xl lg:text-4xl font-medium select-none relative w-fit">
             {about.title}
             {/* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  */}
-            <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
+            <span className="absolute z-[-1] bottom-1 left-0 bg-txt-secondary/20 dark:bg-txt-secondary/30 h-2 w-full"></span>
           </p>
           {/* <p className="select-none text-sm sm:text-base md:text-lg lg:text-2xl xl:text-2xl">
             {about.status}

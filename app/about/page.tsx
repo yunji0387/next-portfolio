@@ -46,7 +46,7 @@ export default function About() {
             </p> */}
             <p className="font-medium text-2xl md:text-3xl lg:text-4xl select-none w-fit relative decoration-2">
               {about.title}
-              <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-1 sm:h-2 w-full"></span>
+              <span className="absolute z-[-1] bottom-1 left-0 bg-txt-secondary/20 dark:bg-txt-secondary/30 h-1 sm:h-2 w-full"></span>
             </p>
 
             {/* <p className="select-none text-justify text-sm sm:text-base md:text-lg lg:text-xl">

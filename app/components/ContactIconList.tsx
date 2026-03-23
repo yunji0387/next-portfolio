@@ -11,7 +11,7 @@ export function ContactIconList({ showResume = false }: ContactIconListProps) {
     <div className="flex flex-row max-w-full h-full m-0">
       {showResume && (
         <Link href="/resume" rel="noopener noreferrer" className="mr-1">
-          <button className="flex justify-center items-center text-lg select-none rounded-full hover:border-2 border-yellow-950 dark:border-white p-2 font-black transition-all duration-100 ease-in-out">
+          <button className="flex justify-center items-center text-lg select-none rounded-full hover:border-2 border-yellow-950 dark:border-txt p-2 font-black transition-all duration-100 ease-in-out">
             <p className="w-[30px] h-[30px] pt-[4px]">CV</p>
           </button>
         </Link>
@@ -26,7 +26,7 @@ export function ContactIconList({ showResume = false }: ContactIconListProps) {
           key={index}
           className={`mx-1 flex flex-row items-center ${
             contact.isAvailable
-              ? "rounded-full hover:border-2 border-yellow-950 dark:border-white p-2 font-black transition-all duration-200 ease-in-out"
+              ? "rounded-full hover:border-2 border-yellow-950 dark:border-txt p-2 font-black transition-all duration-200 ease-in-out"
               : "disabled cursor-not-allowed"
           }`}
         >
