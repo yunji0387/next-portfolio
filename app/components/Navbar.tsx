@@ -48,7 +48,7 @@ export function Navbar() {
             className="select-none dark:hidden"
           />
           <Image
-            src="/icons/logoDark.png"
+            src="/icons/logo_dark.png"
             alt="portfolio logo"
             width={50}
             height={50}
@@ -75,7 +75,7 @@ export function Navbar() {
             className="select-none dark:hidden"
           />
           <Image
-            src="/icons/logoDark.png"
+            src="/icons/logo_dark.png"
             alt="portfolio logo"
             width={50}
             height={50}
@@ -87,9 +87,9 @@ export function Navbar() {
             key={item.name}
             className={`flex items-center justify-center w-36 md:w-full rounded-lg border ${
               currPath === item.link
-                ? "bg-amber-100 dark:bg-indigo-900 md:bg-transparent dark:md:bg-transparent md:border-none"
-                : "bg-white dark:bg-[#020021] hover:bg-gray-100 dark:hover:bg-gray-800 md:bg-transparent dark:md:bg-transparent hover:md:bg-transparent dark:hover:md:bg-transparent md:border-none border-indigo-950 dark:border-white"
-            } border-yellow-950 dark:border-white`}
+                ? "bg-amber-100 dark:bg-btn/60 md:bg-transparent dark:md:bg-transparent md:border-none"
+                : "bg-white dark:bg-btn/10 hover:bg-gray-100 dark:hover:bg-btn md:bg-transparent dark:md:bg-transparent hover:md:bg-transparent dark:hover:md:bg-transparent md:border-none border-indigo-950 dark:border-txt"
+            } border-yellow-950 dark:border-txt`}
           >
             <Link
               href={item.link}
@@ -97,12 +97,12 @@ export function Navbar() {
                 currPath === item.link
                   ? "font-semibold text-2xl lg:text-3xl 2xl:text-4xl"
                   : "font-normal text-lg lg:text-2xl 2xl:text-3xl hover:text-2xl xl:hover:text-3xl 2xl:hover:text-4xl"
-              } text-[#4d2800] dark:text-white`}
+              } text-[#4d2800] dark:text-txt`}
             >
               <p className="select-none mt-1 lg:mt-2 relative">
                 {item.name}
                 {currPath === item.link && (
-                  <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-indigo-800 h-2 w-full"></span>
+                  <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-txt-secondary/30 h-2 w-full"></span>
                 )}
               </p>
             </Link>
