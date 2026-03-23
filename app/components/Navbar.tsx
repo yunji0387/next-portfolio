@@ -85,24 +85,24 @@ export function Navbar() {
         {navItems.map((item) => (
           <li
             key={item.name}
-            className={`flex items-center justify-center w-36 md:w-full rounded-lg border dark:bg-bg ${
+            className={`flex items-center justify-center w-36 md:w-full rounded-lg border bg-bg ${
               currPath === item.link
-                ? "bg-amber-100 dark:bg-btn md:bg-transparent dark:md:bg-transparent md:border-none select-none cursor-default"
-                : "bg-white hover:bg-gray-100 md:bg-transparent dark:md:bg-transparent hover:md:bg-transparent dark:hover:md:bg-transparent md:border-none border-indigo-950 dark:border-txt"
-            } border-yellow-950 dark:border-txt`}
+                ? "bg-btn md:bg-transparent dark:md:bg-transparent md:border-none select-none cursor-default"
+                : "md:bg-transparent dark:md:bg-transparent hover:md:bg-transparent dark:hover:md:bg-transparent md:border-none border-txt"
+            } border-txt`}
           >
             <Link
               href={item.link}
               className={`w-full flex justify-center items-center h-10 md:h-8 md:hover:h-8 xl:h-10 xl:hover:h-10 transition-all duration-200 ease-in-out ${
                 currPath === item.link
-                  ? "font-semibold text-2xl lg:text-3xl 2xl:text-4xl select-none cursor-default"
+                  ? "text-bg dark:text-txt font-semibold text-2xl lg:text-3xl 2xl:text-4xl select-none cursor-default"
                   : "font-normal text-lg lg:text-2xl 2xl:text-3xl hover:text-2xl xl:hover:text-3xl 2xl:hover:text-4xl"
-              } text-[#4d2800] dark:text-txt`}
+              }`}
             >
               <p className="select-none mt-1 lg:mt-2 relative">
                 {item.name}
                 {currPath === item.link && (
-                  <span className="absolute z-[-1] bottom-1 left-0 bg-amber-200 dark:bg-txt-secondary/30 h-2 w-full"></span>
+                  <span className="absolute z-[-1] bottom-1 left-0 bg-txt-secondary/20 dark:bg-txt-secondary/30 h-2 w-full"></span>
                 )}
               </p>
             </Link>
