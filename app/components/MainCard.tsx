@@ -9,24 +9,26 @@ import { ContactIconList } from "./ContactIconList";
 export function MainCard() {
   return (
     <div className={`w-full h-full flex flex-col justify-center items-center`}>
-      <div className="flex flex-row justify-center w-full relative py-8">
-        <div className="absolute inset-0 z-0 md:static w-full md:w-56 flex items-center justify-center opacity-20 dark:opacity-30 md:opacity-100 dark:md:opacity-100 bg-yellow-300 dark:bg-indigo-900 rounded-full">
-          {/* <Image
-            src="/images/face.png"
-            alt="faceImg"
-            width={200}
-            height={200}
-            priority={true}
-            className="select-none min-w-[200px] w-auto h-auto dark:hidden"
-          />
-          <Image
-            src="/images/faceDark.png"
-            alt="faceImgDark"
-            width={200}
-            height={200}
-            priority={true}
-            className="select-none min-w-[200px] w-auto h-auto hidden dark:block"
-          /> */}
+      <div className="flex flex-row justify-center items-center w-full relative py-8">
+        <div className="absolute inset-0 z-0 md:static w-full md:w-56 md:h-56 flex items-center justify-center opacity-20 dark:opacity-30 md:opacity-100 dark:md:opacity-100">
+          <div className="bg-yellow-300 dark:bg-txt-secondary rounded-full md:w-56 md:h-56">
+            <Image
+              src="/images/face.png"
+              alt="faceImg"
+              width={200}
+              height={200}
+              priority={true}
+              className="select-none min-w-[200px] w-auto h-auto dark:hidden"
+            />
+            <Image
+              src="/images/face_v3_dark.png"
+              alt="faceImgDark"
+              width={200}
+              height={200}
+              priority={true}
+              className="select-none w-56 h-56 hidden dark:block"
+            />
+          </div>
         </div>
         <div className="flex flex-col items-center md:items-start justify-center z-10 md:ml-5">
           <p className="text-xl md:text-2xl lg:text-3xl select-none font-light">
