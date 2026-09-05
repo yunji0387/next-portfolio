@@ -11,22 +11,22 @@ export function MainCard() {
     <div className={`w-full h-full flex flex-col justify-center items-center`}>
       <div className="flex flex-row justify-center items-center w-full relative py-8">
         <div className="absolute inset-0 z-0 md:static w-full md:w-56 md:h-56 flex items-center justify-center opacity-20 dark:opacity-30 md:opacity-100 dark:md:opacity-100">
-          <div className="bg-bg-secondary dark:bg-txt-secondary rounded-full md:w-56 md:h-56">
+          <div className="bg-txt dark:bg-txt rounded-full md:w-56 md:h-56 flex items-end justify-center">
             <Image
-              src="/images/face_v2.png"
-              alt="faceImg"
+              src="/images/main_light.png"
+              alt="mainImgLight"
               width={200}
               height={200}
               priority={true}
-              className="select-none min-w-[200px] w-auto h-auto dark:hidden"
+              className="select-none min-w-[200px] w-auto h-auto dark:hidden mb-2"
             />
             <Image
-              src="/images/face_v3.png"
-              alt="faceImgDark"
+              src="/images/main_dark.png"
+              alt="mainImgDark"
               width={200}
               height={200}
               priority={true}
-              className="select-none w-56 h-56 hidden dark:block"
+              className="select-none min-w-[200px] w-auto h-auto hidden dark:block"
             />
           </div>
         </div>
